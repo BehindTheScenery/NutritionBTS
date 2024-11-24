@@ -1,0 +1,40 @@
+modLoader = "javafml"
+loaderVersion = "[4,)"
+issueTrackerURL = "https://github.com/BehindTheScenery/NutritionBTS/issues"
+license = "MIT"
+
+[[mods]]
+modId = "nutritionbts"
+version = "${version}"
+displayName = "NutritionBTS"
+authors = ["Aros"]
+description = "This mod is about nutritions"
+displayURL = "https://github.com/BehindTheScenery/NutritionBTS/"
+#TODO: logoFile = ""
+
+[[dependencies.nutritionbts]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.0,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.nutritionbts]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.nutritionbts]]
+modId = "cloth_config"
+type = "required"
+versionRange = "[${cloth_config_version},)"
+ordering = "NONE"
+side = "BOTH"
+
+# And Forgified Fabric API!
+# Don't forget to download it :D
+
+[[mixins]]
+config = "nutritionbts.mixins.json"

@@ -1,6 +1,6 @@
 {
 	"required": true,
-	"package": "dev.behindthescenry.nutritionbts.mixin",
+	"package": "dev.behindthescenery.nutritionbts.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
 	  "HungerManagerMixin",

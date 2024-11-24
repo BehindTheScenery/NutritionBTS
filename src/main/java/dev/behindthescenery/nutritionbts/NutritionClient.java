@@ -1,16 +1,20 @@
 package dev.behindthescenery.nutritionbts;
 
-import net.fabricmc.api.ClientModInitializer;
-import net.fabricmc.api.EnvType;
-import net.fabricmc.api.Environment;
 import dev.behindthescenery.nutritionbts.init.RenderInit;
 import dev.behindthescenery.nutritionbts.network.NutritionClientPacket;
+import net.fabricmc.api.EnvType;
+import net.fabricmc.api.Environment;
+import net.neoforged.api.distmarker.Dist;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 
+@SuppressWarnings("unused")
 @Environment(EnvType.CLIENT)
-public class NutritionClient implements ClientModInitializer {
-
-    @Override
-    public void onInitializeClient() {
+@EventBusSubscriber(modid = "nutritionbts", value = Dist.CLIENT, bus = EventBusSubscriber.Bus.MOD)
+public class NutritionClient {
+    @SubscribeEvent
+    public static void onStartup(FMLClientSetupEvent event) {
         RenderInit.init();
         NutritionClientPacket.init();
     }

@@ -124,7 +124,7 @@ public class HungerManagerMixin implements HungerManagerAccess {
             if (changedAttributes) {
                 Collection<EntityAttributeInstance> collection = player.getAttributes().getAttributesToSend();
                 if (!collection.isEmpty()) {
-                    ((ServerPlayerEntity) player).networkHandler.sendPacket(new EntityAttributesS2CPacket(player.getId(), collection));
+                    ((ServerPlayerEntity) player).networkHandler.send(new EntityAttributesS2CPacket(player.getId(), collection));
                 }
             }
         }
