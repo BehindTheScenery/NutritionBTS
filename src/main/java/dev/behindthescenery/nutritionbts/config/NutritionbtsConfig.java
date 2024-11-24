@@ -1,12 +1,12 @@
-package net.nutritionz.config;
+package dev.behindthescenery.nutritionbts.config;
 
 import me.shedaniel.autoconfig.ConfigData;
 import me.shedaniel.autoconfig.annotation.Config;
 import me.shedaniel.cloth.clothconfig.shadowed.blue.endless.jankson.Comment;
 
-@Config(name = "nutritionz")
+@Config(name = "nutritionbts")
 @Config.Gui.Background("minecraft:textures/block/stone.png")
-public class NutritionzConfig implements ConfigData {
+public class NutritionbtsConfig implements ConfigData {
 
     public int maxNutrition = 100;
     public int negativeNutrition = 10;
