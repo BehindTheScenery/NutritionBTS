@@ -1,32 +1,32 @@
 {
 	"schemaVersion": 1,
-	"id": "nutritionz",
+	"id": "nutritionbts",
 	"version": "${version}",
-	"name": "NutritionZ",
+	"name": "NutritionBTS",
 	"description": "This mod is about nutritions",
 	"authors": [
-		"Globox_Z"
+		"Aros"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://github.com/BehindTheScenery",
+		"sources": "https://github.com/BehindTheScenery/NutritionBTS"
 	},
 	"license": "MIT",
-	"icon": "assets/nutritionz/icon.png",
+	"icon": "assets/nutritionbts/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"net.nutritionz.NutritionMain"
+			"dev.behindthescenery.nutritionbts.NutritionMain"
 		],
 		"client": [
-			"net.nutritionz.NutritionClient"
+			"dev.behindthescenery.nutritionbts.NutritionClient"
 		],
 		"modmenu": [
-			"net.nutritionz.config.ModMenuIntegration"
+			"dev.behindthescenery.nutritionbts.config.ModMenuIntegration"
 		]
 	},
 	"mixins": [
-		"nutritionz.mixins.json"
+		"nutritionbts.mixins.json"
 	],
 	"depends": {
 		"java": ">=21",
@@ -37,11 +37,5 @@
 	},
 	"suggests": {
 		"another-mod": "*"
-	},
-	"custom": {
-		"mc-publish": {
-			"modrinth": "9IASI8W8",
-			"curseforge": 956695
-		}
 	}
 }

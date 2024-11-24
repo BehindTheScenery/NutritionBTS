@@ -1,0 +1,29 @@
+{
+    "screen.nutritionbts": "Nutrients",
+
+    "text.autoconfig.nutritionbts.title": "nutritionbts Config",
+    "text.autoconfig.nutritionbts.option.maxNutrition": "Max Nutrition",
+    "text.autoconfig.nutritionbts.option.negativeNutrition": "Negative Nutrition",
+    "text.autoconfig.nutritionbts.option.positiveNutrition": "Positive Nutrition",
+    "text.autoconfig.nutritionbts.option.posX": "Pos X",
+    "text.autoconfig.nutritionbts.option.posY": "Pos Y",
+    "text.autoconfig.nutritionbts.option.carbohydrateItemId": "Carbohydrate Item Id",
+    "text.autoconfig.nutritionbts.option.proteinItemId": "Protein Item Id",
+    "text.autoconfig.nutritionbts.option.fatItemId": "Fat Item Id",
+    "text.autoconfig.nutritionbts.option.vitaminItemId": "Vitamin Item Id",
+    "text.autoconfig.nutritionbts.option.mineralItemId": "Mineral Item Id",
+
+    "screen.nutritionbts.carbohydrates": "Carbs",
+    "screen.nutritionbts.protein": "Protein",
+    "screen.nutritionbts.fat": "Fat",
+    "screen.nutritionbts.vitamins": "Vitamins",
+    "screen.nutritionbts.minerals": "Minerals",
+    "screen.nutritionbts.nutritionValue": "%s/%s",
+
+    "item.nutritionbts.nutrients": "§7Nutrients:",
+    "item.nutritionbts.carbohydrates": " %s Carbs",
+    "item.nutritionbts.protein": " %s Protein",
+    "item.nutritionbts.fat": " %s Fat",
+    "item.nutritionbts.vitamins": " %s Vitamins",
+    "item.nutritionbts.minerals": " %s Minerals"
+}

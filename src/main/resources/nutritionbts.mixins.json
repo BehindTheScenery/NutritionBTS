@@ -1,0 +1,16 @@
+{
+	"required": true,
+	"package": "dev.behindthescenry.nutritionbts.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [
+	  "HungerManagerMixin",
+      "PlayerEntityMixin"
+	],
+	"client": [
+		"client.InventoryScreenMixin",
+		"client.ItemStackMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}
