@@ -7,7 +7,7 @@ import net.minecraft.item.Item;
 import dev.behindthescenery.nutritionbts.init.ConfigInit;
 import dev.behindthescenery.nutritionbts.init.EventInit;
 import dev.behindthescenery.nutritionbts.init.LoaderInit;
-import dev.behindthescenery.nutritionbts.network.NutritionServerPacket;
+import dev.behindthescenery.nutritionbts.network.NutritionServerPacketHandler;
 import net.neoforged.fml.common.Mod;
 
 // TODO: 24.11.2024 REPLACE WITH MOD_ID
@@ -20,7 +20,7 @@ public class NutritionMain {
     public NutritionMain() {
         ConfigInit.init();
         LoaderInit.init();
-        NutritionServerPacket.init();
+        NutritionServerPacketHandler.init();
         EventInit.init();
     }
 }

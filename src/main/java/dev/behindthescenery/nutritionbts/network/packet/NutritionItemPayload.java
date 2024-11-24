@@ -8,14 +8,14 @@ import net.minecraft.util.Identifier;
 
 import java.util.List;
 
-public record NutritionItemPacket(List<Integer> itemIds, List<Integer> nutritionValues) implements CustomPayload {
+public record NutritionItemPayload(List<Integer> itemIds, List<Integer> nutritionValues) implements CustomPayload {
 
-    public static final CustomPayload.Id<NutritionItemPacket> PACKET_ID = new CustomPayload.Id<>(Identifier.of("nutritionbts", "nutrition_item_packet"));
+    public static final CustomPayload.Id<NutritionItemPayload> PACKET_ID = new CustomPayload.Id<>(Identifier.of("nutritionbts", "nutrition_item_packet"));
 
-    public static final PacketCodec<RegistryByteBuf, NutritionItemPacket> PACKET_CODEC = PacketCodec.of((value, buf) -> {
+    public static final PacketCodec<RegistryByteBuf, NutritionItemPayload> PACKET_CODEC = PacketCodec.of((value, buf) -> {
         buf.writeCollection(value.itemIds, PacketByteBuf::writeInt);
         buf.writeCollection(value.nutritionValues, PacketByteBuf::writeInt);
-    }, buf -> new NutritionItemPacket(buf.readList(PacketByteBuf::readInt), buf.readList(PacketByteBuf::readInt)));
+    }, buf -> new NutritionItemPayload(buf.readList(PacketByteBuf::readInt), buf.readList(PacketByteBuf::readInt)));
 
     @Override
     public Id<? extends CustomPayload> getId() {

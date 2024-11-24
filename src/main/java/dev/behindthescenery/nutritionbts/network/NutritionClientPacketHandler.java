@@ -4,10 +4,10 @@ import com.google.common.collect.LinkedHashMultimap;
 import com.google.common.collect.Multimap;
 import dev.behindthescenery.nutritionbts.NutritionMain;
 import dev.behindthescenery.nutritionbts.access.HungerManagerAccess;
-import dev.behindthescenery.nutritionbts.network.packet.NutritionEffectPacket;
-import dev.behindthescenery.nutritionbts.network.packet.NutritionItemPacket;
-import dev.behindthescenery.nutritionbts.network.packet.NutritionPacket;
-import dev.behindthescenery.nutritionbts.network.packet.NutritionSyncPacket;
+import dev.behindthescenery.nutritionbts.network.packet.NutritionEffectPayload;
+import dev.behindthescenery.nutritionbts.network.packet.NutritionItemPayload;
+import dev.behindthescenery.nutritionbts.network.packet.NutritionPayload;
+import dev.behindthescenery.nutritionbts.network.packet.NutritionSyncPayload;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking;
@@ -25,10 +25,10 @@ import java.util.List;
 
 @SuppressWarnings("resource")
 @Environment(EnvType.CLIENT)
-public class NutritionClientPacket {
+public class NutritionClientPacketHandler {
 
     public static void init() {
-        ClientPlayNetworking.registerGlobalReceiver(NutritionPacket.PACKET_ID, (payload, context) -> {
+        ClientPlayNetworking.registerGlobalReceiver(NutritionPayload.PACKET_ID, (payload, context) -> {
             int carbohydrateLevel = payload.carbohydrateLevel();
             int proteinLevel = payload.proteinLevel();
             int fatLevel = payload.fatLevel();
@@ -44,7 +44,7 @@ public class NutritionClientPacket {
             });
         });
 
-        ClientPlayNetworking.registerGlobalReceiver(NutritionItemPacket.PACKET_ID, (payload, context) -> {
+        ClientPlayNetworking.registerGlobalReceiver(NutritionItemPayload.PACKET_ID, (payload, context) -> {
             List<Integer> itemIds = payload.itemIds();
             List<Integer> nutritionValues = payload.nutritionValues();
 
@@ -62,8 +62,7 @@ public class NutritionClientPacket {
             });
         });
 
-        ClientPlayNetworking.registerGlobalReceiver(NutritionEffectPacket.PACKET_ID, (payload, context) -> {
-
+        ClientPlayNetworking.registerGlobalReceiver(NutritionEffectPayload.PACKET_ID, (payload, context) -> {
             List<Integer> positiveEffectCount = payload.positiveEffectCount();
             List<Identifier> positiveEffectIds = payload.positiveEffectIds();
             List<Integer> positiveEffectDurations = payload.positiveEffectDurations();
@@ -144,6 +143,6 @@ public class NutritionClientPacket {
     }
 
     public static void writeC2SNutritionPacket() {
-        ClientPlayNetworking.send(new NutritionSyncPacket());
+        ClientPlayNetworking.send(new NutritionSyncPayload());
     }
 }

@@ -1,6 +1,6 @@
 package dev.behindthescenery.nutritionbts.init;
 
-import dev.behindthescenery.nutritionbts.network.NutritionServerPacket;
+import dev.behindthescenery.nutritionbts.network.NutritionServerPacketHandler;
 import net.fabricmc.fabric.api.networking.v1.ServerPlayConnectionEvents;
 import net.fabricmc.fabric.api.resource.ResourceManagerHelper;
 import net.fabricmc.fabric.api.resource.ResourcePackActivationType;
@@ -10,7 +10,7 @@ import net.minecraft.util.Identifier;
 public class EventInit {
 
     public static void init() {
-        ServerPlayConnectionEvents.JOIN.register((handler, sender, server) -> NutritionServerPacket.writeS2CItemNutritionPacket(handler.getPlayer()));
+        ServerPlayConnectionEvents.JOIN.register((handler, sender, server) -> NutritionServerPacketHandler.writeS2CItemNutritionPacket(handler.getPlayer()));
         // sorry'anchik, in future maybe
 //        if (FabricLoader.getInstance().isModLoaded("dehydration")) {
 //            DrinkEvent.EVENT.register((ItemStack stack, PlayerEntity player) -> {

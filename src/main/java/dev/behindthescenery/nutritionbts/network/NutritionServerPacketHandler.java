@@ -17,21 +17,21 @@ import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.util.Identifier;
 import dev.behindthescenery.nutritionbts.NutritionMain;
 import dev.behindthescenery.nutritionbts.access.HungerManagerAccess;
-import dev.behindthescenery.nutritionbts.network.packet.NutritionEffectPacket;
-import dev.behindthescenery.nutritionbts.network.packet.NutritionItemPacket;
-import dev.behindthescenery.nutritionbts.network.packet.NutritionPacket;
-import dev.behindthescenery.nutritionbts.network.packet.NutritionSyncPacket;
+import dev.behindthescenery.nutritionbts.network.packet.NutritionEffectPayload;
+import dev.behindthescenery.nutritionbts.network.packet.NutritionItemPayload;
+import dev.behindthescenery.nutritionbts.network.packet.NutritionPayload;
+import dev.behindthescenery.nutritionbts.network.packet.NutritionSyncPayload;
 
 @SuppressWarnings("ALL")
-public class NutritionServerPacket {
+public class NutritionServerPacketHandler {
 
     public static void init() {
-        PayloadTypeRegistry.playS2C().register(NutritionPacket.PACKET_ID, NutritionPacket.PACKET_CODEC);
-        PayloadTypeRegistry.playS2C().register(NutritionItemPacket.PACKET_ID, NutritionItemPacket.PACKET_CODEC);
-        PayloadTypeRegistry.playS2C().register(NutritionEffectPacket.PACKET_ID, NutritionEffectPacket.PACKET_CODEC);
-        PayloadTypeRegistry.playC2S().register(NutritionSyncPacket.PACKET_ID, NutritionSyncPacket.PACKET_CODEC);
+        PayloadTypeRegistry.playS2C().register(NutritionPayload.PACKET_ID, NutritionPayload.PACKET_CODEC);
+        PayloadTypeRegistry.playS2C().register(NutritionItemPayload.PACKET_ID, NutritionItemPayload.PACKET_CODEC);
+        PayloadTypeRegistry.playS2C().register(NutritionEffectPayload.PACKET_ID, NutritionEffectPayload.PACKET_CODEC);
+        PayloadTypeRegistry.playC2S().register(NutritionSyncPayload.PACKET_ID, NutritionSyncPayload.PACKET_CODEC);
 
-        ServerPlayNetworking.registerGlobalReceiver(NutritionSyncPacket.PACKET_ID, (payload, context) -> {
+        ServerPlayNetworking.registerGlobalReceiver(NutritionSyncPayload.PACKET_ID, (payload, context) -> {
             context.server().execute(() -> {
                 writeS2CNutritionPacket(context.player(), ((HungerManagerAccess) context.player().getHungerManager()));
                 writeS2CEffectNutritionPacket(context.player());
@@ -40,7 +40,7 @@ public class NutritionServerPacket {
     }
 
     public static void writeS2CNutritionPacket(ServerPlayerEntity serverPlayerEntity, HungerManagerAccess hungerManagerAccess) {
-        ServerPlayNetworking.send(serverPlayerEntity, new NutritionPacket(hungerManagerAccess.getNutritionLevel(0), hungerManagerAccess.getNutritionLevel(1), hungerManagerAccess.getNutritionLevel(2), hungerManagerAccess.getNutritionLevel(3), hungerManagerAccess.getNutritionLevel(4)));
+        ServerPlayNetworking.send(serverPlayerEntity, new NutritionPayload(hungerManagerAccess.getNutritionLevel(0), hungerManagerAccess.getNutritionLevel(1), hungerManagerAccess.getNutritionLevel(2), hungerManagerAccess.getNutritionLevel(3), hungerManagerAccess.getNutritionLevel(4)));
     }
 
     public static void writeS2CItemNutritionPacket(ServerPlayerEntity serverPlayerEntity) {
@@ -51,7 +51,7 @@ public class NutritionServerPacket {
             nutritionValues.addAll(list);
         });
 
-        ServerPlayNetworking.send(serverPlayerEntity, new NutritionItemPacket(itemIds, nutritionValues));
+        ServerPlayNetworking.send(serverPlayerEntity, new NutritionItemPayload(itemIds, nutritionValues));
     }
 
     public static void writeS2CEffectNutritionPacket(ServerPlayerEntity serverPlayerEntity) {
@@ -117,7 +117,7 @@ public class NutritionServerPacket {
             negativeEffectCount.add(attributeCount);
         }
 
-        ServerPlayNetworking.send(serverPlayerEntity, new NutritionEffectPacket(positiveEffectCount, positiveEffectIds, positiveEffectDurations, positiveEffectAmplifiers, positiveAttributeIds, positiveAttributeValues, positiveAttributeOperations, negativeEffectCount, negativeEffectIds, negativeEffectDurations, negativeEffectAmplifiers, negativeAttributeIds, negativeAttributeValues, negativeAttributeOperations));
+        ServerPlayNetworking.send(serverPlayerEntity, new NutritionEffectPayload(positiveEffectCount, positiveEffectIds, positiveEffectDurations, positiveEffectAmplifiers, positiveAttributeIds, positiveAttributeValues, positiveAttributeOperations, negativeEffectCount, negativeEffectIds, negativeEffectDurations, negativeEffectAmplifiers, negativeAttributeIds, negativeAttributeValues, negativeAttributeOperations));
     }
 
 }

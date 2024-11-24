@@ -2,7 +2,7 @@ package dev.behindthescenery.nutritionbts.mixin.client;
 
 import dev.behindthescenery.nutritionbts.init.ConfigInit;
 import dev.behindthescenery.nutritionbts.init.RenderInit;
-import dev.behindthescenery.nutritionbts.network.NutritionClientPacket;
+import dev.behindthescenery.nutritionbts.network.NutritionClientPacketHandler;
 import dev.behindthescenery.nutritionbts.screen.NutritionScreen;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
@@ -29,7 +29,7 @@ public abstract class InventoryScreenMixin extends AbstractInventoryScreen<Playe
     @Inject(method = "mouseClicked", at = @At("HEAD"), cancellable = true)
     private void mouseClickedMixin(double mouseX, double mouseY, int button, CallbackInfoReturnable<Boolean> info) {
         if (this.client != null && this.focusedSlot == null && this.isPointWithinBounds(ConfigInit.CONFIG.posX, ConfigInit.CONFIG.posY, 9, 9, mouseX, mouseY)) {
-            NutritionClientPacket.writeC2SNutritionPacket();
+            NutritionClientPacketHandler.writeC2SNutritionPacket();
             this.client.setScreen(new NutritionScreen(Text.translatable("screen.nutritionbts")));
             info.setReturnValue(true);
         }
