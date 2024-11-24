@@ -76,9 +76,7 @@ public class NutritionScreen extends Screen {
                                 tooltips.add(statusEffectInstance.getEffectType().value().getName());
                             } else {
                                 Multimap<RegistryEntry<EntityAttribute>, EntityAttributeModifier> map = (Multimap<RegistryEntry<EntityAttribute>, EntityAttributeModifier>) effect;
-                                map.forEach((attribute, modifier) -> {
-                                    tooltips.add(Text.translatable(attribute.value().getTranslationKey()));
-                                });
+                                map.forEach((attribute, modifier) -> tooltips.add(Text.translatable(attribute.value().getTranslationKey())));
                             }
                         });
                     }
@@ -90,9 +88,7 @@ public class NutritionScreen extends Screen {
                                 tooltips.add(statusEffectInstance.getEffectType().value().getName());
                             } else {
                                 Multimap<RegistryEntry<EntityAttribute>, EntityAttributeModifier> map = (Multimap<RegistryEntry<EntityAttribute>, EntityAttributeModifier>) effect;
-                                map.forEach((attribute, modifier) -> {
-                                    tooltips.add(Text.translatable(attribute.value().getTranslationKey()));
-                                });
+                                map.forEach((attribute, modifier) -> tooltips.add(Text.translatable(attribute.value().getTranslationKey())));
                             }
                         });
                     }
@@ -114,15 +110,17 @@ public class NutritionScreen extends Screen {
     @Override
     public boolean mouseClicked(double mouseX, double mouseY, int button) {
         if (isPointWithinBounds(5, 5, 11, 10, mouseX, mouseY)) {
-            this.client.setScreen(new InventoryScreen(this.client.player));
-            return true;
+            if (this.client != null && this.client.player != null) {
+                this.client.setScreen(new InventoryScreen(this.client.player));
+                return true;
+            }
         }
         return super.mouseClicked(mouseX, mouseY, button);
     }
 
     @Override
     public boolean keyPressed(int keyCode, int scanCode, int modifiers) {
-        if (this.client.options.inventoryKey.matchesKey(keyCode, scanCode)) {
+        if (this.client != null && this.client.options.inventoryKey.matchesKey(keyCode, scanCode)) {
             this.close();
             return true;
         }

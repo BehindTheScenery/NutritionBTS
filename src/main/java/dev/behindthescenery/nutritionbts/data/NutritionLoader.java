@@ -23,20 +23,20 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.List;
 
+@SuppressWarnings("LoggingSimilarMessage")
 public class NutritionLoader implements SimpleSynchronousResourceReloadListener {
 
     public static final Logger LOGGER = LogManager.getLogger("NutritionBTS");
 
     private final List<String> nutritionList = List.of("carbohydrates", "protein", "fat", "vitamins", "minerals");
-    private final List<Boolean> effectReplaceList = List.of(false, false, false, false, false);
+    private final List<Boolean> effectReplaceList = new ArrayList<>(List.of(false, false, false, false, false));
     // Map to store replacing bools
-    private final HashMap<Item, Boolean> replaceList = new HashMap<Item, Boolean>();
+    private final HashMap<Item, Boolean> replaceList = new HashMap<>();
 
     private static void processEffects(JsonObject effectsJsonObject, HashMap<Integer, List<Object>> nutritionEffectsMap, int i) {
-        List<Object> list = new ArrayList<Object>();
+        List<Object> list = new ArrayList<>();
 
         for (String effectId : effectsJsonObject.keySet()) {
             Identifier effectIdentifier = Identifier.of(effectId);
@@ -48,11 +48,11 @@ public class NutritionLoader implements SimpleSynchronousResourceReloadListener 
 
             JsonObject effectJsonObject = effectsJsonObject.get(effectId).getAsJsonObject();
             if (Registries.STATUS_EFFECT.containsId(effectIdentifier)) {
-                list.add(new StatusEffectInstance(Registries.STATUS_EFFECT.getEntry(effectIdentifier).get(), effectJsonObject.get("duration").getAsInt(),
+                list.add(new StatusEffectInstance(Registries.STATUS_EFFECT.getEntry(effectIdentifier).orElseThrow(), effectJsonObject.get("duration").getAsInt(),
                     effectJsonObject.has("amplifier") ? effectJsonObject.get("amplifier").getAsInt() : 0, false, false, true));
             } else {
                 Multimap<RegistryEntry<EntityAttribute>, EntityAttributeModifier> attributeModifiers = LinkedHashMultimap.create();
-                attributeModifiers.put(Registries.ATTRIBUTE.getEntry(effectIdentifier).get(), new EntityAttributeModifier(effectIdentifier,
+                attributeModifiers.put(Registries.ATTRIBUTE.getEntry(effectIdentifier).orElseThrow(), new EntityAttributeModifier(effectIdentifier,
                     effectJsonObject.get("value").getAsFloat(), Operation.valueOf(effectJsonObject.get("operation").getAsString().toUpperCase())));
                 list.add(attributeModifiers);
             }
@@ -74,9 +74,7 @@ public class NutritionLoader implements SimpleSynchronousResourceReloadListener 
                 InputStream stream = resourceRef.getInputStream();
                 JsonObject data = JsonParser.parseReader(new InputStreamReader(stream)).getAsJsonObject();
 
-                Iterator<String> iterator = data.keySet().iterator();
-                while (iterator.hasNext()) {
-                    String itemId = iterator.next();
+                for (String itemId : data.keySet()) {
                     if (Registries.ITEM.get(Identifier.of(itemId)).toString().equals("air")) {
                         LOGGER.info("{} is not a valid item identifier", itemId);
                         continue;

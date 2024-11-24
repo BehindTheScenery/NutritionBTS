@@ -22,6 +22,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+@SuppressWarnings("ALL")
 @Mixin(HungerManager.class)
 public class HungerManagerMixin implements HungerManagerAccess {
 
@@ -104,11 +105,10 @@ public class HungerManagerMixin implements HungerManagerAccess {
                     if (this.effectMap.get(i)) {
                         this.effectMap.put(i, false);
                         List<Object> positiveEffectList = NutritionMain.NUTRITION_POSITIVE_EFFECTS.get(i);
-                        for (int u = 0; u < positiveEffectList.size(); u++) {
-                            if (positiveEffectList.get(u) instanceof Multimap multimap) {
+                        for (Object o : positiveEffectList) {
+                            if (o instanceof Multimap multimap) {
                                 player.getAttributes().removeModifiers(multimap);
                                 changedAttributes = true;
-
                             }
                         }
                         List<Object> negativeEffectList = NutritionMain.NUTRITION_NEGATIVE_EFFECTS.get(i);
@@ -155,15 +155,15 @@ public class HungerManagerMixin implements HungerManagerAccess {
     @Override
     public void addNutritionLevel(int type, int level) {
         if (type == 0) {
-            this.carbohydrateLevel = (this.carbohydrateLevel + level > ConfigInit.CONFIG.maxNutrition) ? ConfigInit.CONFIG.maxNutrition : (this.carbohydrateLevel + level);
+            this.carbohydrateLevel = Math.min(this.carbohydrateLevel + level, ConfigInit.CONFIG.maxNutrition);
         } else if (type == 1) {
-            this.proteinLevel = (this.proteinLevel + level > ConfigInit.CONFIG.maxNutrition) ? ConfigInit.CONFIG.maxNutrition : (this.proteinLevel + level);
+            this.proteinLevel = Math.min(this.proteinLevel + level, ConfigInit.CONFIG.maxNutrition);
         } else if (type == 2) {
-            this.fatLevel = (this.fatLevel + level > ConfigInit.CONFIG.maxNutrition) ? ConfigInit.CONFIG.maxNutrition : (this.fatLevel + level);
+            this.fatLevel = Math.min(this.fatLevel + level, ConfigInit.CONFIG.maxNutrition);
         } else if (type == 3) {
-            this.vitaminLevel = (this.vitaminLevel + level > ConfigInit.CONFIG.maxNutrition) ? ConfigInit.CONFIG.maxNutrition : (this.vitaminLevel + level);
+            this.vitaminLevel = Math.min(this.vitaminLevel + level, ConfigInit.CONFIG.maxNutrition);
         } else if (type == 4) {
-            this.mineralLevel = (this.mineralLevel + level > ConfigInit.CONFIG.maxNutrition) ? ConfigInit.CONFIG.maxNutrition : (this.mineralLevel + level);
+            this.mineralLevel = Math.min(this.mineralLevel + level, ConfigInit.CONFIG.maxNutrition);
         }
         this.shouldUpdateNutritions = true;
     }
@@ -171,15 +171,15 @@ public class HungerManagerMixin implements HungerManagerAccess {
     @Override
     public void decrementNutritionLevel(int type, int level) {
         if (type == 0) {
-            this.carbohydrateLevel = (this.carbohydrateLevel - level < 0) ? 0 : (this.carbohydrateLevel - level);
+            this.carbohydrateLevel = Math.max(this.carbohydrateLevel - level, 0);
         } else if (type == 1) {
-            this.proteinLevel = (this.proteinLevel - level < 0) ? 0 : (this.proteinLevel - level);
+            this.proteinLevel = Math.max(this.proteinLevel - level, 0);
         } else if (type == 2) {
-            this.fatLevel = (this.fatLevel - level < 0) ? 0 : (this.fatLevel - level);
+            this.fatLevel = Math.max(this.fatLevel - level, 0);
         } else if (type == 3) {
-            this.vitaminLevel = (this.vitaminLevel - level < 0) ? 0 : (this.vitaminLevel - level);
+            this.vitaminLevel = Math.max(this.vitaminLevel - level, 0);
         } else if (type == 4) {
-            this.mineralLevel = (this.mineralLevel - level < 0) ? 0 : (this.mineralLevel - level);
+            this.mineralLevel = Math.max(this.mineralLevel - level, 0);
         }
         this.shouldUpdateNutritions = true;
     }
@@ -202,20 +202,14 @@ public class HungerManagerMixin implements HungerManagerAccess {
 
     @Override
     public int getNutritionLevel(int type) {
-        switch (type) {
-            case 0:
-                return this.carbohydrateLevel;
-            case 1:
-                return this.proteinLevel;
-            case 2:
-                return this.fatLevel;
-            case 3:
-                return this.vitaminLevel;
-            case 4:
-                return this.mineralLevel;
-            default:
-                return 0;
-        }
+        return switch (type) {
+            case 0 -> this.carbohydrateLevel;
+            case 1 -> this.proteinLevel;
+            case 2 -> this.fatLevel;
+            case 3 -> this.vitaminLevel;
+            case 4 -> this.mineralLevel;
+            default -> 0;
+        };
     }
 
 }

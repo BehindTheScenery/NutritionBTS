@@ -22,6 +22,7 @@ import dev.behindthescenery.nutritionbts.network.packet.NutritionItemPacket;
 import dev.behindthescenery.nutritionbts.network.packet.NutritionPacket;
 import dev.behindthescenery.nutritionbts.network.packet.NutritionSyncPacket;
 
+@SuppressWarnings("ALL")
 public class NutritionServerPacket {
 
     public static void init() {

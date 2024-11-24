@@ -1,10 +1,13 @@
 package dev.behindthescenery.nutritionbts.network;
 
-import java.util.*;
-
 import com.google.common.collect.LinkedHashMultimap;
 import com.google.common.collect.Multimap;
-
+import dev.behindthescenery.nutritionbts.NutritionMain;
+import dev.behindthescenery.nutritionbts.access.HungerManagerAccess;
+import dev.behindthescenery.nutritionbts.network.packet.NutritionEffectPacket;
+import dev.behindthescenery.nutritionbts.network.packet.NutritionItemPacket;
+import dev.behindthescenery.nutritionbts.network.packet.NutritionPacket;
+import dev.behindthescenery.nutritionbts.network.packet.NutritionSyncPacket;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking;
@@ -15,13 +18,12 @@ import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.util.Identifier;
-import dev.behindthescenery.nutritionbts.NutritionMain;
-import dev.behindthescenery.nutritionbts.access.HungerManagerAccess;
-import dev.behindthescenery.nutritionbts.network.packet.NutritionEffectPacket;
-import dev.behindthescenery.nutritionbts.network.packet.NutritionItemPacket;
-import dev.behindthescenery.nutritionbts.network.packet.NutritionPacket;
-import dev.behindthescenery.nutritionbts.network.packet.NutritionSyncPacket;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+
+@SuppressWarnings("resource")
 @Environment(EnvType.CLIENT)
 public class NutritionClientPacket {
 
@@ -49,7 +51,7 @@ public class NutritionClientPacket {
             context.client().execute(() -> {
                 NutritionMain.NUTRITION_ITEM_MAP.clear();
                 for (int i = 0; i < itemIds.size(); i++) {
-                    List<Integer> nutritionList = new ArrayList<Integer>();
+                    List<Integer> nutritionList = new ArrayList<>();
                     nutritionList.add(nutritionValues.get(i * 5));
                     nutritionList.add(nutritionValues.get(i * 5 + 1));
                     nutritionList.add(nutritionValues.get(i * 5 + 2));
@@ -87,7 +89,7 @@ public class NutritionClientPacket {
 
                 for (int u = 0; u < positiveEffectCount.get(i * 2); u++) {
                     if (Registries.STATUS_EFFECT.get(positiveEffectIds.get(effectCount)) != null) {
-                        list.add(new StatusEffectInstance(Registries.STATUS_EFFECT.getEntry(positiveEffectIds.get(effectCount)).get(), positiveEffectDurations.get(effectCount), positiveEffectAmplifiers.get(effectCount), false, false, true));
+                        list.add(new StatusEffectInstance(Registries.STATUS_EFFECT.getEntry(positiveEffectIds.get(effectCount)).orElseThrow(), positiveEffectDurations.get(effectCount), positiveEffectAmplifiers.get(effectCount), false, false, true));
                     }
                     effectCount++;
                 }
@@ -95,8 +97,8 @@ public class NutritionClientPacket {
                 for (int u = 0; u < positiveEffectCount.get(i * 2 + 1); u++) {
                     if (Registries.ATTRIBUTE.get(positiveAttributeIds.get(attributeCount)) != null) {
                         Multimap<RegistryEntry<EntityAttribute>, EntityAttributeModifier> attributeModifiers = LinkedHashMultimap.create();
-                        attributeModifiers.put(Registries.ATTRIBUTE.getEntry(positiveAttributeIds.get(attributeCount)).get(),
-                                new EntityAttributeModifier(Registries.ATTRIBUTE.getId(Registries.ATTRIBUTE.get(positiveAttributeIds.get(attributeCount))), positiveAttributeValues.get(attributeCount), Operation.valueOf(positiveAttributeOperations.get(attributeCount).toUpperCase())));
+                        attributeModifiers.put(Registries.ATTRIBUTE.getEntry(positiveAttributeIds.get(attributeCount)).orElseThrow(),
+                            new EntityAttributeModifier(Registries.ATTRIBUTE.getId(Registries.ATTRIBUTE.get(positiveAttributeIds.get(attributeCount))), positiveAttributeValues.get(attributeCount), Operation.valueOf(positiveAttributeOperations.get(attributeCount).toUpperCase())));
                         list.add(attributeModifiers);
                     }
                     attributeCount++;
@@ -114,7 +116,7 @@ public class NutritionClientPacket {
 
                 for (int u = 0; u < negativeEffectCount.get(i * 2); u++) {
                     if (Registries.STATUS_EFFECT.get(negativeEffectIds.get(effectCount)) != null) {
-                        list.add(new StatusEffectInstance(Registries.STATUS_EFFECT.getEntry(negativeEffectIds.get(effectCount)).get(), negativeEffectDurations.get(effectCount), negativeEffectAmplifiers.get(effectCount), false, false, true));
+                        list.add(new StatusEffectInstance(Registries.STATUS_EFFECT.getEntry(negativeEffectIds.get(effectCount)).orElseThrow(), negativeEffectDurations.get(effectCount), negativeEffectAmplifiers.get(effectCount), false, false, true));
                     }
                     effectCount++;
                 }
@@ -122,8 +124,8 @@ public class NutritionClientPacket {
                 for (int u = 0; u < negativeEffectCount.get(i * 2 + 1); u++) {
                     if (Registries.ATTRIBUTE.get(negativeAttributeIds.get(attributeCount)) != null) {
                         Multimap<RegistryEntry<EntityAttribute>, EntityAttributeModifier> attributeModifiers = LinkedHashMultimap.create();
-                        attributeModifiers.put(Registries.ATTRIBUTE.getEntry(negativeAttributeIds.get(attributeCount)).get(),
-                                new EntityAttributeModifier(Registries.ATTRIBUTE.getId(Registries.ATTRIBUTE.get(negativeAttributeIds.get(attributeCount))), negativeAttributeValues.get(attributeCount), EntityAttributeModifier.Operation.valueOf(negativeAttributeOperations.get(attributeCount).toUpperCase())));
+                        attributeModifiers.put(Registries.ATTRIBUTE.getEntry(negativeAttributeIds.get(attributeCount)).orElseThrow(),
+                            new EntityAttributeModifier(Registries.ATTRIBUTE.getId(Registries.ATTRIBUTE.get(negativeAttributeIds.get(attributeCount))), negativeAttributeValues.get(attributeCount), EntityAttributeModifier.Operation.valueOf(negativeAttributeOperations.get(attributeCount).toUpperCase())));
                         list.add(attributeModifiers);
                     }
                     attributeCount++;
@@ -135,8 +137,8 @@ public class NutritionClientPacket {
             context.client().execute(() -> {
                 NutritionMain.NUTRITION_POSITIVE_EFFECTS.clear();
                 NutritionMain.NUTRITION_NEGATIVE_EFFECTS.clear();
-                positiveEffectMap.forEach(NutritionMain.NUTRITION_POSITIVE_EFFECTS::put);
-                negativeEffectMap.forEach(NutritionMain.NUTRITION_NEGATIVE_EFFECTS::put);
+                NutritionMain.NUTRITION_POSITIVE_EFFECTS.putAll(positiveEffectMap);
+                NutritionMain.NUTRITION_NEGATIVE_EFFECTS.putAll(negativeEffectMap);
             });
         });
     }

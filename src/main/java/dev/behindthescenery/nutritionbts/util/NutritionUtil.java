@@ -12,8 +12,7 @@ import java.util.List;
 
 public class NutritionUtil {
 
-    private static final List<String> NUTRITION_TOOLTIPS = List.of("item.nutritionbts.carbohydrates", "item.nutritionbts.protein", "item.nutritionbts.fat", "item.nutritionbts.vitamins",
-        "item.nutritionbts.minerals");
+    private static final List<String> NUTRITION_TOOLTIPS = List.of("item.nutritionbts.carbohydrates", "item.nutritionbts.protein", "item.nutritionbts.fat", "item.nutritionbts.vitamins", "item.nutritionbts.minerals");
 
     public static void addNutritionToolTip(ItemStack stack, List<Text> list) {
         if (InputUtil.isKeyPressed(MinecraftClient.getInstance().getWindow().getHandle(), 340) && NutritionMain.NUTRITION_ITEM_MAP.containsKey(stack.getItem())) {

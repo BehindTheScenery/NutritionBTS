@@ -10,9 +10,7 @@ import net.minecraft.util.Identifier;
 public class EventInit {
 
     public static void init() {
-        ServerPlayConnectionEvents.JOIN.register((handler, sender, server) -> {
-            NutritionServerPacket.writeS2CItemNutritionPacket(handler.getPlayer());
-        });
+        ServerPlayConnectionEvents.JOIN.register((handler, sender, server) -> NutritionServerPacket.writeS2CItemNutritionPacket(handler.getPlayer()));
         // sorry'anchik, in future maybe
 //        if (FabricLoader.getInstance().isModLoaded("dehydration")) {
 //            DrinkEvent.EVENT.register((ItemStack stack, PlayerEntity player) -> {
