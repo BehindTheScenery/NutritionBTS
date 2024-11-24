@@ -1,19 +1,19 @@
 package dev.behindthescenery.nutritionbts.util;
 
-import java.util.List;
-
+import dev.behindthescenery.nutritionbts.NutritionMain;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.util.InputUtil;
 import net.minecraft.item.ItemStack;
 import net.minecraft.screen.ScreenTexts;
 import net.minecraft.text.Text;
 import net.minecraft.util.Formatting;
-import dev.behindthescenery.nutritionbts.NutritionMain;
+
+import java.util.List;
 
 public class NutritionUtil {
 
     private static final List<String> NUTRITION_TOOLTIPS = List.of("item.nutritionbts.carbohydrates", "item.nutritionbts.protein", "item.nutritionbts.fat", "item.nutritionbts.vitamins",
-            "item.nutritionbts.minerals");
+        "item.nutritionbts.minerals");
 
     public static void addNutritionToolTip(ItemStack stack, List<Text> list) {
         if (InputUtil.isKeyPressed(MinecraftClient.getInstance().getWindow().getHandle(), 340) && NutritionMain.NUTRITION_ITEM_MAP.containsKey(stack.getItem())) {

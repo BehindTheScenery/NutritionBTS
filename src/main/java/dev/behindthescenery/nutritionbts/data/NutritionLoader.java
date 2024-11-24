@@ -1,21 +1,10 @@
 package dev.behindthescenery.nutritionbts.data;
 
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.List;
-
 import com.google.common.collect.LinkedHashMultimap;
 import com.google.common.collect.Multimap;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
-
-import net.minecraft.registry.entry.RegistryEntry;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-
+import dev.behindthescenery.nutritionbts.NutritionMain;
 import net.fabricmc.fabric.api.resource.SimpleSynchronousResourceReloadListener;
 import net.minecraft.entity.attribute.EntityAttribute;
 import net.minecraft.entity.attribute.EntityAttributeModifier;
@@ -23,19 +12,54 @@ import net.minecraft.entity.attribute.EntityAttributeModifier.Operation;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
+import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.resource.ResourceManager;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.JsonHelper;
-import dev.behindthescenery.nutritionbts.NutritionMain;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.List;
 
 public class NutritionLoader implements SimpleSynchronousResourceReloadListener {
 
     public static final Logger LOGGER = LogManager.getLogger("NutritionBTS");
 
     private final List<String> nutritionList = List.of("carbohydrates", "protein", "fat", "vitamins", "minerals");
-    private List<Boolean> effectReplaceList = List.of(false, false, false, false, false);
+    private final List<Boolean> effectReplaceList = List.of(false, false, false, false, false);
     // Map to store replacing bools
-    private HashMap<Item, Boolean> replaceList = new HashMap<Item, Boolean>();
+    private final HashMap<Item, Boolean> replaceList = new HashMap<Item, Boolean>();
+
+    private static void processEffects(JsonObject effectsJsonObject, HashMap<Integer, List<Object>> nutritionEffectsMap, int i) {
+        List<Object> list = new ArrayList<Object>();
+
+        for (String effectId : effectsJsonObject.keySet()) {
+            Identifier effectIdentifier = Identifier.of(effectId);
+
+            if (!Registries.STATUS_EFFECT.containsId(effectIdentifier) && !Registries.ATTRIBUTE.containsId(effectIdentifier)) {
+                LOGGER.info("{} is not a valid status effect identifier nor attribute identifier", effectIdentifier);
+                continue;
+            }
+
+            JsonObject effectJsonObject = effectsJsonObject.get(effectId).getAsJsonObject();
+            if (Registries.STATUS_EFFECT.containsId(effectIdentifier)) {
+                list.add(new StatusEffectInstance(Registries.STATUS_EFFECT.getEntry(effectIdentifier).get(), effectJsonObject.get("duration").getAsInt(),
+                    effectJsonObject.has("amplifier") ? effectJsonObject.get("amplifier").getAsInt() : 0, false, false, true));
+            } else {
+                Multimap<RegistryEntry<EntityAttribute>, EntityAttributeModifier> attributeModifiers = LinkedHashMultimap.create();
+                attributeModifiers.put(Registries.ATTRIBUTE.getEntry(effectIdentifier).get(), new EntityAttributeModifier(effectIdentifier,
+                    effectJsonObject.get("value").getAsFloat(), Operation.valueOf(effectJsonObject.get("operation").getAsString().toUpperCase())));
+                list.add(attributeModifiers);
+            }
+        }
+
+        nutritionEffectsMap.put(i, list);
+    }
 
     @Override
     public Identifier getFabricId() {
@@ -130,32 +154,6 @@ public class NutritionLoader implements SimpleSynchronousResourceReloadListener 
                 LOGGER.error("Error occurred while loading resource {}. {}", id.toString(), e.toString());
             }
         });
-    }
-
-    private static void processEffects(JsonObject effectsJsonObject, HashMap<Integer, List<Object>> nutritionEffectsMap, int i) {
-        List<Object> list = new ArrayList<Object>();
-
-        for (String effectId : effectsJsonObject.keySet()) {
-            Identifier effectIdentifier = Identifier.of(effectId);
-
-            if (!Registries.STATUS_EFFECT.containsId(effectIdentifier) && !Registries.ATTRIBUTE.containsId(effectIdentifier)) {
-                LOGGER.info("{} is not a valid status effect identifier nor attribute identifier", effectIdentifier);
-                continue;
-            }
-
-            JsonObject effectJsonObject = effectsJsonObject.get(effectId).getAsJsonObject();
-            if (Registries.STATUS_EFFECT.containsId(effectIdentifier)) {
-                list.add(new StatusEffectInstance(Registries.STATUS_EFFECT.getEntry(effectIdentifier).get(), effectJsonObject.get("duration").getAsInt(),
-                        effectJsonObject.has("amplifier") ? effectJsonObject.get("amplifier").getAsInt() : 0, false, false, true));
-            } else {
-                Multimap<RegistryEntry<EntityAttribute>, EntityAttributeModifier> attributeModifiers = LinkedHashMultimap.create();
-                attributeModifiers.put(Registries.ATTRIBUTE.getEntry(effectIdentifier).get(), new EntityAttributeModifier(effectIdentifier,
-                        effectJsonObject.get("value").getAsFloat(), Operation.valueOf(effectJsonObject.get("operation").getAsString().toUpperCase())));
-                list.add(attributeModifiers);
-            }
-        }
-
-        nutritionEffectsMap.put(i, list);
     }
 
 }

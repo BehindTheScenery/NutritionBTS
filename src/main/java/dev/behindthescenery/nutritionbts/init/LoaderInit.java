@@ -1,8 +1,8 @@
 package dev.behindthescenery.nutritionbts.init;
 
+import dev.behindthescenery.nutritionbts.data.NutritionLoader;
 import net.fabricmc.fabric.api.resource.ResourceManagerHelper;
 import net.minecraft.resource.ResourceType;
-import dev.behindthescenery.nutritionbts.data.NutritionLoader;
 
 public class LoaderInit {
 

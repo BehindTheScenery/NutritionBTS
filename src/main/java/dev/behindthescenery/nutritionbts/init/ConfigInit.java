@@ -1,8 +1,8 @@
 package dev.behindthescenery.nutritionbts.init;
 
+import dev.behindthescenery.nutritionbts.config.NutritionbtsConfig;
 import me.shedaniel.autoconfig.AutoConfig;
 import me.shedaniel.autoconfig.serializer.JanksonConfigSerializer;
-import dev.behindthescenery.nutritionbts.config.NutritionbtsConfig;
 
 public class ConfigInit {
 

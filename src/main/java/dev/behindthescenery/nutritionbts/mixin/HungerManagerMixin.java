@@ -1,17 +1,9 @@
 package dev.behindthescenery.nutritionbts.mixin;
 
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
 import com.google.common.collect.Multimap;
-
-import org.spongepowered.asm.mixin.Mixin;
-import org.spongepowered.asm.mixin.Shadow;
-import org.spongepowered.asm.mixin.injection.At;
-import org.spongepowered.asm.mixin.injection.Inject;
-import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
+import dev.behindthescenery.nutritionbts.NutritionMain;
+import dev.behindthescenery.nutritionbts.access.HungerManagerAccess;
+import dev.behindthescenery.nutritionbts.init.ConfigInit;
 import net.minecraft.entity.attribute.EntityAttributeInstance;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.player.HungerManager;
@@ -19,9 +11,16 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.network.packet.s2c.play.EntityAttributesS2CPacket;
 import net.minecraft.server.network.ServerPlayerEntity;
-import dev.behindthescenery.nutritionbts.NutritionMain;
-import dev.behindthescenery.nutritionbts.access.HungerManagerAccess;
-import dev.behindthescenery.nutritionbts.init.ConfigInit;
+import org.spongepowered.asm.mixin.Mixin;
+import org.spongepowered.asm.mixin.Shadow;
+import org.spongepowered.asm.mixin.injection.At;
+import org.spongepowered.asm.mixin.injection.Inject;
+import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
+
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 @Mixin(HungerManager.class)
 public class HungerManagerMixin implements HungerManagerAccess {
@@ -31,7 +30,7 @@ public class HungerManagerMixin implements HungerManagerAccess {
     private int fatLevel = ConfigInit.CONFIG.maxNutrition / 2;
     private int vitaminLevel = ConfigInit.CONFIG.maxNutrition / 2;
     private int mineralLevel = ConfigInit.CONFIG.maxNutrition / 2;
-    private Map<Integer, Boolean> effectMap = new HashMap<Integer, Boolean>() {
+    private final Map<Integer, Boolean> effectMap = new HashMap<Integer, Boolean>() {
         {
             put(0, false);
             put(1, false);
@@ -75,7 +74,7 @@ public class HungerManagerMixin implements HungerManagerAccess {
                         for (int u = 0; u < negativeEffectList.size(); u++) {
                             if (negativeEffectList.get(u) instanceof StatusEffectInstance statusEffectInstance) {
                                 if (!player.hasStatusEffect(statusEffectInstance.getEffectType())
-                                        || player.getStatusEffect(statusEffectInstance.getEffectType()).getDuration() < statusEffectInstance.getDuration() - 50) {
+                                    || player.getStatusEffect(statusEffectInstance.getEffectType()).getDuration() < statusEffectInstance.getDuration() - 50) {
                                     player.addStatusEffect(new StatusEffectInstance(statusEffectInstance));
                                 }
                             } else if (!this.effectMap.get(i) && negativeEffectList.get(u) instanceof Multimap multimap) {
@@ -91,7 +90,7 @@ public class HungerManagerMixin implements HungerManagerAccess {
                         for (int u = 0; u < positiveEffectList.size(); u++) {
                             if (positiveEffectList.get(u) instanceof StatusEffectInstance statusEffectInstance) {
                                 if (!player.hasStatusEffect(statusEffectInstance.getEffectType())
-                                        || player.getStatusEffect(statusEffectInstance.getEffectType()).getDuration() < statusEffectInstance.getDuration() - 50) {
+                                    || player.getStatusEffect(statusEffectInstance.getEffectType()).getDuration() < statusEffectInstance.getDuration() - 50) {
                                     player.addStatusEffect(new StatusEffectInstance(statusEffectInstance));
                                 }
                             } else if (!this.effectMap.get(i) && positiveEffectList.get(u) instanceof Multimap multimap) {
@@ -204,18 +203,18 @@ public class HungerManagerMixin implements HungerManagerAccess {
     @Override
     public int getNutritionLevel(int type) {
         switch (type) {
-        case 0:
-            return this.carbohydrateLevel;
-        case 1:
-            return this.proteinLevel;
-        case 2:
-            return this.fatLevel;
-        case 3:
-            return this.vitaminLevel;
-        case 4:
-            return this.mineralLevel;
-        default:
-            return 0;
+            case 0:
+                return this.carbohydrateLevel;
+            case 1:
+                return this.proteinLevel;
+            case 2:
+                return this.fatLevel;
+            case 3:
+                return this.vitaminLevel;
+            case 4:
+                return this.mineralLevel;
+            default:
+                return 0;
         }
     }
 

@@ -1,13 +1,10 @@
 package dev.behindthescenery.nutritionbts.screen;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import com.google.common.collect.Multimap;
-
-import net.minecraft.registry.entry.RegistryEntry;
-import org.jetbrains.annotations.Nullable;
-
+import dev.behindthescenery.nutritionbts.NutritionMain;
+import dev.behindthescenery.nutritionbts.access.HungerManagerAccess;
+import dev.behindthescenery.nutritionbts.init.ConfigInit;
+import dev.behindthescenery.nutritionbts.init.RenderInit;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.minecraft.client.gui.DrawContext;
@@ -18,23 +15,24 @@ import net.minecraft.entity.attribute.EntityAttributeModifier;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.item.ItemStack;
 import net.minecraft.registry.Registries;
+import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
-import dev.behindthescenery.nutritionbts.NutritionMain;
-import dev.behindthescenery.nutritionbts.access.HungerManagerAccess;
-import dev.behindthescenery.nutritionbts.init.ConfigInit;
-import dev.behindthescenery.nutritionbts.init.RenderInit;
+import org.jetbrains.annotations.Nullable;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @Environment(EnvType.CLIENT)
 public class NutritionScreen extends Screen {
 
+    private final List<ItemStack> nutritionItems = List.of(new ItemStack(Registries.ITEM.get(Identifier.of(ConfigInit.CONFIG.carbohydrateItemId))),
+        new ItemStack(Registries.ITEM.get(Identifier.of(ConfigInit.CONFIG.proteinItemId))), new ItemStack(Registries.ITEM.get(Identifier.of(ConfigInit.CONFIG.fatItemId))),
+        new ItemStack(Registries.ITEM.get(Identifier.of(ConfigInit.CONFIG.vitaminItemId))), new ItemStack(Registries.ITEM.get(Identifier.of(ConfigInit.CONFIG.mineralItemId))));
+    private final List<Text> nutritionTexts = List.of(Text.translatable("screen.nutritionbts.carbohydrates"), Text.translatable("screen.nutritionbts.protein"), Text.translatable("screen.nutritionbts.fat"),
+        Text.translatable("screen.nutritionbts.vitamins"), Text.translatable("screen.nutritionbts.minerals"));
     private int x;
     private int y;
-    private final List<ItemStack> nutritionItems = List.of(new ItemStack(Registries.ITEM.get(Identifier.of(ConfigInit.CONFIG.carbohydrateItemId))),
-            new ItemStack(Registries.ITEM.get(Identifier.of(ConfigInit.CONFIG.proteinItemId))), new ItemStack(Registries.ITEM.get(Identifier.of(ConfigInit.CONFIG.fatItemId))),
-            new ItemStack(Registries.ITEM.get(Identifier.of(ConfigInit.CONFIG.vitaminItemId))), new ItemStack(Registries.ITEM.get(Identifier.of(ConfigInit.CONFIG.mineralItemId))));
-    private final List<Text> nutritionTexts = List.of(Text.translatable("screen.nutritionbts.carbohydrates"), Text.translatable("screen.nutritionbts.protein"), Text.translatable("screen.nutritionbts.fat"),
-            Text.translatable("screen.nutritionbts.vitamins"), Text.translatable("screen.nutritionbts.minerals"));
     @Nullable
     private HungerManagerAccess hungerManagerAccess = null;
 
@@ -66,10 +64,10 @@ public class NutritionScreen extends Screen {
             if (this.hungerManagerAccess != null) {
                 if (this.hungerManagerAccess.getNutritionLevel(i) > 0) {
                     context.drawTexture(RenderInit.NUTRITION_ICONS, this.x + 27, this.y + 36 + extraY, 0, 211 + extraBarY,
-                            140 * this.hungerManagerAccess.getNutritionLevel(i) / ConfigInit.CONFIG.maxNutrition, 5);
+                        140 * this.hungerManagerAccess.getNutritionLevel(i) / ConfigInit.CONFIG.maxNutrition, 5);
                 }
                 context.drawText(this.textRenderer, Text.translatable("screen.nutritionbts.nutritionValue", this.hungerManagerAccess.getNutritionLevel(i), ConfigInit.CONFIG.maxNutrition), this.x + 127,
-                        this.y + 26 + extraY, 0x3F3F3F, false);
+                    this.y + 26 + extraY, 0x3F3F3F, false);
                 List<Text> tooltips = new ArrayList<>();
                 if (isPointWithinBounds(27, 36 + extraY, 31, 5, mouseX, mouseY)) {
                     if (NutritionMain.NUTRITION_NEGATIVE_EFFECTS.containsKey(i)) {
@@ -80,7 +78,6 @@ public class NutritionScreen extends Screen {
                                 Multimap<RegistryEntry<EntityAttribute>, EntityAttributeModifier> map = (Multimap<RegistryEntry<EntityAttribute>, EntityAttributeModifier>) effect;
                                 map.forEach((attribute, modifier) -> {
                                     tooltips.add(Text.translatable(attribute.value().getTranslationKey()));
-                                    return;
                                 });
                             }
                         });
@@ -95,7 +92,6 @@ public class NutritionScreen extends Screen {
                                 Multimap<RegistryEntry<EntityAttribute>, EntityAttributeModifier> map = (Multimap<RegistryEntry<EntityAttribute>, EntityAttributeModifier>) effect;
                                 map.forEach((attribute, modifier) -> {
                                     tooltips.add(Text.translatable(attribute.value().getTranslationKey()));
-                                    return;
                                 });
                             }
                         });
@@ -142,7 +138,7 @@ public class NutritionScreen extends Screen {
     private boolean isPointWithinBounds(int x, int y, int width, int height, double pointX, double pointY) {
         int i = this.x;
         int j = this.y;
-        return (pointX -= (double) i) >= (double) (x - 1) && pointX < (double) (x + width + 1) && (pointY -= (double) j) >= (double) (y - 1) && pointY < (double) (y + height + 1);
+        return (pointX -= i) >= (double) (x - 1) && pointX < (double) (x + width + 1) && (pointY -= j) >= (double) (y - 1) && pointY < (double) (y + height + 1);
     }
 
 }

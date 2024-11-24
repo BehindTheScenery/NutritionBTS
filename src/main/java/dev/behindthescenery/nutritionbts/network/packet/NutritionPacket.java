@@ -5,7 +5,8 @@ import net.minecraft.network.codec.PacketCodec;
 import net.minecraft.network.packet.CustomPayload;
 import net.minecraft.util.Identifier;
 
-public record NutritionPacket(int carbohydrateLevel, int proteinLevel, int fatLevel, int vitaminLevel, int mineralLevel) implements CustomPayload {
+public record NutritionPacket(int carbohydrateLevel, int proteinLevel, int fatLevel, int vitaminLevel,
+                              int mineralLevel) implements CustomPayload {
 
     public static final CustomPayload.Id<NutritionPacket> PACKET_ID = new CustomPayload.Id<>(Identifier.of("nutritionbts", "nutrition_packet"));
 
