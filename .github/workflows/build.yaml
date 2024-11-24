@@ -1,0 +1,47 @@
+name: 'Build'
+
+on:
+  [ push ]
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    outputs:
+      ARTIFACT_PATH: ${{ steps.prepare_artifact_metadata.outputs.ARTIFACT_PATH }}
+      ARTIFACT_NAME: ${{ steps.prepare_artifact_metadata.outputs.ARTIFACT_NAME }}
+      JAVADOC_PATH: ${{ steps.prepare_artifact_metadata.outputs.JAVADOC_PATH }}
+      JAVADOC_NAME: ${{ steps.prepare_artifact_metadata.outputs.JAVADOC_NAME }}
+      API_PATH: ${{ steps.prepare_artifact_metadata.outputs.API_PATH }}
+      API_NAME: ${{ steps.prepare_artifact_metadata.outputs.API_NAME }}
+      VERSION: ${{ steps.prepare_artifact_metadata.outputs.VERSION }}
+
+    steps:
+      - uses: actions/checkout@v4
+      - run: git fetch origin --tags
+        shell: bash
+      - uses: ./.github/actions/gradle-setup
+      - name: make gradle wrapper executable
+        run: chmod +x ./gradlew
+      - name: Build with Gradle
+        run: ./gradlew build -DGITHUB_USERNAME=${{ github.actor }} -DGITHUB_TOKEN=${{ secrets.REP_TOKEN }} publish -x check --max-workers 1
+      - name: Prepare artifact metadata. Note that VERSION is set by the gradle script.
+        id: prepare_artifact_metadata
+        run: |
+          echo ARTIFACT_PATH=./build/libs/${MOD_NAME}-${VERSION}.jar >> $GITHUB_OUTPUT
+          echo ARTIFACT_NAME=${MOD_NAME}-${VERSION}.jar >> $GITHUB_OUTPUT
+          echo JAVADOC_PATH=./build/libs/${MOD_NAME}-${VERSION}-javadoc.jar >> $GITHUB_OUTPUT
+          echo JAVADOC_NAME=${MOD_NAME}-${VERSION}-javadoc.jar >> $GITHUB_OUTPUT
+          echo API_PATH=./build/libs/${MOD_NAME}-${VERSION}-api.jar >> $GITHUB_OUTPUT
+          echo API_NAME=${MOD_NAME}-${VERSION}-api.jar >> $GITHUB_OUTPUT
+          echo VERSION=${VERSION} >> $GITHUB_OUTPUT
+      - name: Archive build results
+        # It is important to  archive .gradle as well since gradle stores the incremental build state there
+        run: tar -I zstd -cf build.tar.zst build/libs build/repo
+      - name: Upload build and gradle folders
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-artifacts
+          path: build.tar.zst
+          if-no-files-found: error
+          retention-days: 3

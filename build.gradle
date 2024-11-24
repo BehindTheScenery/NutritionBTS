@@ -1,3 +1,8 @@
+import java.nio.charset.StandardCharsets
+import java.nio.file.Files
+import java.nio.file.Paths
+import java.nio.file.StandardOpenOption
+
 //file:noinspection GroovyAssignabilityCheck
 plugins {
     id 'dev.architectury.loom' version '1.7-SNAPSHOT'
@@ -46,6 +51,12 @@ processResources {
     filesMatching("META-INF/neoforge.mods.toml") {
         expand "version": project.version, "neoforge_version": project.neoforge_version, "minecraft_version": project.minecraft_version, "cloth_config_version": project.cloth_config_version
     }
+
+    var githubEnv = System.getenv("GITHUB_ENV");
+    if (githubEnv != null) {
+        Files.writeString(Paths.get(githubEnv), "VERSION=" + project.version + "\n", StandardCharsets.UTF_8, StandardOpenOption.APPEND);
+        Files.writeString(Paths.get(githubEnv), "MOD_NAME=" + project.archives_name + "\n", StandardCharsets.UTF_8, StandardOpenOption.APPEND);
+    }
 }
 
 tasks.withType(JavaCompile).configureEach {
@@ -68,16 +79,19 @@ jar {
 // configure the maven publication
 publishing {
     publications {
-        mavenJava(MavenPublication) {
-            from components.java
+        maven(MavenPublication) {
+            artifactId = project.archives_name + "-" + project.mod_loader
+            version = project.mod_version
+
+            artifact jar
+            artifact remapJar
+            artifact sourcesJar
         }
     }
-
-    // See https://docs.gradle.org/current/userguide/publishing_maven.html for information on how to set up publishing.
     repositories {
-        // Add repositories to publish to here.
-        // Notice: This block does NOT have the same function as the block in the top level.
-        // The repositories here will be used for publishing your artifact, not for
-        // retrieving dependencies.
+        maven {
+            name = "Local"
+            url = file("build/repo").toURI()
+        }
     }
 }

@@ -1,0 +1,132 @@
+name: 'Release'
+
+on:
+  release:
+    types: [ published ]
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    outputs:
+      ARTIFACT_PATH: ${{ steps.prepare_artifact_metadata.outputs.ARTIFACT_PATH }}
+      ARTIFACT_NAME: ${{ steps.prepare_artifact_metadata.outputs.ARTIFACT_NAME }}
+      JAVADOC_PATH: ${{ steps.prepare_artifact_metadata.outputs.JAVADOC_PATH }}
+      JAVADOC_NAME: ${{ steps.prepare_artifact_metadata.outputs.JAVADOC_NAME }}
+      API_PATH: ${{ steps.prepare_artifact_metadata.outputs.API_PATH }}
+      API_NAME: ${{ steps.prepare_artifact_metadata.outputs.API_NAME }}
+      VERSION: ${{ steps.prepare_artifact_metadata.outputs.VERSION }}
+
+    steps:
+      - uses: actions/checkout@v4
+      - run: git fetch origin --tags
+        shell: bash
+      - uses: ./.github/actions/gradle-setup
+      - name: make gradle wrapper executable
+        run: chmod +x ./gradlew
+      - name: Build with Gradle
+        run: ./gradlew build -DGITHUB_USERNAME=${{ github.actor }} -DGITHUB_TOKEN=${{ secrets.REP_TOKEN }} publish -x check --max-workers 1
+      - name: Prepare artifact metadata.
+        id: prepare_artifact_metadata
+        run: |
+          echo ARTIFACT_PATH=./build/libs/${MOD_NAME}-${VERSION}.jar >> $GITHUB_OUTPUT
+          echo ARTIFACT_NAME=${MOD_NAME}-${VERSION}.jar >> $GITHUB_OUTPUT
+          echo JAVADOC_PATH=./build/libs/${MOD_NAME}-${VERSION}-javadoc.jar >> $GITHUB_OUTPUT
+          echo JAVADOC_NAME=${MOD_NAME}-${VERSION}-javadoc.jar >> $GITHUB_OUTPUT
+          echo API_PATH=./build/libs/${MOD_NAME}-${VERSION}-api.jar >> $GITHUB_OUTPUT
+          echo API_NAME=${MOD_NAME}-${VERSION}-api.jar >> $GITHUB_OUTPUT
+          echo VERSION=${VERSION} >> $GITHUB_OUTPUT
+      - name: Archive build results
+        # It is important to  archive .gradle as well since gradle stores the incremental build state there
+        run: tar -I zstd -cf build.tar.zst build/libs build/repo
+      - name: Upload build and gradle folders
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-artifacts
+          path: build.tar.zst
+          if-no-files-found: error
+          retention-days: 3
+
+  upload-release-artifacts:
+    name: Upload Release Artifacts
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Download build artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: build-artifacts
+      - name: Unpack build artifact
+        run: tar axf build.tar.zst
+      - name: Upload Release Artifact
+        uses: actions/upload-release-asset@v1.0.1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ github.event.release.upload_url }}
+          asset_path: ${{ needs.build.outputs.ARTIFACT_PATH }}
+          asset_name: ${{ needs.build.outputs.ARTIFACT_NAME }}
+          asset_content_type: application/zip
+      - name: Check if Javadoc exists
+        id: check_javadoc
+        run: |
+          if [ -f ${{ needs.build.outputs.JAVADOC_PATH }} ]; then
+            echo "JAVADOC_EXISTS=true" >> $GITHUB_ENV
+          else
+            echo "JAVADOC_EXISTS=false" >> $GITHUB_ENV
+          fi
+        shell: bash
+      - name: Upload Javadocs Artifact
+        if: env.JAVADOC_EXISTS == 'true'
+        uses: actions/upload-release-asset@v1.0.1
+        env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+            upload_url: ${{ github.event.release.upload_url }}
+            asset_path: ${{ needs.build.outputs.JAVADOC_PATH }}
+            asset_name: ${{ needs.build.outputs.JAVADOC_NAME }}
+            asset_content_type: application/zip
+      - name: Check if API exists
+        id: check_api
+        run: |
+          if [ -f ${{ needs.build.outputs.API_PATH }} ]; then
+            echo "API_EXISTS=true" >> $GITHUB_ENV
+          else
+            echo "API_EXISTS=false" >> $GITHUB_ENV
+          fi
+        shell: bash
+      - name: Upload API
+        if: env.API_EXISTS == 'true'
+        uses: actions/upload-release-asset@v1.0.1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ github.event.release.upload_url }}
+          asset_path: ${{ needs.build.outputs.API_PATH }}
+          asset_name: ${{ needs.build.outputs.API_NAME }}
+          asset_content_type: application/zip
+
+  deploy-github-packages:
+    name: Deploy to Github Packages
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      packages: write
+    steps:
+      - name: Download build artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: build-artifacts
+      - name: Unpack build artifact
+        run: tar axf build.tar.zst
+      - name: Validate artifacts exist
+        run: test -d ./build
+      - name: Publish to Github Packages
+        uses: AppliedEnergistics/maven-publish-action@main
+        with:
+          local-repository-path: build/repo
+          remote-repository-url: https://maven.pkg.github.com/${{ github.repository }}/
+          remote-repository-username: ${{ github.actor }}
+          remote-repository-password: ${{ github.token }}
