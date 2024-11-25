@@ -23,14 +23,15 @@ import org.jetbrains.annotations.Nullable;
 import java.util.ArrayList;
 import java.util.List;
 
+import static dev.behindthescenery.nutritionbts.NutritionMain.MOD_ID;
+
 @Environment(EnvType.CLIENT)
 public class NutritionScreen extends Screen {
-
     private final List<ItemStack> nutritionItems = List.of(new ItemStack(Registries.ITEM.get(Identifier.of(ConfigInit.CONFIG.carbohydrateItemId))),
         new ItemStack(Registries.ITEM.get(Identifier.of(ConfigInit.CONFIG.proteinItemId))), new ItemStack(Registries.ITEM.get(Identifier.of(ConfigInit.CONFIG.fatItemId))),
         new ItemStack(Registries.ITEM.get(Identifier.of(ConfigInit.CONFIG.vitaminItemId))), new ItemStack(Registries.ITEM.get(Identifier.of(ConfigInit.CONFIG.mineralItemId))));
-    private final List<Text> nutritionTexts = List.of(Text.translatable("screen.nutritionbts.carbohydrates"), Text.translatable("screen.nutritionbts.protein"), Text.translatable("screen.nutritionbts.fat"),
-        Text.translatable("screen.nutritionbts.vitamins"), Text.translatable("screen.nutritionbts.minerals"));
+    private final List<Text> nutritionTexts = List.of(Text.translatable("screen." + MOD_ID + ".carbohydrates"), Text.translatable("screen." + MOD_ID + ".protein"), Text.translatable("screen." + MOD_ID + ".fat"),
+        Text.translatable("screen." + MOD_ID + ".vitamins"), Text.translatable("screen." + MOD_ID + ".minerals"));
     private int x;
     private int y;
     @Nullable
@@ -66,7 +67,7 @@ public class NutritionScreen extends Screen {
                     context.drawTexture(RenderInit.NUTRITION_ICONS, this.x + 27, this.y + 36 + extraY, 0, 211 + extraBarY,
                         140 * this.hungerManagerAccess.getNutritionLevel(i) / ConfigInit.CONFIG.maxNutrition, 5);
                 }
-                context.drawText(this.textRenderer, Text.translatable("screen.nutritionbts.nutritionValue", this.hungerManagerAccess.getNutritionLevel(i), ConfigInit.CONFIG.maxNutrition), this.x + 127,
+                context.drawText(this.textRenderer, Text.translatable("screen."  + MOD_ID +".nutritionValue", this.hungerManagerAccess.getNutritionLevel(i), ConfigInit.CONFIG.maxNutrition), this.x + 127,
                     this.y + 26 + extraY, 0x3F3F3F, false);
                 List<Text> tooltips = new ArrayList<>();
                 if (isPointWithinBounds(27, 36 + extraY, 31, 5, mouseX, mouseY)) {

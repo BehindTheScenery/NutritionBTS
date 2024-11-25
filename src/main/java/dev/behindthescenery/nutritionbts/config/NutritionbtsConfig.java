@@ -4,7 +4,9 @@ import me.shedaniel.autoconfig.ConfigData;
 import me.shedaniel.autoconfig.annotation.Config;
 import me.shedaniel.cloth.clothconfig.shadowed.blue.endless.jankson.Comment;
 
-@Config(name = "nutritionbts")
+import static dev.behindthescenery.nutritionbts.NutritionMain.MOD_ID;
+
+@Config(name = MOD_ID)
 @Config.Gui.Background("minecraft:textures/block/stone.png")
 public class NutritionbtsConfig implements ConfigData {
 

@@ -7,6 +7,8 @@ import net.fabricmc.fabric.api.resource.ResourcePackActivationType;
 import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.util.Identifier;
 
+import static dev.behindthescenery.nutritionbts.NutritionMain.MOD_ID;
+
 public class EventInit {
 
     public static void init() {
@@ -28,75 +30,75 @@ public class EventInit {
 //        }
         // datapacks
         if (FabricLoader.getInstance().isModLoaded("adventurez")) {
-            ResourceManagerHelper.registerBuiltinResourcePack(Identifier.of("nutritionbts", "adventurez_nutrition_compat"), FabricLoader.getInstance().getModContainer("nutritionbts").orElseThrow(),
+            ResourceManagerHelper.registerBuiltinResourcePack(Identifier.of(MOD_ID, "adventurez_nutrition_compat"), FabricLoader.getInstance().getModContainer(MOD_ID).orElseThrow(),
                 ResourcePackActivationType.DEFAULT_ENABLED);
         }
         if (FabricLoader.getInstance().isModLoaded("betterend")) {
-            ResourceManagerHelper.registerBuiltinResourcePack(Identifier.of("nutritionbts", "betterend_nutrition_compat"), FabricLoader.getInstance().getModContainer("nutritionbts").orElseThrow(),
+            ResourceManagerHelper.registerBuiltinResourcePack(Identifier.of(MOD_ID, "betterend_nutrition_compat"), FabricLoader.getInstance().getModContainer(MOD_ID).orElseThrow(),
                 ResourcePackActivationType.DEFAULT_ENABLED);
         }
         if (FabricLoader.getInstance().isModLoaded("betternether")) {
-            ResourceManagerHelper.registerBuiltinResourcePack(Identifier.of("nutritionbts", "betternether_nutrition_compat"), FabricLoader.getInstance().getModContainer("nutritionbts").orElseThrow(),
+            ResourceManagerHelper.registerBuiltinResourcePack(Identifier.of(MOD_ID, "betternether_nutrition_compat"), FabricLoader.getInstance().getModContainer(MOD_ID).orElseThrow(),
                 ResourcePackActivationType.DEFAULT_ENABLED);
         }
         if (FabricLoader.getInstance().isModLoaded("cornexpansion")) {
-            ResourceManagerHelper.registerBuiltinResourcePack(Identifier.of("nutritionbts", "cornexpansion_nutrition_compat"), FabricLoader.getInstance().getModContainer("nutritionbts").orElseThrow(),
+            ResourceManagerHelper.registerBuiltinResourcePack(Identifier.of(MOD_ID, "cornexpansion_nutrition_compat"), FabricLoader.getInstance().getModContainer(MOD_ID).orElseThrow(),
                 ResourcePackActivationType.DEFAULT_ENABLED);
         }
         if (FabricLoader.getInstance().isModLoaded("croptopia")) {
-            ResourceManagerHelper.registerBuiltinResourcePack(Identifier.of("nutritionbts", "croptopia_nutrition_compat"), FabricLoader.getInstance().getModContainer("nutritionbts").orElseThrow(),
+            ResourceManagerHelper.registerBuiltinResourcePack(Identifier.of(MOD_ID, "croptopia_nutrition_compat"), FabricLoader.getInstance().getModContainer(MOD_ID).orElseThrow(),
                 ResourcePackActivationType.DEFAULT_ENABLED);
         }
         if (FabricLoader.getInstance().isModLoaded("dehydration")) {
-            ResourceManagerHelper.registerBuiltinResourcePack(Identifier.of("nutritionbts", "dehydration_nutrition_compat"), FabricLoader.getInstance().getModContainer("nutritionbts").orElseThrow(),
+            ResourceManagerHelper.registerBuiltinResourcePack(Identifier.of(MOD_ID, "dehydration_nutrition_compat"), FabricLoader.getInstance().getModContainer(MOD_ID).orElseThrow(),
                 ResourcePackActivationType.DEFAULT_ENABLED);
         }
         if (FabricLoader.getInstance().isModLoaded("dehydration") && FabricLoader.getInstance().isModLoaded("vinery")) {
-            ResourceManagerHelper.registerBuiltinResourcePack(Identifier.of("nutritionbts", "dehydration_x_vinery_nutrition_compat"),
-                FabricLoader.getInstance().getModContainer("nutritionbts").orElseThrow(), ResourcePackActivationType.DEFAULT_ENABLED);
+            ResourceManagerHelper.registerBuiltinResourcePack(Identifier.of(MOD_ID, "dehydration_x_vinery_nutrition_compat"),
+                FabricLoader.getInstance().getModContainer(MOD_ID).orElseThrow(), ResourcePackActivationType.DEFAULT_ENABLED);
         }
         if (FabricLoader.getInstance().isModLoaded("farm_and_charm")) {
-            ResourceManagerHelper.registerBuiltinResourcePack(Identifier.of("nutritionbts", "farm_and_charm_nutrition_compat"), FabricLoader.getInstance().getModContainer("nutritionbts").orElseThrow(),
+            ResourceManagerHelper.registerBuiltinResourcePack(Identifier.of(MOD_ID, "farm_and_charm_nutrition_compat"), FabricLoader.getInstance().getModContainer(MOD_ID).orElseThrow(),
                 ResourcePackActivationType.DEFAULT_ENABLED);
         }
         if (FabricLoader.getInstance().isModLoaded("farmersdelight")) {
-            ResourceManagerHelper.registerBuiltinResourcePack(Identifier.of("nutritionbts", "farmersdelight_nutrition_compat"), FabricLoader.getInstance().getModContainer("nutritionbts").orElseThrow(),
+            ResourceManagerHelper.registerBuiltinResourcePack(Identifier.of(MOD_ID, "farmersdelight_nutrition_compat"), FabricLoader.getInstance().getModContainer(MOD_ID).orElseThrow(),
                 ResourcePackActivationType.DEFAULT_ENABLED);
         }
         if (FabricLoader.getInstance().isModLoaded("fishofthieves")) {
-            ResourceManagerHelper.registerBuiltinResourcePack(Identifier.of("nutritionbts", "fishofthieves_nutrition_compat"), FabricLoader.getInstance().getModContainer("nutritionbts").orElseThrow(),
+            ResourceManagerHelper.registerBuiltinResourcePack(Identifier.of(MOD_ID, "fishofthieves_nutrition_compat"), FabricLoader.getInstance().getModContainer(MOD_ID).orElseThrow(),
                 ResourcePackActivationType.DEFAULT_ENABLED);
         }
         if (FabricLoader.getInstance().isModLoaded("livingthings")) {
-            ResourceManagerHelper.registerBuiltinResourcePack(Identifier.of("nutritionbts", "livingthings_nutrition_compat"), FabricLoader.getInstance().getModContainer("nutritionbts").orElseThrow(),
+            ResourceManagerHelper.registerBuiltinResourcePack(Identifier.of(MOD_ID, "livingthings_nutrition_compat"), FabricLoader.getInstance().getModContainer(MOD_ID).orElseThrow(),
                 ResourcePackActivationType.DEFAULT_ENABLED);
         }
         if (FabricLoader.getInstance().isModLoaded("moredelight")) {
-            ResourceManagerHelper.registerBuiltinResourcePack(Identifier.of("nutritionbts", "moredelight_nutrition_compat"), FabricLoader.getInstance().getModContainer("nutritionbts").orElseThrow(),
+            ResourceManagerHelper.registerBuiltinResourcePack(Identifier.of(MOD_ID, "moredelight_nutrition_compat"), FabricLoader.getInstance().getModContainer(MOD_ID).orElseThrow(),
                 ResourcePackActivationType.DEFAULT_ENABLED);
         }
         if (FabricLoader.getInstance().isModLoaded("natures_spirit")) {
-            ResourceManagerHelper.registerBuiltinResourcePack(Identifier.of("nutritionbts", "natures_spirit_nutrition_compat"), FabricLoader.getInstance().getModContainer("nutritionbts").orElseThrow(),
+            ResourceManagerHelper.registerBuiltinResourcePack(Identifier.of(MOD_ID, "natures_spirit_nutrition_compat"), FabricLoader.getInstance().getModContainer(MOD_ID).orElseThrow(),
                 ResourcePackActivationType.DEFAULT_ENABLED);
         }
         if (FabricLoader.getInstance().isModLoaded("oceansdelight")) {
-            ResourceManagerHelper.registerBuiltinResourcePack(Identifier.of("nutritionbts", "oceansdelight_nutrition_compat"), FabricLoader.getInstance().getModContainer("nutritionbts").orElseThrow(),
+            ResourceManagerHelper.registerBuiltinResourcePack(Identifier.of(MOD_ID, "oceansdelight_nutrition_compat"), FabricLoader.getInstance().getModContainer(MOD_ID).orElseThrow(),
                 ResourcePackActivationType.DEFAULT_ENABLED);
         }
         if (FabricLoader.getInstance().isModLoaded("the_bumblezone")) {
-            ResourceManagerHelper.registerBuiltinResourcePack(Identifier.of("nutritionbts", "the_bumblezone_nutrition_compat"), FabricLoader.getInstance().getModContainer("nutritionbts").orElseThrow(),
+            ResourceManagerHelper.registerBuiltinResourcePack(Identifier.of(MOD_ID, "the_bumblezone_nutrition_compat"), FabricLoader.getInstance().getModContainer(MOD_ID).orElseThrow(),
                 ResourcePackActivationType.DEFAULT_ENABLED);
         }
         if (FabricLoader.getInstance().isModLoaded("ubesdelight")) {
-            ResourceManagerHelper.registerBuiltinResourcePack(Identifier.of("nutritionbts", "ubesdelight_nutrition_compat"), FabricLoader.getInstance().getModContainer("nutritionbts").orElseThrow(),
+            ResourceManagerHelper.registerBuiltinResourcePack(Identifier.of(MOD_ID, "ubesdelight_nutrition_compat"), FabricLoader.getInstance().getModContainer(MOD_ID).orElseThrow(),
                 ResourcePackActivationType.DEFAULT_ENABLED);
         }
         if (FabricLoader.getInstance().isModLoaded("vinery")) {
-            ResourceManagerHelper.registerBuiltinResourcePack(Identifier.of("nutritionbts", "vinery_nutrition_compat"), FabricLoader.getInstance().getModContainer("nutritionbts").orElseThrow(),
+            ResourceManagerHelper.registerBuiltinResourcePack(Identifier.of(MOD_ID, "vinery_nutrition_compat"), FabricLoader.getInstance().getModContainer(MOD_ID).orElseThrow(),
                 ResourcePackActivationType.DEFAULT_ENABLED);
         }
         if (FabricLoader.getInstance().isModLoaded("wilderwild")) {
-            ResourceManagerHelper.registerBuiltinResourcePack(Identifier.of("nutritionbts", "wilderwild_nutrition_compat"), FabricLoader.getInstance().getModContainer("nutritionbts").orElseThrow(),
+            ResourceManagerHelper.registerBuiltinResourcePack(Identifier.of(MOD_ID, "wilderwild_nutrition_compat"), FabricLoader.getInstance().getModContainer(MOD_ID).orElseThrow(),
                 ResourcePackActivationType.DEFAULT_ENABLED);
         }
     }

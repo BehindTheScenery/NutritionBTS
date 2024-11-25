@@ -16,8 +16,6 @@ import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.resource.ResourceManager;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.JsonHelper;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -25,11 +23,11 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
+import static dev.behindthescenery.nutritionbts.NutritionMain.LOGGER;
+import static dev.behindthescenery.nutritionbts.NutritionMain.MOD_ID;
+
 @SuppressWarnings("LoggingSimilarMessage")
 public class NutritionLoader implements SimpleSynchronousResourceReloadListener {
-
-    public static final Logger LOGGER = LogManager.getLogger("NutritionBTS");
-
     private final List<String> nutritionList = List.of("carbohydrates", "protein", "fat", "vitamins", "minerals");
     private final List<Boolean> effectReplaceList = new ArrayList<>(List.of(false, false, false, false, false));
     // Map to store replacing bools
@@ -63,7 +61,7 @@ public class NutritionLoader implements SimpleSynchronousResourceReloadListener 
 
     @Override
     public Identifier getFabricId() {
-        return Identifier.of("nutritionbts", "loader");
+        return Identifier.of(MOD_ID, "loader");
     }
 
     @Override

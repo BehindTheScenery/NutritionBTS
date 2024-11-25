@@ -9,10 +9,16 @@ import dev.behindthescenery.nutritionbts.init.EventInit;
 import dev.behindthescenery.nutritionbts.init.LoaderInit;
 import dev.behindthescenery.nutritionbts.network.NutritionServerPacketHandler;
 import net.neoforged.fml.common.Mod;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
-// TODO: 24.11.2024 REPLACE WITH MOD_ID
-@Mod("nutritionbts")
+import static dev.behindthescenery.nutritionbts.NutritionMain.MOD_ID;
+
+@Mod(MOD_ID)
 public class NutritionMain {
+    public static final String MOD_ID = "nutritionbts";
+    public static final Logger LOGGER = LogManager.getLogger(MOD_ID);
+
     public static final HashMap<Item, List<Integer>> NUTRITION_ITEM_MAP = new HashMap<>();
     public static final HashMap<Integer, List<Object>> NUTRITION_POSITIVE_EFFECTS = new HashMap<>();
     public static final HashMap<Integer, List<Object>> NUTRITION_NEGATIVE_EFFECTS = new HashMap<>();

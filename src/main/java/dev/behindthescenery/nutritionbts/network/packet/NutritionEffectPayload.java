@@ -8,6 +8,8 @@ import net.minecraft.util.Identifier;
 
 import java.util.*;
 
+import static dev.behindthescenery.nutritionbts.NutritionMain.MOD_ID;
+
 public record NutritionEffectPayload(List<Integer> positiveEffectCount, List<Identifier> positiveEffectIds, List<Integer> positiveEffectDurations, List<Integer> positiveEffectAmplifiers,
                                      List<Identifier> positiveAttributeIds,
                                      List<Float> positiveAttributeValues, List<String> positiveAttributeOperations, List<Integer> negativeEffectCount, List<Identifier> negativeEffectIds,
@@ -15,7 +17,7 @@ public record NutritionEffectPayload(List<Integer> positiveEffectCount, List<Ide
                                      List<Integer> negativeEffectAmplifiers, List<Identifier> negativeAttributeIds, List<Float> negativeAttributeValues,
                                      List<String> negativeAttributeOperations) implements CustomPayload {
 
-    public static final CustomPayload.Id<NutritionEffectPayload> PACKET_ID = new CustomPayload.Id<>(Identifier.of("nutritionbts", "nutrition_effect_packet"));
+    public static final CustomPayload.Id<NutritionEffectPayload> PACKET_ID = new CustomPayload.Id<>(Identifier.of(MOD_ID, "nutrition_effect_packet"));
 
     public static final PacketCodec<RegistryByteBuf, NutritionEffectPayload> PACKET_CODEC = PacketCodec.of((value, buf) -> {
         buf.writeCollection(value.positiveEffectCount(), PacketByteBuf::writeInt);
