@@ -1,20 +1,44 @@
 package dev.behindthescenery.nutritionbts.data;
 
-import com.mojang.serialization.Codec;
+import com.google.gson.JsonElement;
+import com.mojang.serialization.DataResult;
+import com.mojang.serialization.JsonOps;
+import dev.behindthescenery.nutritionbts.NutritionMain;
 import dev.behindthescenery.nutritionbts.nutrition.NutritionType;
-import dev.behindthescenery.nutritionbts.util.CodecFileLoader;
+import dev.behindthescenery.nutritionbts.util.FileLoader;
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Unmodifiable;
 
-public class NutritionTypeLoader extends CodecFileLoader<NutritionType> {
+import java.util.ArrayList;
+import java.util.List;
+
+public class NutritionTypeLoader extends FileLoader {
     public static final NutritionTypeLoader INSTANCE = new NutritionTypeLoader("nutrition_types");
 
     public NutritionTypeLoader(String directoryName) {
         super(directoryName);
     }
 
+    private final List<NutritionType> loaded = new ArrayList<>();
+
+    @Unmodifiable
+    public List<NutritionType> getLoaded() {
+        return List.copyOf(loaded);
+    }
+
     @Override
-    @NotNull
-    public Codec<NutritionType> getCodec() {
-        return NutritionType.CODEC;
+    protected void preInit() {
+        loaded.clear();
+    }
+
+    @Override
+    protected void resolveFile(@NotNull JsonElement element) {
+        
+
+
+        DataResult<NutritionType> res = NutritionType.CODEC.parse(JsonOps.INSTANCE, element).ifError(NutritionMain.LOGGER::error);
+        if (res.isError()) return;
+
+        loaded.add(res.getOrThrow());
     }
 }

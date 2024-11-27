@@ -1,0 +1,81 @@
+{
+  "values": {
+    "livingthings:crab": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 8,
+      "nutritionbts:fat": 2,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 0
+    },
+    "livingthings:cooked_crab": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 20,
+      "nutritionbts:fat": 5,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 0
+    },
+    "livingthings:banana": {
+      "nutritionbts:carbohydrates": 5,
+      "nutritionbts:protein": 0,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 10,
+      "nutritionbts:minerals": 5
+    },
+    "livingthings:ostrich": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 12,
+      "nutritionbts:fat": 3,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 0
+    },
+    "livingthings:cooked_ostrich": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 24,
+      "nutritionbts:fat": 6,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 0
+    },
+    "livingthings:elephant": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 10,
+      "nutritionbts:fat": 10,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 0
+    },
+    "livingthings:cooked_elephant": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 20,
+      "nutritionbts:fat": 15,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 0
+    },
+    "livingthings:lion": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 10,
+      "nutritionbts:fat": 5,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 0
+    },
+    "livingthings:cooked_lion": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 20,
+      "nutritionbts:fat": 10,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 0
+    },
+    "livingthings:giraffe": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 10,
+      "nutritionbts:fat": 5,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 0
+    },
+    "livingthings:cooked_giraffe": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 20,
+      "nutritionbts:fat": 10,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 0
+    }
+  }
+}

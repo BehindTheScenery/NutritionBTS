@@ -1,0 +1,67 @@
+{
+  "values": {
+    "natures_spirit:quarter_pizza": {
+      "nutritionbts:carbohydrates": 6,
+      "nutritionbts:protein": 2,
+      "nutritionbts:fat": 2,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 0
+    },
+    "natures_spirit:half_pizza": {
+      "nutritionbts:carbohydrates": 6,
+      "nutritionbts:protein": 2,
+      "nutritionbts:fat": 2,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 0
+    },
+    "natures_spirit:three_quarters_pizza": {
+      "nutritionbts:carbohydrates": 6,
+      "nutritionbts:protein": 2,
+      "nutritionbts:fat": 2,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 0
+    },
+    "natures_spirit:whole_pizza": {
+      "nutritionbts:carbohydrates": 6,
+      "nutritionbts:protein": 2,
+      "nutritionbts:fat": 2,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 0
+    },
+    "natures_spirit:green_olives": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 0,
+      "nutritionbts:fat": 7,
+      "nutritionbts:vitamins": 2,
+      "nutritionbts:minerals": 1
+    },
+    "natures_spirit:black_olives": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 0,
+      "nutritionbts:fat": 10,
+      "nutritionbts:vitamins": 3,
+      "nutritionbts:minerals": 2
+    },
+    "natures_spirit:desert_turnip": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 0,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 5,
+      "nutritionbts:minerals": 5
+    },
+    "natures_spirit:coconut_half": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 10,
+      "nutritionbts:fat": 15,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 5
+    },
+    "natures_spirit:young_coconut_half": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 5,
+      "nutritionbts:fat": 10,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 5
+    }
+  }
+}

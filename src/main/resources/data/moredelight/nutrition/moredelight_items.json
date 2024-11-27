@@ -1,0 +1,214 @@
+{
+  "values": {
+    "moredelight:diced_potatoes": {
+      "nutritionbts:carbohydrates": 8,
+      "nutritionbts:protein": 2,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 0
+    },
+    "moredelight:omelette": {
+      "nutritionbts:carbohydrates": 5,
+      "nutritionbts:protein": 15,
+      "nutritionbts:fat": 5,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 5
+    },
+    "moredelight:cooked_rice_with_milk_cream_and_chicken_cuts": {
+      "nutritionbts:carbohydrates": 20,
+      "nutritionbts:protein": 30,
+      "nutritionbts:fat": 10,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 10
+    },
+    "moredelight:cooked_rice_with_milk_cream_and_beef": {
+      "nutritionbts:carbohydrates": 20,
+      "nutritionbts:protein": 30,
+      "nutritionbts:fat": 10,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 10
+    },
+    "moredelight:cooked_rice_with_milk_cream_and_porkchop": {
+      "nutritionbts:carbohydrates": 20,
+      "nutritionbts:protein": 30,
+      "nutritionbts:fat": 10,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 10
+    },
+    "moredelight:mashed_potatoes": {
+      "nutritionbts:carbohydrates": 25,
+      "nutritionbts:protein": 20,
+      "nutritionbts:fat": 5,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 0
+    },
+    "moredelight:pasta_with_milk_cream_and_ham": {
+      "nutritionbts:carbohydrates": 10,
+      "nutritionbts:protein": 20,
+      "nutritionbts:fat": 20,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 0
+    },
+    "moredelight:cooked_diced_potatoes_with_chicken_cuts": {
+      "nutritionbts:carbohydrates": 15,
+      "nutritionbts:protein": 15,
+      "nutritionbts:fat": 5,
+      "nutritionbts:vitamins": 10,
+      "nutritionbts:minerals": 5
+    },
+    "moredelight:cooked_diced_potatoes_with_beef": {
+      "nutritionbts:carbohydrates": 15,
+      "nutritionbts:protein": 15,
+      "nutritionbts:fat": 5,
+      "nutritionbts:vitamins": 10,
+      "nutritionbts:minerals": 5
+    },
+    "moredelight:cooked_diced_potatoes_with_porkchop": {
+      "nutritionbts:carbohydrates": 15,
+      "nutritionbts:protein": 15,
+      "nutritionbts:fat": 5,
+      "nutritionbts:vitamins": 10,
+      "nutritionbts:minerals": 5
+    },
+    "moredelight:chicken_salad": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 10,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 15,
+      "nutritionbts:minerals": 5
+    },
+    "moredelight:potato_salad": {
+      "nutritionbts:carbohydrates": 15,
+      "nutritionbts:protein": 5,
+      "nutritionbts:fat": 5,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 5
+    },
+    "moredelight:carrot_soup": {
+      "nutritionbts:carbohydrates": 5,
+      "nutritionbts:protein": 5,
+      "nutritionbts:fat": 10,
+      "nutritionbts:vitamins": 20,
+      "nutritionbts:minerals": 5
+    },
+    "moredelight:simple_hamburger": {
+      "nutritionbts:carbohydrates": 10,
+      "nutritionbts:protein": 20,
+      "nutritionbts:fat": 5,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 5
+    },
+    "moredelight:hamburger_with_egg": {
+      "nutritionbts:carbohydrates": 10,
+      "nutritionbts:protein": 20,
+      "nutritionbts:fat": 5,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 10
+    },
+    "moredelight:loaded_hamburger": {
+      "nutritionbts:carbohydrates": 15,
+      "nutritionbts:protein": 30,
+      "nutritionbts:fat": 10,
+      "nutritionbts:vitamins": 10,
+      "nutritionbts:minerals": 10
+    },
+    "moredelight:chocolate_popsicle": {
+      "nutritionbts:carbohydrates": 10,
+      "nutritionbts:protein": 0,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 5
+    },
+    "moredelight:chicken_sandwich_with_egg_and_tomato": {
+      "nutritionbts:carbohydrates": 15,
+      "nutritionbts:protein": 15,
+      "nutritionbts:fat": 15,
+      "nutritionbts:vitamins": 5,
+      "nutritionbts:minerals": 5
+    },
+    "moredelight:steak_sandwich": {
+      "nutritionbts:carbohydrates": 15,
+      "nutritionbts:protein": 15,
+      "nutritionbts:fat": 10,
+      "nutritionbts:vitamins": 5,
+      "nutritionbts:minerals": 5
+    },
+    "moredelight:porkchop_sandwich": {
+      "nutritionbts:carbohydrates": 15,
+      "nutritionbts:protein": 15,
+      "nutritionbts:fat": 10,
+      "nutritionbts:vitamins": 5,
+      "nutritionbts:minerals": 5
+    },
+    "moredelight:egg_with_bacon_sandwich": {
+      "nutritionbts:carbohydrates": 10,
+      "nutritionbts:protein": 10,
+      "nutritionbts:fat": 30,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 0
+    },
+    "moredelight:steak_with_egg_sandwich": {
+      "nutritionbts:carbohydrates": 10,
+      "nutritionbts:protein": 25,
+      "nutritionbts:fat": 15,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 0
+    },
+    "moredelight:tomato_sandwich": {
+      "nutritionbts:carbohydrates": 15,
+      "nutritionbts:protein": 0,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 15,
+      "nutritionbts:minerals": 0
+    },
+    "moredelight:bread_slice": {
+      "nutritionbts:carbohydrates": 10,
+      "nutritionbts:protein": 0,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 0
+    },
+    "moredelight:toast": {
+      "nutritionbts:carbohydrates": 10,
+      "nutritionbts:protein": 0,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 0
+    },
+    "moredelight:toast_with_egg": {
+      "nutritionbts:carbohydrates": 10,
+      "nutritionbts:protein": 10,
+      "nutritionbts:fat": 5,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 0
+    },
+    "moredelight:toast_with_honey": {
+      "nutritionbts:carbohydrates": 20,
+      "nutritionbts:protein": 0,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 5
+    },
+    "moredelight:toast_with_sweet_berries": {
+      "nutritionbts:carbohydrates": 15,
+      "nutritionbts:protein": 0,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 5,
+      "nutritionbts:minerals": 5
+    },
+    "moredelight:toast_with_glow_berries": {
+      "nutritionbts:carbohydrates": 15,
+      "nutritionbts:protein": 0,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 10
+    },
+    "moredelight:toast_with_chocolate": {
+      "nutritionbts:carbohydrates": 15,
+      "nutritionbts:protein": 0,
+      "nutritionbts:fat": 10,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 0
+    }
+  }
+}

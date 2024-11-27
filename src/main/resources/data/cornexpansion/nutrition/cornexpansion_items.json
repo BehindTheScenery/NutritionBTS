@@ -1,0 +1,95 @@
+{
+  "values": {
+    "cornexpansion:corn_dough": {
+      "nutritionbts:carbohydrates": 3,
+      "nutritionbts:protein": 0,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 2
+    },
+    "cornexpansion:corn_syrup": {
+      "nutritionbts:carbohydrates": 15,
+      "nutritionbts:protein": 5,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 5,
+      "nutritionbts:minerals": 10
+    },
+    "cornexpansion:buttery_popcorn": {
+      "nutritionbts:carbohydrates": 2,
+      "nutritionbts:protein": 3,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 0
+    },
+    "cornexpansion:cheesy_popcorn": {
+      "nutritionbts:carbohydrates": 3,
+      "nutritionbts:protein": 8,
+      "nutritionbts:fat": 2,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 2
+    },
+    "cornexpansion:candied_popcorn": {
+      "nutritionbts:carbohydrates": 10,
+      "nutritionbts:protein": 0,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 0
+    },
+    "cornexpansion:corn_on_the_cob": {
+      "nutritionbts:carbohydrates": 5,
+      "nutritionbts:protein": 0,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 3,
+      "nutritionbts:minerals": 2
+    },
+    "cornexpansion:grilled_corn": {
+      "nutritionbts:carbohydrates": 10,
+      "nutritionbts:protein": 0,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 10
+    },
+    "cornexpansion:grandmas_cornbread": {
+      "nutritionbts:carbohydrates": 15,
+      "nutritionbts:protein": 0,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 5,
+      "nutritionbts:minerals": 10
+    },
+    "cornexpansion:corn_syrup_cookie": {
+      "nutritionbts:carbohydrates": 5,
+      "nutritionbts:protein": 5,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 5
+    },
+    "cornexpansion:polenta": {
+      "nutritionbts:carbohydrates": 5,
+      "nutritionbts:protein": 5,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 5
+    },
+    "cornexpansion:sweet_polenta": {
+      "nutritionbts:carbohydrates": 10,
+      "nutritionbts:protein": 5,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 0
+    },
+    "cornexpansion:buttery_polenta": {
+      "nutritionbts:carbohydrates": 5,
+      "nutritionbts:protein": 8,
+      "nutritionbts:fat": 2,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 0
+    },
+    "cornexpansion:cheesy_polenta": {
+      "nutritionbts:carbohydrates": 5,
+      "nutritionbts:protein": 10,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 5
+    }
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "values": {
+    "adventurez:mammoth_meat": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 9,
+      "nutritionbts:fat": 6,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 0
+    },
+    "adventurez:cooked_mammoth_meat": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 25,
+      "nutritionbts:fat": 15,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 0
+    },
+    "adventurez:iguana_meat": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 9,
+      "nutritionbts:fat": 1,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 0
+    },
+    "adventurez:cooked_iguana_meat": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 27,
+      "nutritionbts:fat": 3,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 0
+    },
+    "adventurez:ender_whale_meat": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 5,
+      "nutritionbts:fat": 5,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 5
+    },
+    "adventurez:cooked_ender_whale_meat": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 13,
+      "nutritionbts:fat": 13,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 14
+    },
+    "adventurez:rhino_meat": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 6,
+      "nutritionbts:fat": 9,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 0
+    },
+    "adventurez:cooked_rhino_meat": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 15,
+      "nutritionbts:fat": 25,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 0
+    },
+    "adventurez:raw_venison": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 8,
+      "nutritionbts:fat": 7,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 0
+    },
+    "adventurez:cooked_venison": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 16,
+      "nutritionbts:fat": 14,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 0
+    },
+    "adventurez:warthog_meat": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 5,
+      "nutritionbts:fat": 5,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 5
+    },
+    "adventurez:cooked_warthog_meat": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 10,
+      "nutritionbts:fat": 10,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 10
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "values": {
+    "wilderwild:baobab_nut": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 0,
+      "nutritionbts:fat": 4,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 1
+    },
+    "wilderwild:split_coconut": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 2,
+      "nutritionbts:fat": 8,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 0
+    },
+    "wilderwild:prickly_pear": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 0,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 7,
+      "nutritionbts:minerals": 3
+    },
+    "wilderwild:peeled_prickly_pear": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 5,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 10,
+      "nutritionbts:minerals": 5
+    },
+    "wilderwild:crab_claw": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 4,
+      "nutritionbts:fat": 1,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 0
+    },
+    "wilderwild:cooked_crab_claw": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 17,
+      "nutritionbts:fat": 3,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 0
+    },
+    "wilderwild:scorched_eye": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 0,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 15
+    }
+  }
+}

@@ -16,9 +16,9 @@ import static dev.behindthescenery.nutritionbts.NutritionMain.MOD_ID;
 
 public class NutritionUtil {
     public static void addNutritionToolTip(ItemStack stack, List<Text> list) {
-        if (ItemLevelsLoader.INSTANCE.getItemLevels().containsKey(stack.getItem())) {
+        if (ItemLevelsLoader.INSTANCE.containsKey(stack.getItem())) {
             if (Screen.hasShiftDown()) {
-                Map<Identifier, Integer> nutritionMap = ItemLevelsLoader.INSTANCE.getItemLevels().get(stack.getItem());
+                Map<Identifier, Integer> nutritionMap = ItemLevelsLoader.INSTANCE.get(stack.getItem());
                 list.add(ScreenTexts.EMPTY);
                 list.add(Text.translatable("item." + MOD_ID + ".nutrients"));
                 nutritionMap.forEach((k, v) -> {

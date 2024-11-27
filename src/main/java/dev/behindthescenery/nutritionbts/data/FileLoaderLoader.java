@@ -12,11 +12,7 @@ public class FileLoaderLoader extends SinglePreparationResourceReloader<Void> {
 
     @Override
     protected void apply(Void prepared, ResourceManager manager, Profiler profiler) {
-        resolveAllPaths();
-    }
-
-    private void resolveAllPaths() {
-        NutritionTypeLoader.INSTANCE.resolvePaths();
-        ItemLevelsLoader.INSTANCE.resolvePaths();
+        NutritionTypeLoader.INSTANCE.resolvePaths(manager);
+        ItemLevelsLoader.INSTANCE.resolvePaths(manager);
     }
 }

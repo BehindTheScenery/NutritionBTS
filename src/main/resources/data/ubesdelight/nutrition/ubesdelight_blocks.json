@@ -1,0 +1,18 @@
+{
+  "values": {
+    "ubesdelight:ube_cake": {
+      "nutritionbts:carbohydrates": 3,
+      "nutritionbts:protein": 3,
+      "nutritionbts:fat": 2,
+      "nutritionbts:vitamins": 2,
+      "nutritionbts:minerals": 0
+    },
+    "ubesdelight:leche_flan_feast": {
+      "nutritionbts:carbohydrates": 5,
+      "nutritionbts:protein": 5,
+      "nutritionbts:fat": 5,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 0
+    }
+  }
+}

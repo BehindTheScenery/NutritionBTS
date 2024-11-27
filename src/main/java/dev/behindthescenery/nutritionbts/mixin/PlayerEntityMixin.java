@@ -7,7 +7,6 @@ import dev.behindthescenery.nutritionbts.nutrition.NutritionType;
 import net.minecraft.component.type.FoodComponent;
 import net.minecraft.entity.player.HungerManager;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.util.Identifier;
@@ -27,15 +26,15 @@ public abstract class PlayerEntityMixin {
     private void eatFoodMixin(World world, ItemStack stack, FoodComponent foodComponent, CallbackInfoReturnable<ItemStack> info) {
         if (world.isClient) return;
         PlayerEntity self = (PlayerEntity) (Object) this;
-        Map<Item, Map<Identifier, Integer>> itemLevels = ItemLevelsLoader.INSTANCE.getItemLevels();
-        if (!itemLevels.containsKey(stack.getItem())) return;
+        if (!ItemLevelsLoader.INSTANCE.containsKey(stack.getItem())) return;
 
-        for (Map.Entry<Identifier, Integer> levels : itemLevels.get(stack.getItem()).entrySet()) {
+        for (Map.Entry<Identifier, Integer> levels : ItemLevelsLoader.INSTANCE.get(stack.getItem()).entrySet()) {
             if (levels.getValue() > 0) {
                 try {
                     ((HungerManagerAccess) getHungerManager()).addNutritionLevel(NutritionType.byId(levels.getKey()), levels.getValue());
                     NutritionServerPacketHandler.writeS2CNutritionPacket((ServerPlayerEntity) self, (HungerManagerAccess) getHungerManager());
-                } catch (IllegalArgumentException ignored) {}
+                } catch (IllegalArgumentException ignored) {
+                }
             }
         }
     }
