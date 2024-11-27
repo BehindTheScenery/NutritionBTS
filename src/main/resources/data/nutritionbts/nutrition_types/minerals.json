@@ -2,6 +2,7 @@
   "id": "nutritionbts:minerals",
   "tooltip": "screen.nutritionbts.minerals",
   "icon": "minecraft:apple",
+  "color": 15917082,
   "positiveAttributes": {
     "minecraft:generic.armor_toughness": {
       "id": "nutritionbts:minerals_positive_1",

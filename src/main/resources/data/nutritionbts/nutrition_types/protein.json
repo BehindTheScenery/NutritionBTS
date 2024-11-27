@@ -2,6 +2,7 @@
   "id": "nutritionbts:protein",
   "tooltip": "screen.nutritionbts.protein",
   "icon": "minecraft:chicken",
+  "color": 5622796,
   "positiveAttributes": {
     "minecraft:generic.attack_damage": {
       "id": "nutritionbts:protein_positive_1",

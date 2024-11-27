@@ -15,6 +15,7 @@ import net.minecraft.text.MutableText;
 import net.minecraft.text.Text;
 import net.minecraft.text.TranslatableTextContent;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.dynamic.Codecs;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
@@ -22,7 +23,7 @@ import java.util.Map;
 import java.util.Objects;
 import java.util.Optional;
 
-public record NutritionType(Identifier id, Optional<RegistryEntry<Item>> icon,
+public record NutritionType(Identifier id, Optional<RegistryEntry<Item>> icon, int color,
                             MutableText tooltip, List<StatusEffectInstance> positiveEffects,
                             List<StatusEffectInstance> negativeEffects,
                             Map<Identifier, EntityAttributeModifier> positiveAttributeModifiers,
@@ -30,6 +31,7 @@ public record NutritionType(Identifier id, Optional<RegistryEntry<Item>> icon,
     public static final Codec<NutritionType> CODEC = RecordCodecBuilder.create(inst -> inst.group(
         Identifier.CODEC.fieldOf("id").forGetter(NutritionType::id),
         ItemStack.ITEM_CODEC.xmap(Optional::ofNullable, opt -> opt.orElse(null)).fieldOf("icon").forGetter(NutritionType::icon),
+        Codecs.NONNEGATIVE_INT.optionalFieldOf("color", 0xFFFFFF).forGetter(NutritionType::color),
         Codec.STRING.fieldOf("tooltip").xmap(Text::translatable, text -> text.getContent() instanceof TranslatableTextContent content ? content.getKey() : text.getString()).orElse(Text.empty()).forGetter(NutritionType::tooltip),
         StatusEffectInstance.CODEC.listOf().fieldOf("positiveEffects").orElse(List.of()).forGetter(NutritionType::positiveEffects),
         StatusEffectInstance.CODEC.listOf().fieldOf("negativeEffects").orElse(List.of()).forGetter(NutritionType::negativeEffects),

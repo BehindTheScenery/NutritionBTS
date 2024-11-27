@@ -1,5 +1,6 @@
 {
   "id": "nutritionbts:carbohydrates",
+  "color": 15024150,
   "tooltip": "screen.nutritionbts.carbohydrates",
   "icon": "minecraft:sugar",
   "positiveAttributes": {
