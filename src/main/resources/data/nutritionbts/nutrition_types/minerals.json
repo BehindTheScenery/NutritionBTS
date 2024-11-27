@@ -1,0 +1,35 @@
+{
+  "id": "nutritionbts:minerals",
+  "tooltip": "screen.nutritionbts.minerals",
+  "icon": "minecraft:apple",
+  "positiveAttributes": {
+    "minecraft:generic.armor_toughness": {
+      "id": "nutritionbts:minerals_positive_1",
+      "operation": "add_value",
+      "amount": 1.0
+    }
+  },
+  "negativeAttributes": {
+    "minecraft:generic.armor_toughness": {
+      "id": "nutritionbts:minerals_negative_1",
+      "operation": "add_value",
+      "amount": -1.0
+    }
+  },
+  "positiveEffects": [
+    {
+      "id": "minecraft:haste",
+      "duration": 319,
+      "amplifier": 0,
+      "show_particles": false
+    }
+  ],
+  "negativeEffects": [
+    {
+      "id": "minecraft:mining_fatigue",
+      "duration": 319,
+      "amplifier": 0,
+      "show_particles": false
+    }
+  ]
+}

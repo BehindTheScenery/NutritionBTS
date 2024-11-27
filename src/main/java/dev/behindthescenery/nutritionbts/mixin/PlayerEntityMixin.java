@@ -1,11 +1,16 @@
 package dev.behindthescenery.nutritionbts.mixin;
 
-import dev.behindthescenery.nutritionbts.NutritionMain;
 import dev.behindthescenery.nutritionbts.access.HungerManagerAccess;
+import dev.behindthescenery.nutritionbts.data.ItemLevelsLoader;
+import dev.behindthescenery.nutritionbts.network.NutritionServerPacketHandler;
+import dev.behindthescenery.nutritionbts.nutrition.NutritionType;
 import net.minecraft.component.type.FoodComponent;
 import net.minecraft.entity.player.HungerManager;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.server.network.ServerPlayerEntity;
+import net.minecraft.util.Identifier;
 import net.minecraft.world.World;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
@@ -13,16 +18,24 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
+import java.util.Map;
+
 @Mixin(PlayerEntity.class)
 public abstract class PlayerEntityMixin {
 
     @Inject(method = "eatFood", at = @At("HEAD"))
     private void eatFoodMixin(World world, ItemStack stack, FoodComponent foodComponent, CallbackInfoReturnable<ItemStack> info) {
-        if (NutritionMain.NUTRITION_ITEM_MAP.containsKey(stack.getItem())) {
-            for (int i = 0; i < NutritionMain.NUTRITION_ITEM_MAP.get(stack.getItem()).size(); i++) {
-                if (NutritionMain.NUTRITION_ITEM_MAP.get(stack.getItem()).get(i) > 0) {
-                    ((HungerManagerAccess) getHungerManager()).addNutritionLevel(i, NutritionMain.NUTRITION_ITEM_MAP.get(stack.getItem()).get(i));
-                }
+        if (world.isClient) return;
+        PlayerEntity self = (PlayerEntity) (Object) this;
+        Map<Item, Map<Identifier, Integer>> itemLevels = ItemLevelsLoader.INSTANCE.getItemLevels();
+        if (!itemLevels.containsKey(stack.getItem())) return;
+
+        for (Map.Entry<Identifier, Integer> levels : itemLevels.get(stack.getItem()).entrySet()) {
+            if (levels.getValue() > 0) {
+                try {
+                    ((HungerManagerAccess) getHungerManager()).addNutritionLevel(NutritionType.byId(levels.getKey()), levels.getValue());
+                    NutritionServerPacketHandler.writeS2CNutritionPacket((ServerPlayerEntity) self, (HungerManagerAccess) getHungerManager());
+                } catch (IllegalArgumentException ignored) {}
             }
         }
     }

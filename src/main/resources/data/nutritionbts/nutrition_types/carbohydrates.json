@@ -1,0 +1,29 @@
+{
+  "id": "nutritionbts:carbohydrates",
+  "tooltip": "screen.nutritionbts.carbohydrates",
+  "icon": "minecraft:sugar",
+  "positiveAttributes": {
+    "minecraft:generic.attack_speed": {
+      "id": "nutritionbts:carbohydrates_positive_1",
+      "operation": "add_value",
+      "amount": 0.5
+    },
+    "minecraft:generic.movement_speed": {
+      "id": "nutritionbts:carbohydrates_positive_2",
+      "operation": "add_value",
+      "amount": 0.02
+    }
+  },
+  "negativeAttributes": {
+    "minecraft:generic.attack_speed": {
+      "id": "nutritionbts:carbohydrates_negative_1",
+      "operation": "add_value",
+      "amount": -0.5
+    },
+    "minecraft:generic.movement_speed": {
+      "id": "nutritionbts:carbohydrates_negative_2",
+      "operation": "add_value",
+      "amount": -0.02
+    }
+  }
+}

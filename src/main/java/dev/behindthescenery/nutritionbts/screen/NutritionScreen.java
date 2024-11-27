@@ -1,23 +1,17 @@
 package dev.behindthescenery.nutritionbts.screen;
 
-import com.google.common.collect.Multimap;
-import dev.behindthescenery.nutritionbts.NutritionMain;
 import dev.behindthescenery.nutritionbts.access.HungerManagerAccess;
+import dev.behindthescenery.nutritionbts.data.NutritionTypeLoader;
 import dev.behindthescenery.nutritionbts.init.ConfigInit;
 import dev.behindthescenery.nutritionbts.init.RenderInit;
+import dev.behindthescenery.nutritionbts.nutrition.NutritionType;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.gui.screen.ingame.InventoryScreen;
-import net.minecraft.entity.attribute.EntityAttribute;
-import net.minecraft.entity.attribute.EntityAttributeModifier;
-import net.minecraft.entity.effect.StatusEffectInstance;
-import net.minecraft.item.ItemStack;
 import net.minecraft.registry.Registries;
-import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.text.Text;
-import net.minecraft.util.Identifier;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.ArrayList;
@@ -27,11 +21,6 @@ import static dev.behindthescenery.nutritionbts.NutritionMain.MOD_ID;
 
 @Environment(EnvType.CLIENT)
 public class NutritionScreen extends Screen {
-    private final List<ItemStack> nutritionItems = List.of(new ItemStack(Registries.ITEM.get(Identifier.of(ConfigInit.CONFIG.carbohydrateItemId))),
-        new ItemStack(Registries.ITEM.get(Identifier.of(ConfigInit.CONFIG.proteinItemId))), new ItemStack(Registries.ITEM.get(Identifier.of(ConfigInit.CONFIG.fatItemId))),
-        new ItemStack(Registries.ITEM.get(Identifier.of(ConfigInit.CONFIG.vitaminItemId))), new ItemStack(Registries.ITEM.get(Identifier.of(ConfigInit.CONFIG.mineralItemId))));
-    private final List<Text> nutritionTexts = List.of(Text.translatable("screen." + MOD_ID + ".carbohydrates"), Text.translatable("screen." + MOD_ID + ".protein"), Text.translatable("screen." + MOD_ID + ".fat"),
-        Text.translatable("screen." + MOD_ID + ".vitamins"), Text.translatable("screen." + MOD_ID + ".minerals"));
     private int x;
     private int y;
     @Nullable
@@ -49,54 +38,41 @@ public class NutritionScreen extends Screen {
         this.hungerManagerAccess = this.client != null && this.client.player != null ? (HungerManagerAccess) this.client.player.getHungerManager() : null;
     }
 
-    @SuppressWarnings("unchecked")
+    @SuppressWarnings("DataFlowIssue")
     @Override
     public void render(DrawContext context, int mouseX, int mouseY, float delta) {
         super.render(context, mouseX, mouseY, delta);
 
         context.drawTexture(RenderInit.NUTRITION_ICONS, this.x, this.y, 0, 0, 176, 142);
         context.drawText(this.textRenderer, this.title, this.x + 176 / 2 - this.textRenderer.getWidth(this.title) / 2, this.y + 7, 0x3F3F3F, false);
+        if (hungerManagerAccess == null) return;
         int extraY = 0;
         int extraBarY = 0;
-        for (int i = 0; i < this.nutritionItems.size(); i++) {
-            context.drawItem(this.nutritionItems.get(i), this.x + 7, this.y + 25 + extraY);
-            context.drawText(this.textRenderer, this.nutritionTexts.get(i), this.x + 28, this.y + 26 + extraY, 0x3F3F3F, false);
-            context.drawTexture(RenderInit.NUTRITION_ICONS, this.x + 27, this.y + 36 + extraY, 0, 206 + extraBarY, 141, 5);
-            if (this.hungerManagerAccess != null) {
-                if (this.hungerManagerAccess.getNutritionLevel(i) > 0) {
-                    context.drawTexture(RenderInit.NUTRITION_ICONS, this.x + 27, this.y + 36 + extraY, 0, 211 + extraBarY,
-                        140 * this.hungerManagerAccess.getNutritionLevel(i) / ConfigInit.CONFIG.maxNutrition, 5);
-                }
-                context.drawText(this.textRenderer, Text.translatable("screen."  + MOD_ID +".nutritionValue", this.hungerManagerAccess.getNutritionLevel(i), ConfigInit.CONFIG.maxNutrition), this.x + 127,
-                    this.y + 26 + extraY, 0x3F3F3F, false);
-                List<Text> tooltips = new ArrayList<>();
-                if (isPointWithinBounds(27, 36 + extraY, 31, 5, mouseX, mouseY)) {
-                    if (NutritionMain.NUTRITION_NEGATIVE_EFFECTS.containsKey(i)) {
-                        NutritionMain.NUTRITION_NEGATIVE_EFFECTS.get(i).forEach(effect -> {
-                            if (effect instanceof StatusEffectInstance statusEffectInstance) {
-                                tooltips.add(statusEffectInstance.getEffectType().value().getName());
-                            } else {
-                                Multimap<RegistryEntry<EntityAttribute>, EntityAttributeModifier> map = (Multimap<RegistryEntry<EntityAttribute>, EntityAttributeModifier>) effect;
-                                map.forEach((attribute, modifier) -> tooltips.add(Text.translatable(attribute.value().getTranslationKey())));
-                            }
-                        });
-                    }
 
-                } else if (isPointWithinBounds(137, 36 + extraY, 31, 5, mouseX, mouseY)) {
-                    if (NutritionMain.NUTRITION_POSITIVE_EFFECTS.containsKey(i)) {
-                        NutritionMain.NUTRITION_POSITIVE_EFFECTS.get(i).forEach(effect -> {
-                            if (effect instanceof StatusEffectInstance statusEffectInstance) {
-                                tooltips.add(statusEffectInstance.getEffectType().value().getName());
-                            } else {
-                                Multimap<RegistryEntry<EntityAttribute>, EntityAttributeModifier> map = (Multimap<RegistryEntry<EntityAttribute>, EntityAttributeModifier>) effect;
-                                map.forEach((attribute, modifier) -> tooltips.add(Text.translatable(attribute.value().getTranslationKey())));
-                            }
-                        });
-                    }
-                }
-                if (!tooltips.isEmpty()) {
-                    context.drawTooltip(textRenderer, tooltips, mouseX, mouseY);
-                }
+        for (NutritionType type : NutritionTypeLoader.INSTANCE.getLoaded()) {
+            int nutritionLevel = hungerManagerAccess.getNutritionLevel(type);
+            final int extraYF = extraY;
+            type.icon().ifPresent(icon -> context.drawItem(icon.value().getDefaultStack(), this.x + 7, this.y + 25 + extraYF));
+            context.drawText(textRenderer, type.tooltip(), this.x + 28, this.y + 26 + extraY, 0x3f3f3f, false);
+            context.drawTexture(RenderInit.NUTRITION_ICONS, this.x + 27, this.y + 36 + extraY, 0, 206 + extraBarY, 141, 5);
+
+            if (hungerManagerAccess.getNutritionLevel(type) > 0) {
+                context.drawTexture(RenderInit.NUTRITION_ICONS, this.x + 27, this.y + 36 + extraY, 0, 211 + extraBarY,
+                    140 * nutritionLevel / ConfigInit.CONFIG.maxNutrition, 5);
+            }
+            context.drawText(this.textRenderer, Text.translatable("screen." + MOD_ID + ".nutritionValue", nutritionLevel, ConfigInit.CONFIG.maxNutrition), this.x + 127, this.y + 26 + extraY, 0x3F3F3F, false);
+
+            List<Text> tooltips = new ArrayList<>();
+            if (isPointWithinBounds(27, 36 + extraY, 31, 5, mouseX, mouseY)) {
+                type.negativeEffects().forEach(effect -> tooltips.add(effect.getEffectType().value().getName()));
+                type.negativeAttributeModifiers().forEach((attribute, modifier) -> tooltips.add(Text.translatable(Registries.ATTRIBUTE.get(attribute).getTranslationKey())));
+            }
+            else if (isPointWithinBounds(137, 36 + extraY, 31, 5, mouseX, mouseY)) {
+                type.positiveEffects().forEach(effect -> tooltips.add(effect.getEffectType().value().getName()));
+                type.positiveAttributeModifiers().forEach((attribute, modifier) -> tooltips.add(Text.translatable(Registries.ATTRIBUTE.get(attribute).getTranslationKey())));
+            }
+            if (!tooltips.isEmpty()) {
+                context.drawTooltip(textRenderer, tooltips, mouseX, mouseY);
             }
             extraY += 23;
             extraBarY += 10;

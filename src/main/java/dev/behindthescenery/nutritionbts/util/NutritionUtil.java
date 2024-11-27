@@ -1,42 +1,37 @@
 package dev.behindthescenery.nutritionbts.util;
 
-import dev.behindthescenery.nutritionbts.NutritionMain;
-import net.minecraft.client.MinecraftClient;
-import net.minecraft.client.util.InputUtil;
+import dev.behindthescenery.nutritionbts.data.ItemLevelsLoader;
+import dev.behindthescenery.nutritionbts.nutrition.NutritionType;
+import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.item.ItemStack;
 import net.minecraft.screen.ScreenTexts;
 import net.minecraft.text.Text;
 import net.minecraft.util.Formatting;
+import net.minecraft.util.Identifier;
 
 import java.util.List;
+import java.util.Map;
 
 import static dev.behindthescenery.nutritionbts.NutritionMain.MOD_ID;
 
 public class NutritionUtil {
-    private static final List<String> NUTRITION_TOOLTIPS = List.of(
-        "item." + MOD_ID + ".carbohydrates",
-        "item." + MOD_ID + ".protein",
-        "item." + MOD_ID + ".fat",
-        "item." + MOD_ID + ".vitamins",
-        "item." + MOD_ID + ".minerals"
-    );
-
     public static void addNutritionToolTip(ItemStack stack, List<Text> list) {
-        if (InputUtil.isKeyPressed(MinecraftClient.getInstance().getWindow().getHandle(), 340) && NutritionMain.NUTRITION_ITEM_MAP.containsKey(stack.getItem())) {
-            List<Integer> nutritionList = NutritionMain.NUTRITION_ITEM_MAP.get(stack.getItem());
-
-            boolean hasNutritions = false;
-            for (int i = 0; i < nutritionList.size(); i++) {
-                if (nutritionList.get(i) > 0) {
-                    if (!hasNutritions) {
-                        list.add(ScreenTexts.EMPTY);
-                        list.add(Text.translatable("item." + MOD_ID + ".nutrients"));
+        if (ItemLevelsLoader.INSTANCE.getItemLevels().containsKey(stack.getItem())) {
+            if (Screen.hasShiftDown()) {
+                Map<Identifier, Integer> nutritionMap = ItemLevelsLoader.INSTANCE.getItemLevels().get(stack.getItem());
+                list.add(ScreenTexts.EMPTY);
+                list.add(Text.translatable("item." + MOD_ID + ".nutrients"));
+                nutritionMap.forEach((k, v) -> {
+                    if (v > 0) {
+                        try {
+                            list.add(NutritionType.byId(k).tooltip().copy().append(" (" + v + ")").formatted(Formatting.GREEN));
+                        } catch (IllegalArgumentException ignore) {
+                        }
                     }
-                    list.add(Text.translatable(NUTRITION_TOOLTIPS.get(i), nutritionList.get(i)).formatted(Formatting.GREEN));
-                    hasNutritions = true;
-                }
+                });
+                return;
             }
+            list.add(Text.translatable("text." + MOD_ID + ".hold_shift").formatted(Formatting.GRAY));
         }
     }
-
 }
