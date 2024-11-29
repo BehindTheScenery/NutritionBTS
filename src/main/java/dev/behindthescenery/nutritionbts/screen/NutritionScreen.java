@@ -28,9 +28,15 @@ import static dev.behindthescenery.nutritionbts.NutritionMain.MOD_ID;
 public class NutritionScreen extends Screen {
     public static final int TEXTURE_WIDTH = 256;
     public static final int TEXTURE_HEIGHT = 256;
+    public static final int START_HEIGHT = 20;
+    public static final int BARS_GAP = 23;
+    public static final int SCREEN_WIDTH = 176;
+    public static final int BORDERS = 4;
+    public static final int BOTTOM_EXTRA = 4;
 
-    private int x;
-    private int y;
+    private boolean heightDirty = true;
+    private int screenHeight, x, y;
+
     @Nullable
     private HungerManagerAccess hungerManagerAccess = null;
 
@@ -41,9 +47,13 @@ public class NutritionScreen extends Screen {
     @Override
     protected void init() {
         super.init();
-        this.x = this.width / 2 - (176 / 2);
-        this.y = this.height / 2 - (141 / 2);
         this.hungerManagerAccess = this.client != null && this.client.player != null ? (HungerManagerAccess) this.client.player.getHungerManager() : null;
+
+        if (hungerManagerAccess == null) return;
+
+//        this.x = (this.width - SCREEN_WIDTH) / 2;
+//        this.y = (this.height - SCREEN_HEIGHT) / 2;
+        // 178 - 20 = 158
     }
 
     @SuppressWarnings("DataFlowIssue")
@@ -51,7 +61,17 @@ public class NutritionScreen extends Screen {
     public void render(DrawContext context, int mouseX, int mouseY, float delta) {
         super.render(context, mouseX, mouseY, delta);
 
-        context.drawTexture(RenderInit.NUTRITION_ICONS, this.x, this.y, 0, 0, 176, 142);
+        if (heightDirty) {
+            screenHeight = START_HEIGHT + BARS_GAP * hungerManagerAccess.getNutritionLevels().keySet().stream().filter(NutritionTypeLoader.INSTANCE.getLoaded()::contains).toList().size();
+            x = (width - SCREEN_WIDTH) / 2;
+            y = (height - screenHeight) / 2;
+            heightDirty = false;
+        }
+
+        context.drawTexture(RenderInit.NUTRITION_ICONS, x, this.y, 0, 0, SCREEN_WIDTH, BORDERS);
+        for (int i = 0; i < screenHeight - BORDERS + BOTTOM_EXTRA; i++) context.drawTexture(RenderInit.NUTRITION_ICONS, this.x, this.y + 4 + i, 0, BORDERS, SCREEN_WIDTH, 1);
+        context.drawTexture(RenderInit.NUTRITION_ICONS, x, this.y + screenHeight + BOTTOM_EXTRA, 0, 5, SCREEN_WIDTH, 4);
+
         context.drawText(this.textRenderer, this.title, this.x + 176 / 2 - this.textRenderer.getWidth(this.title) / 2, this.y + 7, 0x3F3F3F, false);
         if (hungerManagerAccess == null) return;
         int extraY = 0;
@@ -80,7 +100,7 @@ public class NutritionScreen extends Screen {
             if (!tooltips.isEmpty()) {
                 context.drawTooltip(textRenderer, tooltips, mouseX, mouseY);
             }
-            extraY += 23;
+            extraY += BARS_GAP;
         }
         if (isPointWithinBounds(5, 5, 11, 10, mouseX, mouseY)) {
             context.drawTexture(RenderInit.NUTRITION_ICONS, this.x + 5, this.y + 5, 187, 0, 11, 10);
@@ -148,4 +168,7 @@ public class NutritionScreen extends Screen {
         return (pointX -= i) >= (double) (x - 1) && pointX < (double) (x + width + 1) && (pointY -= j) >= (double) (y - 1) && pointY < (double) (y + height + 1);
     }
 
+    public void markHeightDirty() {
+        heightDirty = true;
+    }
 }
