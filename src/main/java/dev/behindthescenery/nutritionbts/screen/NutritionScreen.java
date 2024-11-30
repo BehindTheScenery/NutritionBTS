@@ -62,7 +62,7 @@ public class NutritionScreen extends Screen {
         super.render(context, mouseX, mouseY, delta);
 
         if (heightDirty) {
-            screenHeight = START_HEIGHT + BARS_GAP * hungerManagerAccess.getNutritionLevels().keySet().stream().filter(NutritionTypeLoader.INSTANCE.getLoaded()::contains).toList().size();
+            screenHeight = START_HEIGHT + BARS_GAP * NutritionTypeLoader.INSTANCE.getLoaded().size();
             x = (width - SCREEN_WIDTH) / 2;
             y = (height - screenHeight) / 2;
             heightDirty = false;

@@ -205,20 +205,20 @@
     },
     "minecraft:pufferfish": {
       "nutritionbts:carbohydrates": 0,
-      "nutritionbts:protein": 0,
+      "nutritionbts:protein": 6,
       "nutritionbts:fat": 4,
       "nutritionbts:vitamins": 0,
       "nutritionbts:minerals": 1
     },
     "minecraft:bread": {
-      "nutritionbts:carbohydrates": 19,
+      "nutritionbts:carbohydrates": 14,
       "nutritionbts:protein": 4,
       "nutritionbts:fat": 1,
       "nutritionbts:vitamins": 0,
       "nutritionbts:minerals": 1
     },
     "minecraft:cookie": {
-      "nutritionbts:carbohydrates": 2,
+      "nutritionbts:carbohydrates": 8,
       "nutritionbts:protein": 0,
       "nutritionbts:fat": 3,
       "nutritionbts:vitamins": 0,
@@ -236,14 +236,14 @@
       "nutritionbts:protein": 4,
       "nutritionbts:fat": 2,
       "nutritionbts:vitamins": 0,
-      "nutritionbts:minerals": 14
+      "nutritionbts:minerals": 4
     },
     "minecraft:spider_eye": {
       "nutritionbts:carbohydrates": 0,
       "nutritionbts:protein": 2,
       "nutritionbts:fat": 0,
       "nutritionbts:vitamins": 0,
-      "nutritionbts:minerals": 8
+      "nutritionbts:minerals": 6
     },
     "minecraft:mushroom_stew": {
       "nutritionbts:carbohydrates": 7,

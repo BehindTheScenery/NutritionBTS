@@ -1,8 +1,9 @@
 {
   "id": "nutritionbts:vitamins",
+  "column": 3,
   "tooltip": "screen.nutritionbts.vitamins",
   "icon": "minecraft:apple",
-  "color": 11711154,
+  "color": 5622796,
   "positiveAttributes": {
     "minecraft:generic.max_health": {
       "id": "nutritionbts:vitamins_positive_1",

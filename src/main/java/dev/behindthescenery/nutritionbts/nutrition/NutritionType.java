@@ -23,13 +23,14 @@ import java.util.Map;
 import java.util.Objects;
 import java.util.Optional;
 
-public record NutritionType(Identifier id, Optional<RegistryEntry<Item>> icon, int color,
+public record NutritionType(Identifier id, int column, Optional<RegistryEntry<Item>> icon, int color,
                             MutableText tooltip, List<StatusEffectInstance> positiveEffects,
                             List<StatusEffectInstance> negativeEffects,
                             Map<Identifier, EntityAttributeModifier> positiveAttributeModifiers,
                             Map<Identifier, EntityAttributeModifier> negativeAttributeModifiers) {
     public static final Codec<NutritionType> CODEC = RecordCodecBuilder.create(inst -> inst.group(
         Identifier.CODEC.fieldOf("id").forGetter(NutritionType::id),
+        Codecs.NONNEGATIVE_INT.optionalFieldOf("column", Integer.MAX_VALUE).forGetter(NutritionType::column),
         ItemStack.ITEM_CODEC.xmap(Optional::ofNullable, opt -> opt.orElse(null)).fieldOf("icon").forGetter(NutritionType::icon),
         Codecs.NONNEGATIVE_INT.optionalFieldOf("color", 0xFFFFFF).forGetter(NutritionType::color),
         Codec.STRING.fieldOf("tooltip").xmap(Text::translatable, text -> text.getContent() instanceof TranslatableTextContent content ? content.getKey() : text.getString()).orElse(Text.empty()).forGetter(NutritionType::tooltip),
