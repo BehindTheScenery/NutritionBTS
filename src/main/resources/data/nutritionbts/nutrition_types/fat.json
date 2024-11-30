@@ -1,8 +1,9 @@
 {
   "id": "nutritionbts:fat",
+  "column": 2,
   "tooltip": "screen.nutritionbts.fat",
   "icon": "minecraft:porkchop",
-  "color": 15897100,
+  "color": 15917082,
   "positiveAttributes": {
     "minecraft:generic.armor": {
       "id": "nutritionbts:fat_positive_1",

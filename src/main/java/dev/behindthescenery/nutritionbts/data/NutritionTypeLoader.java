@@ -10,6 +10,7 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Unmodifiable;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 
 public class NutritionTypeLoader extends FileLoader {
@@ -33,12 +34,14 @@ public class NutritionTypeLoader extends FileLoader {
 
     @Override
     protected void resolveFile(@NotNull JsonElement element) {
-        
-
-
         DataResult<NutritionType> res = NutritionType.CODEC.parse(JsonOps.INSTANCE, element).ifError(NutritionMain.LOGGER::error);
         if (res.isError()) return;
 
         loaded.add(res.getOrThrow());
+    }
+
+    @Override
+    protected void postInit() {
+        loaded.sort(Comparator.comparingInt(NutritionType::column));
     }
 }

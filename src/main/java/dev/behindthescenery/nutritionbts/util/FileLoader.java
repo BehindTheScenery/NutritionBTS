@@ -41,9 +41,13 @@ public abstract class FileLoader {
             }
 
         }
+
+        postInit();
     }
 
     protected abstract void resolveFile(@NotNull JsonElement element);
 
     protected abstract void preInit();
+
+    protected void postInit() {}
 }

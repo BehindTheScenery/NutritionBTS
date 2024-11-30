@@ -48,12 +48,6 @@ public class NutritionScreen extends Screen {
     protected void init() {
         super.init();
         this.hungerManagerAccess = this.client != null && this.client.player != null ? (HungerManagerAccess) this.client.player.getHungerManager() : null;
-
-        if (hungerManagerAccess == null) return;
-
-//        this.x = (this.width - SCREEN_WIDTH) / 2;
-//        this.y = (this.height - SCREEN_HEIGHT) / 2;
-        // 178 - 20 = 158
     }
 
     @SuppressWarnings("DataFlowIssue")
@@ -62,7 +56,7 @@ public class NutritionScreen extends Screen {
         super.render(context, mouseX, mouseY, delta);
 
         if (heightDirty) {
-            screenHeight = START_HEIGHT + BARS_GAP * hungerManagerAccess.getNutritionLevels().keySet().stream().filter(NutritionTypeLoader.INSTANCE.getLoaded()::contains).toList().size();
+            screenHeight = START_HEIGHT + BARS_GAP * NutritionTypeLoader.INSTANCE.getLoaded().size();
             x = (width - SCREEN_WIDTH) / 2;
             y = (height - screenHeight) / 2;
             heightDirty = false;
