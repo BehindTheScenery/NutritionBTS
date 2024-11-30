@@ -1,0 +1,515 @@
+{
+  "values": {
+    "farmersdelight:cabbage": {
+      "nutritionbts:carbohydrates": 3,
+      "nutritionbts:protein": 0,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 5,
+      "nutritionbts:minerals": 2
+    },
+    "farmersdelight:tomato": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 0,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 4,
+      "nutritionbts:minerals": 1
+    },
+    "farmersdelight:onion": {
+      "nutritionbts:carbohydrates": 5,
+      "nutritionbts:protein": 1,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 2,
+      "nutritionbts:minerals": 2
+    },
+    "farmersdelight:fried_egg": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 7,
+      "nutritionbts:fat": 13,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 0
+    },
+    "farmersdelight:tomato_sauce": {
+      "nutritionbts:carbohydrates": 6,
+      "nutritionbts:protein": 0,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 12,
+      "nutritionbts:minerals": 2
+    },
+    "farmersdelight:wheat_dough": {
+      "nutritionbts:carbohydrates": 8,
+      "nutritionbts:protein": 2,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 0
+    },
+    "farmersdelight:raw_pasta": {
+      "nutritionbts:carbohydrates": 8,
+      "nutritionbts:protein": 2,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 0
+    },
+    "farmersdelight:pumpkin_slice": {
+      "nutritionbts:carbohydrates": 8,
+      "nutritionbts:protein": 4,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 1,
+      "nutritionbts:minerals": 2
+    },
+    "farmersdelight:cabbage_leaf": {
+      "nutritionbts:carbohydrates": 1,
+      "nutritionbts:protein": 0,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 3,
+      "nutritionbts:minerals": 1
+    },
+    "farmersdelight:minced_beef": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 4,
+      "nutritionbts:fat": 6,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 0
+    },
+    "farmersdelight:beef_patty": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 12,
+      "nutritionbts:fat": 8,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 0
+    },
+    "farmersdelight:chicken_cuts": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 4,
+      "nutritionbts:fat": 1,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 0
+    },
+    "farmersdelight:cooked_chicken_cuts": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 13,
+      "nutritionbts:fat": 2,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 0
+    },
+    "farmersdelight:bacon": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 3,
+      "nutritionbts:fat": 7,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 0
+    },
+    "farmersdelight:cooked_bacon": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 6,
+      "nutritionbts:fat": 14,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 0
+    },
+    "farmersdelight:cod_slice": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 3,
+      "nutritionbts:fat": 1,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 1
+    },
+    "farmersdelight:cooked_cod_slice": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 9,
+      "nutritionbts:fat": 3,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 3
+    },
+    "farmersdelight:salmon_slice": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 2,
+      "nutritionbts:fat": 2,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 1
+    },
+    "farmersdelight:cooked_salmon_slice": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 6,
+      "nutritionbts:fat": 6,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 3
+    },
+    "farmersdelight:mutton_chops": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 3,
+      "nutritionbts:fat": 2,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 0
+    },
+    "farmersdelight:cooked_mutton_chops": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 9,
+      "nutritionbts:fat": 6,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 0
+    },
+    "farmersdelight:ham": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 10,
+      "nutritionbts:fat": 15,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 0
+    },
+    "farmersdelight:smoked_ham": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 20,
+      "nutritionbts:fat": 30,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 0
+    },
+    "farmersdelight:pie_crust": {
+      "nutritionbts:carbohydrates": 6,
+      "nutritionbts:protein": 2,
+      "nutritionbts:fat": 1,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 1
+    },
+    "farmersdelight:cake_slice": {
+      "nutritionbts:carbohydrates": 4,
+      "nutritionbts:protein": 2,
+      "nutritionbts:fat": 4,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 0
+    },
+    "farmersdelight:apple_pie_slice": {
+      "nutritionbts:carbohydrates": 4,
+      "nutritionbts:protein": 2,
+      "nutritionbts:fat": 4,
+      "nutritionbts:vitamins": 4,
+      "nutritionbts:minerals": 1
+    },
+    "farmersdelight:sweet_berry_cheesecake_slice": {
+      "nutritionbts:carbohydrates": 4,
+      "nutritionbts:protein": 2,
+      "nutritionbts:fat": 4,
+      "nutritionbts:vitamins": 4,
+      "nutritionbts:minerals": 1
+    },
+    "farmersdelight:chocolate_pie_slice": {
+      "nutritionbts:carbohydrates": 6,
+      "nutritionbts:protein": 2,
+      "nutritionbts:fat": 7,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 0
+    },
+    "farmersdelight:sweet_berry_cookie": {
+      "nutritionbts:carbohydrates": 6,
+      "nutritionbts:protein": 1,
+      "nutritionbts:fat": 1,
+      "nutritionbts:vitamins": 2,
+      "nutritionbts:minerals": 0
+    },
+    "farmersdelight:honey_cookie": {
+      "nutritionbts:carbohydrates": 9,
+      "nutritionbts:protein": 0,
+      "nutritionbts:fat": 1,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 0
+    },
+    "farmersdelight:melon_popsicle": {
+      "nutritionbts:carbohydrates": 6,
+      "nutritionbts:protein": 0,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 6,
+      "nutritionbts:minerals": 3
+    },
+    "farmersdelight:glow_berry_custard": {
+      "nutritionbts:carbohydrates": 10,
+      "nutritionbts:protein": 5,
+      "nutritionbts:fat": 10,
+      "nutritionbts:vitamins": 5,
+      "nutritionbts:minerals": 5
+    },
+    "farmersdelight:fruit_salad": {
+      "nutritionbts:carbohydrates": 5,
+      "nutritionbts:protein": 0,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 20,
+      "nutritionbts:minerals": 5
+    },
+    "farmersdelight:mixed_salad": {
+      "nutritionbts:carbohydrates": 13,
+      "nutritionbts:protein": 0,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 12,
+      "nutritionbts:minerals": 5
+    },
+    "farmersdelight:nether_salad": {
+      "nutritionbts:carbohydrates": 5,
+      "nutritionbts:protein": 0,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 5,
+      "nutritionbts:minerals": 15
+    },
+    "farmersdelight:barbecue_stick": {
+      "nutritionbts:carbohydrates": 10,
+      "nutritionbts:protein": 15,
+      "nutritionbts:fat": 10,
+      "nutritionbts:vitamins": 5,
+      "nutritionbts:minerals": 0
+    },
+    "farmersdelight:egg_sandwich": {
+      "nutritionbts:carbohydrates": 16,
+      "nutritionbts:protein": 7,
+      "nutritionbts:fat": 17,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 0
+    },
+    "farmersdelight:chicken_sandwich": {
+      "nutritionbts:carbohydrates": 10,
+      "nutritionbts:protein": 20,
+      "nutritionbts:fat": 5,
+      "nutritionbts:vitamins": 15,
+      "nutritionbts:minerals": 0
+    },
+    "farmersdelight:hamburger": {
+      "nutritionbts:carbohydrates": 15,
+      "nutritionbts:protein": 15,
+      "nutritionbts:fat": 10,
+      "nutritionbts:vitamins": 15,
+      "nutritionbts:minerals": 0
+    },
+    "farmersdelight:bacon_sandwich": {
+      "nutritionbts:carbohydrates": 15,
+      "nutritionbts:protein": 10,
+      "nutritionbts:fat": 15,
+      "nutritionbts:vitamins": 10,
+      "nutritionbts:minerals": 0
+    },
+    "farmersdelight:mutton_wrap": {
+      "nutritionbts:carbohydrates": 15,
+      "nutritionbts:protein": 15,
+      "nutritionbts:fat": 10,
+      "nutritionbts:vitamins": 5,
+      "nutritionbts:minerals": 5
+    },
+    "farmersdelight:dumplings": {
+      "nutritionbts:carbohydrates": 10,
+      "nutritionbts:protein": 15,
+      "nutritionbts:fat": 5,
+      "nutritionbts:vitamins": 5,
+      "nutritionbts:minerals": 5
+    },
+    "farmersdelight:stuffed_potato": {
+      "nutritionbts:carbohydrates": 15,
+      "nutritionbts:protein": 20,
+      "nutritionbts:fat": 15,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 0
+    },
+    "farmersdelight:cabbage_rolls": {
+      "nutritionbts:carbohydrates": 10,
+      "nutritionbts:protein": 5,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 10,
+      "nutritionbts:minerals": 0
+    },
+    "farmersdelight:salmon_roll": {
+      "nutritionbts:carbohydrates": 10,
+      "nutritionbts:protein": 10,
+      "nutritionbts:fat": 10,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 5
+    },
+    "farmersdelight:cod_roll": {
+      "nutritionbts:carbohydrates": 10,
+      "nutritionbts:protein": 15,
+      "nutritionbts:fat": 5,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 5
+    },
+    "farmersdelight:kelp_roll": {
+      "nutritionbts:carbohydrates": 20,
+      "nutritionbts:protein": 5,
+      "nutritionbts:fat": 5,
+      "nutritionbts:vitamins": 10,
+      "nutritionbts:minerals": 20
+    },
+    "farmersdelight:kelp_roll_slice": {
+      "nutritionbts:carbohydrates": 10,
+      "nutritionbts:protein": 3,
+      "nutritionbts:fat": 2,
+      "nutritionbts:vitamins": 5,
+      "nutritionbts:minerals": 10
+    },
+    "farmersdelight:cooked_rice": {
+      "nutritionbts:carbohydrates": 20,
+      "nutritionbts:protein": 10,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 0
+    },
+    "farmersdelight:bone_broth": {
+      "nutritionbts:carbohydrates": 5,
+      "nutritionbts:protein": 3,
+      "nutritionbts:fat": 2,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 30
+    },
+    "farmersdelight:beef_stew": {
+      "nutritionbts:carbohydrates": 10,
+      "nutritionbts:protein": 25,
+      "nutritionbts:fat": 15,
+      "nutritionbts:vitamins": 5,
+      "nutritionbts:minerals": 5
+    },
+    "farmersdelight:chicken_soup": {
+      "nutritionbts:carbohydrates": 15,
+      "nutritionbts:protein": 35,
+      "nutritionbts:fat": 5,
+      "nutritionbts:vitamins": 10,
+      "nutritionbts:minerals": 5
+    },
+    "farmersdelight:vegetable_soup": {
+      "nutritionbts:carbohydrates": 10,
+      "nutritionbts:protein": 0,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 40,
+      "nutritionbts:minerals": 10
+    },
+    "farmersdelight:fish_stew": {
+      "nutritionbts:carbohydrates": 5,
+      "nutritionbts:protein": 30,
+      "nutritionbts:fat": 5,
+      "nutritionbts:vitamins": 15,
+      "nutritionbts:minerals": 5
+    },
+    "farmersdelight:fried_rice": {
+      "nutritionbts:carbohydrates": 20,
+      "nutritionbts:protein": 20,
+      "nutritionbts:fat": 5,
+      "nutritionbts:vitamins": 20,
+      "nutritionbts:minerals": 5
+    },
+    "farmersdelight:pumpkin_soup": {
+      "nutritionbts:carbohydrates": 10,
+      "nutritionbts:protein": 20,
+      "nutritionbts:fat": 10,
+      "nutritionbts:vitamins": 20,
+      "nutritionbts:minerals": 10
+    },
+    "farmersdelight:baked_cod_stew": {
+      "nutritionbts:carbohydrates": 20,
+      "nutritionbts:protein": 30,
+      "nutritionbts:fat": 10,
+      "nutritionbts:vitamins": 5,
+      "nutritionbts:minerals": 5
+    },
+    "farmersdelight:noodle_soup": {
+      "nutritionbts:carbohydrates": 15,
+      "nutritionbts:protein": 20,
+      "nutritionbts:fat": 20,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 15
+    },
+    "farmersdelight:bacon_and_eggs": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 20,
+      "nutritionbts:fat": 30,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 0
+    },
+    "farmersdelight:pasta_with_meatballs": {
+      "nutritionbts:carbohydrates": 20,
+      "nutritionbts:protein": 15,
+      "nutritionbts:fat": 10,
+      "nutritionbts:vitamins": 5,
+      "nutritionbts:minerals": 10
+    },
+    "farmersdelight:pasta_with_mutton_chop": {
+      "nutritionbts:carbohydrates": 20,
+      "nutritionbts:protein": 20,
+      "nutritionbts:fat": 5,
+      "nutritionbts:vitamins": 5,
+      "nutritionbts:minerals": 10
+    },
+    "farmersdelight:mushroom_rice": {
+      "nutritionbts:carbohydrates": 25,
+      "nutritionbts:protein": 0,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 10,
+      "nutritionbts:minerals": 25
+    },
+    "farmersdelight:roasted_mutton_chops": {
+      "nutritionbts:carbohydrates": 25,
+      "nutritionbts:protein": 20,
+      "nutritionbts:fat": 10,
+      "nutritionbts:vitamins": 10,
+      "nutritionbts:minerals": 5
+    },
+    "farmersdelight:vegetable_noodles": {
+      "nutritionbts:carbohydrates": 10,
+      "nutritionbts:protein": 0,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 50,
+      "nutritionbts:minerals": 10
+    },
+    "farmersdelight:steak_and_potatoes": {
+      "nutritionbts:carbohydrates": 20,
+      "nutritionbts:protein": 20,
+      "nutritionbts:fat": 10,
+      "nutritionbts:vitamins": 5,
+      "nutritionbts:minerals": 5
+    },
+    "farmersdelight:ratatouille": {
+      "nutritionbts:carbohydrates": 5,
+      "nutritionbts:protein": 0,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 40,
+      "nutritionbts:minerals": 5
+    },
+    "farmersdelight:squid_ink_pasta": {
+      "nutritionbts:carbohydrates": 20,
+      "nutritionbts:protein": 20,
+      "nutritionbts:fat": 5,
+      "nutritionbts:vitamins": 5,
+      "nutritionbts:minerals": 20
+    },
+    "farmersdelight:grilled_salmon": {
+      "nutritionbts:carbohydrates": 10,
+      "nutritionbts:protein": 25,
+      "nutritionbts:fat": 5,
+      "nutritionbts:vitamins": 20,
+      "nutritionbts:minerals": 10
+    },
+    "farmersdelight:roast_chicken": {
+      "nutritionbts:carbohydrates": 20,
+      "nutritionbts:protein": 20,
+      "nutritionbts:fat": 5,
+      "nutritionbts:vitamins": 20,
+      "nutritionbts:minerals": 5
+    },
+    "farmersdelight:stuffed_pumpkin": {
+      "nutritionbts:carbohydrates": 30,
+      "nutritionbts:protein": 0,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 30,
+      "nutritionbts:minerals": 10
+    },
+    "farmersdelight:honey_glazed_ham": {
+      "nutritionbts:carbohydrates": 10,
+      "nutritionbts:protein": 20,
+      "nutritionbts:fat": 30,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 10
+    },
+    "farmersdelight:shepherds_pie": {
+      "nutritionbts:carbohydrates": 10,
+      "nutritionbts:protein": 30,
+      "nutritionbts:fat": 10,
+      "nutritionbts:vitamins": 10,
+      "nutritionbts:minerals": 10
+    },
+    "farmersdelight:dog_food": {
+      "nutritionbts:carbohydrates": 5,
+      "nutritionbts:protein": 5,
+      "nutritionbts:fat": 3,
+      "nutritionbts:vitamins": 2,
+      "nutritionbts:minerals": 5
+    }
+  }
+}

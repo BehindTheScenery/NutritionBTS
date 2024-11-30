@@ -1,0 +1,326 @@
+{
+  "values": {
+    "farm_and_charm:corn": {
+      "nutritionbts:carbohydrates": 5,
+      "nutritionbts:protein": 0,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 3,
+      "nutritionbts:minerals": 2
+    },
+    "farm_and_charm:lettuce": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 0,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 10,
+      "nutritionbts:minerals": 5
+    },
+    "farm_and_charm:onion": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 0,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 7,
+      "nutritionbts:minerals": 3
+    },
+    "farm_and_charm:tomato": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 0,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 15,
+      "nutritionbts:minerals": 5
+    },
+    "farm_and_charm:rotten_tomato": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 0,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 10
+    },
+    "farm_and_charm:strawberry": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 0,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 5,
+      "nutritionbts:minerals": 0
+    },
+    "farm_and_charm:butter": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 5,
+      "nutritionbts:fat": 5,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 0
+    },
+    "farm_and_charm:dough": {
+      "nutritionbts:carbohydrates": 8,
+      "nutritionbts:protein": 0,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 2
+    },
+    "farm_and_charm:raw_pasta": {
+      "nutritionbts:carbohydrates": 10,
+      "nutritionbts:protein": 0,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 0
+    },
+    "farm_and_charm:minced_beef": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 10,
+      "nutritionbts:fat": 5,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 0
+    },
+    "farm_and_charm:lamb_ham": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 4,
+      "nutritionbts:fat": 6,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 0
+    },
+    "farm_and_charm:chicken_parts": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 5,
+      "nutritionbts:fat": 1,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 4
+    },
+    "farm_and_charm:bacon": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 5,
+      "nutritionbts:fat": 10,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 0
+    },
+    "farm_and_charm:farmer_salad": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 0,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 25,
+      "nutritionbts:minerals": 10
+    },
+    "farm_and_charm:oatmeal_with_strawberries": {
+      "nutritionbts:carbohydrates": 4,
+      "nutritionbts:protein": 4,
+      "nutritionbts:fat": 4,
+      "nutritionbts:vitamins": 4,
+      "nutritionbts:minerals": 4
+    },
+    "farm_and_charm:simple_tomato_soup": {
+      "nutritionbts:carbohydrates": 5,
+      "nutritionbts:protein": 0,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 20,
+      "nutritionbts:minerals": 5
+    },
+    "farm_and_charm:barley_soup": {
+      "nutritionbts:carbohydrates": 10,
+      "nutritionbts:protein": 5,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 10
+    },
+    "farm_and_charm:onion_soup": {
+      "nutritionbts:carbohydrates": 10,
+      "nutritionbts:protein": 0,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 15,
+      "nutritionbts:minerals": 10
+    },
+    "farm_and_charm:potato_soup": {
+      "nutritionbts:carbohydrates": 5,
+      "nutritionbts:protein": 0,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 10,
+      "nutritionbts:minerals": 10
+    },
+    "farm_and_charm:goulash": {
+      "nutritionbts:carbohydrates": 10,
+      "nutritionbts:protein": 10,
+      "nutritionbts:fat": 5,
+      "nutritionbts:vitamins": 10,
+      "nutritionbts:minerals": 5
+    },
+    "farm_and_charm:pasta_with_onion_sauce": {
+      "nutritionbts:carbohydrates": 10,
+      "nutritionbts:protein": 0,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 15,
+      "nutritionbts:minerals": 5
+    },
+    "farm_and_charm:corn_grits": {
+      "nutritionbts:carbohydrates": 15,
+      "nutritionbts:protein": 0,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 10,
+      "nutritionbts:minerals": 5
+    },
+    "farm_and_charm:barley_patties_with_potatoes": {
+      "nutritionbts:carbohydrates": 10,
+      "nutritionbts:protein": 5,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 5,
+      "nutritionbts:minerals": 5
+    },
+    "farm_and_charm:beef_patty_with_vegetables": {
+      "nutritionbts:carbohydrates": 5,
+      "nutritionbts:protein": 5,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 15,
+      "nutritionbts:minerals": 5
+    },
+    "farm_and_charm:sausage_with_oat_patty": {
+      "nutritionbts:carbohydrates": 10,
+      "nutritionbts:protein": 15,
+      "nutritionbts:fat": 5,
+      "nutritionbts:vitamins": 5,
+      "nutritionbts:minerals": 5
+    },
+    "farm_and_charm:roasted_chicken": {
+      "nutritionbts:carbohydrates": 10,
+      "nutritionbts:protein": 10,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 5,
+      "nutritionbts:minerals": 0
+    },
+    "farm_and_charm:roasted_corn": {
+      "nutritionbts:carbohydrates": 10,
+      "nutritionbts:protein": 5,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 5,
+      "nutritionbts:minerals": 5
+    },
+    "farm_and_charm:cooked_salmon": {
+      "nutritionbts:carbohydrates": 10,
+      "nutritionbts:protein": 10,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 10,
+      "nutritionbts:minerals": 5
+    },
+    "farm_and_charm:cooked_cod": {
+      "nutritionbts:carbohydrates": 10,
+      "nutritionbts:protein": 10,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 10,
+      "nutritionbts:minerals": 5
+    },
+    "farm_and_charm:chicken_wrapped_in_bacon": {
+      "nutritionbts:carbohydrates": 10,
+      "nutritionbts:protein": 15,
+      "nutritionbts:fat": 15,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 5
+    },
+    "farm_and_charm:lamb_with_corn": {
+      "nutritionbts:carbohydrates": 10,
+      "nutritionbts:protein": 5,
+      "nutritionbts:fat": 10,
+      "nutritionbts:vitamins": 10,
+      "nutritionbts:minerals": 5
+    },
+    "farm_and_charm:bacon_with_eggs": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 15,
+      "nutritionbts:fat": 15,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 0
+    },
+    "farm_and_charm:oat_pancake": {
+      "nutritionbts:carbohydrates": 10,
+      "nutritionbts:protein": 10,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 5,
+      "nutritionbts:minerals": 0
+    },
+    "farm_and_charm:farmers_breakfast": {
+      "nutritionbts:carbohydrates": 20,
+      "nutritionbts:protein": 20,
+      "nutritionbts:fat": 10,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 10
+    },
+    "farm_and_charm:baked_lamb_ham": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 10,
+      "nutritionbts:fat": 10,
+      "nutritionbts:vitamins": 10,
+      "nutritionbts:minerals": 10
+    },
+    "farm_and_charm:potato_with_roast_meat": {
+      "nutritionbts:carbohydrates": 10,
+      "nutritionbts:protein": 10,
+      "nutritionbts:fat": 5,
+      "nutritionbts:vitamins": 5,
+      "nutritionbts:minerals": 5
+    },
+    "farm_and_charm:stuffed_chicken": {
+      "nutritionbts:carbohydrates": 5,
+      "nutritionbts:protein": 10,
+      "nutritionbts:fat": 5,
+      "nutritionbts:vitamins": 15,
+      "nutritionbts:minerals": 5
+    },
+    "farm_and_charm:stuffed_rabbit": {
+      "nutritionbts:carbohydrates": 5,
+      "nutritionbts:protein": 15,
+      "nutritionbts:fat": 5,
+      "nutritionbts:vitamins": 15,
+      "nutritionbts:minerals": 5
+    },
+    "farm_and_charm:farmers_bread": {
+      "nutritionbts:carbohydrates": 20,
+      "nutritionbts:protein": 5,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 5
+    },
+    "farm_and_charm:grandmothers_strawberry_cake": {
+      "nutritionbts:carbohydrates": 5,
+      "nutritionbts:protein": 0,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 5,
+      "nutritionbts:minerals": 10
+    },
+    "farm_and_charm:strawberry_tea": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 0,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 3,
+      "nutritionbts:minerals": 2
+    },
+    "farm_and_charm:nettle_tea": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 0,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 4,
+      "nutritionbts:minerals": 1
+    },
+    "farm_and_charm:ribwort_tea": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 0,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 2,
+      "nutritionbts:minerals": 3
+    },
+    "farm_and_charm:strawberry_tea_cup": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 0,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 3,
+      "nutritionbts:minerals": 2
+    },
+    "farm_and_charm:nettle_tea_cup": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 0,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 4,
+      "nutritionbts:minerals": 1
+    },
+    "farm_and_charm:ribwort_tea_cup": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 0,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 2,
+      "nutritionbts:minerals": 3
+    }
+  }
+}

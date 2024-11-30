@@ -1,0 +1,2069 @@
+{
+    "values": {
+        "croptopia:artichoke": {
+        "nutritionbts:carbohydrates": 0,
+        "nutritionbts:protein": 0,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 5,
+        "nutritionbts:minerals": 0
+    },
+    "croptopia:asparagus": {
+        "nutritionbts:carbohydrates": 0,
+        "nutritionbts:protein": 0,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 5,
+        "nutritionbts:minerals": 0
+    },
+    "croptopia:barley": {
+        "nutritionbts:carbohydrates": 5,
+        "nutritionbts:protein": 0,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 0,
+        "nutritionbts:minerals": 0
+    },
+    "croptopia:basil": {
+        "nutritionbts:carbohydrates": 0,
+        "nutritionbts:protein": 0,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 5,
+        "nutritionbts:minerals": 0
+    },
+    "croptopia:bellpepper": {
+        "nutritionbts:carbohydrates": 0,
+        "nutritionbts:protein": 0,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 5,
+        "nutritionbts:minerals": 0
+    },
+    "croptopia:blackbean": {
+        "nutritionbts:carbohydrates": 1,
+        "nutritionbts:protein": 3,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 0,
+        "nutritionbts:minerals": 1
+    },
+    "croptopia:blackberry": {
+        "nutritionbts:carbohydrates": 0,
+        "nutritionbts:protein": 0,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 5,
+        "nutritionbts:minerals": 0
+    },
+    "croptopia:blueberry": {
+        "nutritionbts:carbohydrates": 0,
+        "nutritionbts:protein": 0,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 5,
+        "nutritionbts:minerals": 0
+    },
+    "croptopia:broccoli": {
+        "nutritionbts:carbohydrates": 0,
+        "nutritionbts:protein": 0,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 5,
+        "nutritionbts:minerals": 0
+    },
+    "croptopia:cabbage": {
+        "nutritionbts:carbohydrates": 0,
+        "nutritionbts:protein": 0,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 4,
+        "nutritionbts:minerals": 1
+    },
+    "croptopia:cantaloupe": {
+        "nutritionbts:carbohydrates": 0,
+        "nutritionbts:protein": 0,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 5,
+        "nutritionbts:minerals": 0
+    },
+    "croptopia:cauliflower": {
+        "nutritionbts:carbohydrates": 0,
+        "nutritionbts:protein": 0,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 5,
+        "nutritionbts:minerals": 0
+    },
+    "croptopia:celery": {
+        "nutritionbts:carbohydrates": 0,
+        "nutritionbts:protein": 0,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 5,
+        "nutritionbts:minerals": 0
+    },
+    "croptopia:chile_pepper": {
+        "nutritionbts:carbohydrates": 0,
+        "nutritionbts:protein": 0,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 2,
+        "nutritionbts:minerals": 3
+    },
+    "croptopia:coffee_beans": {
+        "nutritionbts:carbohydrates": 2,
+        "nutritionbts:protein": 0,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 0,
+        "nutritionbts:minerals": 3
+    },
+    "croptopia:corn": {
+        "nutritionbts:carbohydrates": 5,
+        "nutritionbts:protein": 0,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 0,
+        "nutritionbts:minerals": 0
+    },
+    "croptopia:cranberry": {
+        "nutritionbts:carbohydrates": 1,
+        "nutritionbts:protein": 0,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 2,
+        "nutritionbts:minerals": 2
+    },
+    "croptopia:cucumber": {
+        "nutritionbts:carbohydrates": 0,
+        "nutritionbts:protein": 0,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 5,
+        "nutritionbts:minerals": 0
+    },
+    "croptopia:currant": {
+        "nutritionbts:carbohydrates": 5,
+        "nutritionbts:protein": 0,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 0,
+        "nutritionbts:minerals": 0
+    },
+    "croptopia:eggplant": {
+        "nutritionbts:carbohydrates": 0,
+        "nutritionbts:protein": 0,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 5,
+        "nutritionbts:minerals": 0
+    },
+    "croptopia:elderberry": {
+        "nutritionbts:carbohydrates": 0,
+        "nutritionbts:protein": 0,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 5,
+        "nutritionbts:minerals": 0
+    },
+    "croptopia:garlic": {
+        "nutritionbts:carbohydrates": 0,
+        "nutritionbts:protein": 0,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 5,
+        "nutritionbts:minerals": 0
+    },
+    "croptopia:grape": {
+        "nutritionbts:carbohydrates": 0,
+        "nutritionbts:protein": 0,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 5,
+        "nutritionbts:minerals": 0
+    },
+    "croptopia:greenbean": {
+        "nutritionbts:carbohydrates": 0,
+        "nutritionbts:protein": 2,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 3,
+        "nutritionbts:minerals": 0
+    },
+    "croptopia:greenonion": {
+        "nutritionbts:carbohydrates": 0,
+        "nutritionbts:protein": 0,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 3,
+        "nutritionbts:minerals": 2
+    },
+    "croptopia:honeydew": {
+        "nutritionbts:carbohydrates": 0,
+        "nutritionbts:protein": 0,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 3,
+        "nutritionbts:minerals": 2
+    },
+    "croptopia:kale": {
+        "nutritionbts:carbohydrates": 0,
+        "nutritionbts:protein": 0,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 5,
+        "nutritionbts:minerals": 0
+    },
+    "croptopia:kiwi": {
+        "nutritionbts:carbohydrates": 0,
+        "nutritionbts:protein": 0,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 5,
+        "nutritionbts:minerals": 0
+    },
+    "croptopia:leek": {
+        "nutritionbts:carbohydrates": 0,
+        "nutritionbts:protein": 0,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 5,
+        "nutritionbts:minerals": 0
+    },
+    "croptopia:lettuce": {
+        "nutritionbts:carbohydrates": 0,
+        "nutritionbts:protein": 0,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 5,
+        "nutritionbts:minerals": 0
+    },
+    "croptopia:oat": {
+        "nutritionbts:carbohydrates": 4,
+        "nutritionbts:protein": 0,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 1,
+        "nutritionbts:minerals": 0
+    },
+    "croptopia:olive": {
+        "nutritionbts:carbohydrates": 0,
+        "nutritionbts:protein": 0,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 1,
+        "nutritionbts:minerals": 4
+    },
+    "croptopia:onion": {
+        "nutritionbts:carbohydrates": 0,
+        "nutritionbts:protein": 0,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 5,
+        "nutritionbts:minerals": 0
+    },
+    "croptopia:peanut": {
+        "nutritionbts:carbohydrates": 2,
+        "nutritionbts:protein": 0,
+        "nutritionbts:fat": 3,
+        "nutritionbts:vitamins": 0,
+        "nutritionbts:minerals": 0
+    },
+    "croptopia:pineapple": {
+        "nutritionbts:carbohydrates": 2,
+        "nutritionbts:protein": 0,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 2,
+        "nutritionbts:minerals": 1
+    },
+    "croptopia:radish": {
+        "nutritionbts:carbohydrates": 0,
+        "nutritionbts:protein": 0,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 5,
+        "nutritionbts:minerals": 0
+    },
+    "croptopia:raspberry": {
+        "nutritionbts:carbohydrates": 0,
+        "nutritionbts:protein": 0,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 5,
+        "nutritionbts:minerals": 0
+    },
+    "croptopia:rhubarb": {
+        "nutritionbts:carbohydrates": 0,
+        "nutritionbts:protein": 0,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 5,
+        "nutritionbts:minerals": 0
+    },
+    "croptopia:rice": {
+        "nutritionbts:carbohydrates": 2,
+        "nutritionbts:protein": 2,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 0,
+        "nutritionbts:minerals": 1
+    },
+    "croptopia:rutabaga": {
+        "nutritionbts:carbohydrates": 0,
+        "nutritionbts:protein": 0,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 5,
+        "nutritionbts:minerals": 0
+    },
+    "croptopia:saguaro": {
+        "nutritionbts:carbohydrates": 0,
+        "nutritionbts:protein": 0,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 5,
+        "nutritionbts:minerals": 0
+    },
+    "croptopia:soybean": {
+        "nutritionbts:carbohydrates": 0,
+        "nutritionbts:protein": 4,
+        "nutritionbts:fat": 1,
+        "nutritionbts:vitamins": 0,
+        "nutritionbts:minerals": 0
+    },
+    "croptopia:spinach": {
+        "nutritionbts:carbohydrates": 0,
+        "nutritionbts:protein": 0,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 5,
+        "nutritionbts:minerals": 0
+    },
+    "croptopia:squash": {
+        "nutritionbts:carbohydrates": 0,
+        "nutritionbts:protein": 0,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 5,
+        "nutritionbts:minerals": 0
+    },
+    "croptopia:strawberry": {
+        "nutritionbts:carbohydrates": 0,
+        "nutritionbts:protein": 0,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 5,
+        "nutritionbts:minerals": 0
+    },
+    "croptopia:sweetpotato": {
+        "nutritionbts:carbohydrates": 0,
+        "nutritionbts:protein": 0,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 5,
+        "nutritionbts:minerals": 0
+    },
+    "croptopia:tomatillo": {
+        "nutritionbts:carbohydrates": 0,
+        "nutritionbts:protein": 0,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 5,
+        "nutritionbts:minerals": 0
+    },
+    "croptopia:tomato": {
+        "nutritionbts:carbohydrates": 0,
+        "nutritionbts:protein": 0,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 5,
+        "nutritionbts:minerals": 0
+    },
+    "croptopia:turnip": {
+        "nutritionbts:carbohydrates": 0,
+        "nutritionbts:protein": 0,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 5,
+        "nutritionbts:minerals": 0
+    },
+    "croptopia:yam": {
+        "nutritionbts:carbohydrates": 0,
+        "nutritionbts:protein": 0,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 5,
+        "nutritionbts:minerals": 0
+    },
+    "croptopia:zucchini": {
+        "nutritionbts:carbohydrates": 0,
+        "nutritionbts:protein": 0,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 5,
+        "nutritionbts:minerals": 0
+    },
+    "croptopia:almond": {
+        "nutritionbts:carbohydrates": 0,
+        "nutritionbts:protein": 0,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 5,
+        "nutritionbts:minerals": 0
+    },
+    "croptopia:apricot": {
+        "nutritionbts:carbohydrates": 0,
+        "nutritionbts:protein": 0,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 5,
+        "nutritionbts:minerals": 0
+    },
+    "croptopia:avocado": {
+        "nutritionbts:carbohydrates": 0,
+        "nutritionbts:protein": 0,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 5,
+        "nutritionbts:minerals": 0
+    },
+    "croptopia:banana": {
+        "nutritionbts:carbohydrates": 0,
+        "nutritionbts:protein": 0,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 5,
+        "nutritionbts:minerals": 0
+    },
+    "croptopia:cashew": {
+        "nutritionbts:carbohydrates": 1,
+        "nutritionbts:protein": 0,
+        "nutritionbts:fat": 4,
+        "nutritionbts:vitamins": 0,
+        "nutritionbts:minerals": 0
+    },
+    "croptopia:cherry": {
+        "nutritionbts:carbohydrates": 0,
+        "nutritionbts:protein": 0,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 5,
+        "nutritionbts:minerals": 0
+    },
+    "croptopia:coconut": {
+        "nutritionbts:carbohydrates": 1,
+        "nutritionbts:protein": 1,
+        "nutritionbts:fat": 1,
+        "nutritionbts:vitamins": 0,
+        "nutritionbts:minerals": 2
+    },
+    "croptopia:date": {
+        "nutritionbts:carbohydrates": 0,
+        "nutritionbts:protein": 0,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 5,
+        "nutritionbts:minerals": 0
+    },
+    "croptopia:dragonfruit": {
+        "nutritionbts:carbohydrates": 0,
+        "nutritionbts:protein": 0,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 5,
+        "nutritionbts:minerals": 0
+    },
+    "croptopia:fig": {
+        "nutritionbts:carbohydrates": 0,
+        "nutritionbts:protein": 0,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 5,
+        "nutritionbts:minerals": 0
+    },
+    "croptopia:grapefruit": {
+        "nutritionbts:carbohydrates": 0,
+        "nutritionbts:protein": 0,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 5,
+        "nutritionbts:minerals": 0
+    },
+    "croptopia:kumquat": {
+        "nutritionbts:carbohydrates": 0,
+        "nutritionbts:protein": 0,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 5,
+        "nutritionbts:minerals": 0
+    },
+    "croptopia:lemon": {
+        "nutritionbts:carbohydrates": 0,
+        "nutritionbts:protein": 0,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 4,
+        "nutritionbts:minerals": 1
+    },
+    "croptopia:lime": {
+        "nutritionbts:carbohydrates": 0,
+        "nutritionbts:protein": 0,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 4,
+        "nutritionbts:minerals": 1
+    },
+    "croptopia:mango": {
+        "nutritionbts:carbohydrates": 0,
+        "nutritionbts:protein": 0,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 5,
+        "nutritionbts:minerals": 0
+    },
+    "croptopia:nectarine": {
+        "nutritionbts:carbohydrates": 0,
+        "nutritionbts:protein": 0,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 5,
+        "nutritionbts:minerals": 0
+    },
+    "croptopia:nutmeg": {
+        "nutritionbts:carbohydrates": 3,
+        "nutritionbts:protein": 0,
+        "nutritionbts:fat": 2,
+        "nutritionbts:vitamins": 0,
+        "nutritionbts:minerals": 0
+    },
+    "croptopia:orange": {
+        "nutritionbts:carbohydrates": 0,
+        "nutritionbts:protein": 0,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 5,
+        "nutritionbts:minerals": 0
+    },
+    "croptopia:peach": {
+        "nutritionbts:carbohydrates": 0,
+        "nutritionbts:protein": 0,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 5,
+        "nutritionbts:minerals": 0
+    },
+    "croptopia:pear": {
+        "nutritionbts:carbohydrates": 0,
+        "nutritionbts:protein": 0,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 5,
+        "nutritionbts:minerals": 0
+    },
+    "croptopia:pecan": {
+        "nutritionbts:carbohydrates": 3,
+        "nutritionbts:protein": 0,
+        "nutritionbts:fat": 2,
+        "nutritionbts:vitamins": 0,
+        "nutritionbts:minerals": 0
+    },
+    "croptopia:persimmon": {
+        "nutritionbts:carbohydrates": 0,
+        "nutritionbts:protein": 0,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 5,
+        "nutritionbts:minerals": 0
+    },
+    "croptopia:plum": {
+        "nutritionbts:carbohydrates": 0,
+        "nutritionbts:protein": 0,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 5,
+        "nutritionbts:minerals": 0
+    },
+    "croptopia:starfruit": {
+        "nutritionbts:carbohydrates": 0,
+        "nutritionbts:protein": 0,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 5,
+        "nutritionbts:minerals": 0
+    },
+    "croptopia:walnut": {
+        "nutritionbts:carbohydrates": 3,
+        "nutritionbts:protein": 0,
+        "nutritionbts:fat": 1,
+        "nutritionbts:vitamins": 0,
+        "nutritionbts:minerals": 1
+    },
+    "croptopia:anchovy": {
+        "nutritionbts:carbohydrates": 0,
+        "nutritionbts:protein": 2,
+        "nutritionbts:fat": 3,
+        "nutritionbts:vitamins": 0,
+        "nutritionbts:minerals": 0
+    },
+    "croptopia:calamari": {
+        "nutritionbts:carbohydrates": 0,
+        "nutritionbts:protein": 3,
+        "nutritionbts:fat": 2,
+        "nutritionbts:vitamins": 0,
+        "nutritionbts:minerals": 0
+    },
+    "croptopia:clam": {
+        "nutritionbts:carbohydrates": 0,
+        "nutritionbts:protein": 1,
+        "nutritionbts:fat": 4,
+        "nutritionbts:vitamins": 0,
+        "nutritionbts:minerals": 0
+    },
+    "croptopia:crab": {
+        "nutritionbts:carbohydrates": 0,
+        "nutritionbts:protein": 4,
+        "nutritionbts:fat": 1,
+        "nutritionbts:vitamins": 0,
+        "nutritionbts:minerals": 0
+    },
+    "croptopia:glowing_calamari": {
+        "nutritionbts:carbohydrates": 0,
+        "nutritionbts:protein": 2,
+        "nutritionbts:fat": 2,
+        "nutritionbts:vitamins": 0,
+        "nutritionbts:minerals": 1
+    },
+    "croptopia:oyster": {
+        "nutritionbts:carbohydrates": 0,
+        "nutritionbts:protein": 1,
+        "nutritionbts:fat": 2,
+        "nutritionbts:vitamins": 0,
+        "nutritionbts:minerals": 2
+    },
+    "croptopia:roe": {
+        "nutritionbts:carbohydrates": 0,
+        "nutritionbts:protein": 2,
+        "nutritionbts:fat": 2,
+        "nutritionbts:vitamins": 0,
+        "nutritionbts:minerals": 1
+    },
+    "croptopia:shrimp": {
+        "nutritionbts:carbohydrates": 0,
+        "nutritionbts:protein": 3,
+        "nutritionbts:fat": 2,
+        "nutritionbts:vitamins": 0,
+        "nutritionbts:minerals": 0
+    },
+    "croptopia:tuna": {
+        "nutritionbts:carbohydrates": 0,
+        "nutritionbts:protein": 3,
+        "nutritionbts:fat": 2,
+        "nutritionbts:vitamins": 0,
+        "nutritionbts:minerals": 0
+    },
+    "croptopia:baked_beans": {
+        "nutritionbts:carbohydrates": 5,
+        "nutritionbts:protein": 10,
+        "nutritionbts:fat": 5,
+        "nutritionbts:vitamins": 0,
+        "nutritionbts:minerals": 5
+    },
+    "croptopia:baked_sweet_potato": {
+        "nutritionbts:carbohydrates": 10,
+        "nutritionbts:protein": 0,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 10,
+        "nutritionbts:minerals": 5
+    },
+    "croptopia:baked_yam": {
+        "nutritionbts:carbohydrates": 5,
+        "nutritionbts:protein": 0,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 10,
+        "nutritionbts:minerals": 10
+    },
+    "croptopia:cooked_anchovy": {
+        "nutritionbts:carbohydrates": 0,
+        "nutritionbts:protein": 5,
+        "nutritionbts:fat": 15,
+        "nutritionbts:vitamins": 0,
+        "nutritionbts:minerals": 0
+    },
+    "croptopia:cooked_bacon": {
+        "nutritionbts:carbohydrates": 0,
+        "nutritionbts:protein": 10,
+        "nutritionbts:fat": 25,
+        "nutritionbts:vitamins": 0,
+        "nutritionbts:minerals": 0
+    },
+    "croptopia:cooked_calamari": {
+        "nutritionbts:carbohydrates": 0,
+        "nutritionbts:protein": 15,
+        "nutritionbts:fat": 10,
+        "nutritionbts:vitamins": 0,
+        "nutritionbts:minerals": 0
+    },
+    "croptopia:cooked_shrimp": {
+        "nutritionbts:carbohydrates": 0,
+        "nutritionbts:protein": 15,
+        "nutritionbts:fat": 5,
+        "nutritionbts:vitamins": 0,
+        "nutritionbts:minerals": 5
+    },
+    "croptopia:cooked_tuna": {
+        "nutritionbts:carbohydrates": 0,
+        "nutritionbts:protein": 20,
+        "nutritionbts:fat": 10,
+        "nutritionbts:vitamins": 0,
+        "nutritionbts:minerals": 0
+    },
+    "croptopia:popcorn": {
+        "nutritionbts:carbohydrates": 10,
+        "nutritionbts:protein": 0,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 0,
+        "nutritionbts:minerals": 5
+    },
+    "croptopia:raisins": {
+        "nutritionbts:carbohydrates": 5,
+        "nutritionbts:protein": 0,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 5,
+        "nutritionbts:minerals": 5
+    },
+    "croptopia:toast": {
+        "nutritionbts:carbohydrates": 20,
+        "nutritionbts:protein": 5,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 0,
+        "nutritionbts:minerals": 10
+    },
+    "croptopia:apple_juice": {
+        "nutritionbts:carbohydrates": 5,
+        "nutritionbts:protein": 0,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 15,
+        "nutritionbts:minerals": 5
+    },
+    "croptopia:cranberry_juice": {
+        "nutritionbts:carbohydrates": 5,
+        "nutritionbts:protein": 0,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 15,
+        "nutritionbts:minerals": 5
+    },
+    "croptopia:grape_juice": {
+        "nutritionbts:carbohydrates": 5,
+        "nutritionbts:protein": 0,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 15,
+        "nutritionbts:minerals": 5
+    },
+    "croptopia:melon_juice": {
+        "nutritionbts:carbohydrates": 5,
+        "nutritionbts:protein": 0,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 15,
+        "nutritionbts:minerals": 5
+    },
+    "croptopia:orange_juice": {
+        "nutritionbts:carbohydrates": 5,
+        "nutritionbts:protein": 0,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 15,
+        "nutritionbts:minerals": 5
+    },
+    "croptopia:pineapple_juice": {
+        "nutritionbts:carbohydrates": 5,
+        "nutritionbts:protein": 0,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 15,
+        "nutritionbts:minerals": 5
+    },
+    "croptopia:saguaro_juice": {
+        "nutritionbts:carbohydrates": 5,
+        "nutritionbts:protein": 0,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 15,
+        "nutritionbts:minerals": 5
+    },
+    "croptopia:tomato_juice": {
+        "nutritionbts:carbohydrates": 0,
+        "nutritionbts:protein": 0,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 20,
+        "nutritionbts:minerals": 5
+    },
+    "croptopia:apricot_jam": {
+        "nutritionbts:carbohydrates": 5,
+        "nutritionbts:protein": 0,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 10,
+        "nutritionbts:minerals": 0
+    },
+    "croptopia:blackberry_jam": {
+        "nutritionbts:carbohydrates": 5,
+        "nutritionbts:protein": 0,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 10,
+        "nutritionbts:minerals": 0
+    },
+    "croptopia:blueberry_jam": {
+        "nutritionbts:carbohydrates": 5,
+        "nutritionbts:protein": 0,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 10,
+        "nutritionbts:minerals": 0
+    },
+    "croptopia:cherry_jam": {
+        "nutritionbts:carbohydrates": 5,
+        "nutritionbts:protein": 0,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 10,
+        "nutritionbts:minerals": 0
+    },
+    "croptopia:elderberry_jam": {
+        "nutritionbts:carbohydrates": 5,
+        "nutritionbts:protein": 0,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 10,
+        "nutritionbts:minerals": 0
+    },
+    "croptopia:grape_jam": {
+        "nutritionbts:carbohydrates": 5,
+        "nutritionbts:protein": 0,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 10,
+        "nutritionbts:minerals": 0
+    },
+    "croptopia:peach_jam": {
+        "nutritionbts:carbohydrates": 5,
+        "nutritionbts:protein": 0,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 10,
+        "nutritionbts:minerals": 0
+    },
+    "croptopia:raspberry_jam": {
+        "nutritionbts:carbohydrates": 5,
+        "nutritionbts:protein": 0,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 10,
+        "nutritionbts:minerals": 0
+    },
+    "croptopia:strawberry_jam": {
+        "nutritionbts:carbohydrates": 5,
+        "nutritionbts:protein": 0,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 10,
+        "nutritionbts:minerals": 0
+    },
+    "croptopia:banana_smoothie": {
+        "nutritionbts:carbohydrates": 0,
+        "nutritionbts:protein": 5,
+        "nutritionbts:fat": 5,
+        "nutritionbts:vitamins": 10,
+        "nutritionbts:minerals": 5
+    },
+    "croptopia:strawberry_smoothie": {
+        "nutritionbts:carbohydrates": 0,
+        "nutritionbts:protein": 5,
+        "nutritionbts:fat": 5,
+        "nutritionbts:vitamins": 10,
+        "nutritionbts:minerals": 5
+    },
+    "croptopia:mango_ice_cream": {
+        "nutritionbts:carbohydrates": 0,
+        "nutritionbts:protein": 10,
+        "nutritionbts:fat": 5,
+        "nutritionbts:vitamins": 15,
+        "nutritionbts:minerals": 5
+    },
+    "croptopia:pecan_ice_cream": {
+        "nutritionbts:carbohydrates": 10,
+        "nutritionbts:protein": 10,
+        "nutritionbts:fat": 5,
+        "nutritionbts:vitamins": 5,
+        "nutritionbts:minerals": 5
+    },
+    "croptopia:strawberry_ice_cream": {
+        "nutritionbts:carbohydrates": 0,
+        "nutritionbts:protein": 10,
+        "nutritionbts:fat": 5,
+        "nutritionbts:vitamins": 15,
+        "nutritionbts:minerals": 5
+    },
+    "croptopia:vanilla_ice_cream": {
+        "nutritionbts:carbohydrates": 0,
+        "nutritionbts:protein": 10,
+        "nutritionbts:fat": 5,
+        "nutritionbts:vitamins": 5,
+        "nutritionbts:minerals": 15
+    },
+    "croptopia:apple_pie": {
+        "nutritionbts:carbohydrates": 5,
+        "nutritionbts:protein": 10,
+        "nutritionbts:fat": 15,
+        "nutritionbts:vitamins": 15,
+        "nutritionbts:minerals": 5
+    },
+    "croptopia:cherry_pie": {
+        "nutritionbts:carbohydrates": 5,
+        "nutritionbts:protein": 10,
+        "nutritionbts:fat": 15,
+        "nutritionbts:vitamins": 15,
+        "nutritionbts:minerals": 5
+    },
+    "croptopia:pecan_pie": {
+        "nutritionbts:carbohydrates": 20,
+        "nutritionbts:protein": 10,
+        "nutritionbts:fat": 15,
+        "nutritionbts:vitamins": 0,
+        "nutritionbts:minerals": 5
+    },
+    "croptopia:rhubarb_pie": {
+        "nutritionbts:carbohydrates": 5,
+        "nutritionbts:protein": 10,
+        "nutritionbts:fat": 15,
+        "nutritionbts:vitamins": 15,
+        "nutritionbts:minerals": 5
+    },
+    "croptopia:cheese": {
+        "nutritionbts:carbohydrates": 0,
+        "nutritionbts:protein": 5,
+        "nutritionbts:fat": 5,
+        "nutritionbts:vitamins": 0,
+        "nutritionbts:minerals": 5
+    },
+    "croptopia:butter": {
+        "nutritionbts:carbohydrates": 0,
+        "nutritionbts:protein": 5,
+        "nutritionbts:fat": 10,
+        "nutritionbts:vitamins": 0,
+        "nutritionbts:minerals": 0
+    },
+    "croptopia:tofu": {
+        "nutritionbts:carbohydrates": 0,
+        "nutritionbts:protein": 15,
+        "nutritionbts:fat": 5,
+        "nutritionbts:vitamins": 0,
+        "nutritionbts:minerals": 5
+    },
+    "croptopia:chocolate": {
+        "nutritionbts:carbohydrates": 5,
+        "nutritionbts:protein": 5,
+        "nutritionbts:fat": 5,
+        "nutritionbts:vitamins": 0,
+        "nutritionbts:minerals": 10
+    },
+    "croptopia:tortilla": {
+        "nutritionbts:carbohydrates": 15,
+        "nutritionbts:protein": 5,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 0,
+        "nutritionbts:minerals": 5
+    },
+    "croptopia:salsa": {
+        "nutritionbts:carbohydrates": 5,
+        "nutritionbts:protein": 5,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 5,
+        "nutritionbts:minerals": 10
+    },
+    "croptopia:artichoke_dip": {
+        "nutritionbts:carbohydrates": 5,
+        "nutritionbts:protein": 5,
+        "nutritionbts:fat": 5,
+        "nutritionbts:vitamins": 10,
+        "nutritionbts:minerals": 0
+    },
+    "croptopia:pepperoni": {
+        "nutritionbts:carbohydrates": 0,
+        "nutritionbts:protein": 0,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 15,
+        "nutritionbts:minerals": 10
+    },
+    "croptopia:coffee": {
+        "nutritionbts:carbohydrates": 5,
+        "nutritionbts:protein": 0,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 0,
+        "nutritionbts:minerals": 20
+    },
+    "croptopia:lemonade": {
+        "nutritionbts:carbohydrates": 5,
+        "nutritionbts:protein": 0,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 10,
+        "nutritionbts:minerals": 10
+    },
+    "croptopia:limeade": {
+        "nutritionbts:carbohydrates": 5,
+        "nutritionbts:protein": 0,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 10,
+        "nutritionbts:minerals": 10
+    },
+    "croptopia:soy_milk": {
+        "nutritionbts:carbohydrates": 0,
+        "nutritionbts:protein": 10,
+        "nutritionbts:fat": 10,
+        "nutritionbts:vitamins": 0,
+        "nutritionbts:minerals": 5
+    },
+    "croptopia:kale_smoothie": {
+        "nutritionbts:carbohydrates": 5,
+        "nutritionbts:protein": 10,
+        "nutritionbts:fat": 20,
+        "nutritionbts:vitamins": 25,
+        "nutritionbts:minerals": 10
+    },
+    "croptopia:fruit_smoothie": {
+        "nutritionbts:carbohydrates": 0,
+        "nutritionbts:protein": 5,
+        "nutritionbts:fat": 10,
+        "nutritionbts:vitamins": 20,
+        "nutritionbts:minerals": 0
+    },
+    "croptopia:chocolate_milkshake": {
+        "nutritionbts:carbohydrates": 10,
+        "nutritionbts:protein": 10,
+        "nutritionbts:fat": 10,
+        "nutritionbts:vitamins": 0,
+        "nutritionbts:minerals": 5
+    },
+    "croptopia:beer": {
+        "nutritionbts:carbohydrates": 5,
+        "nutritionbts:protein": 15,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 5,
+        "nutritionbts:minerals": 10
+    },
+    "croptopia:wine": {
+        "nutritionbts:carbohydrates": 0,
+        "nutritionbts:protein": 0,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 20,
+        "nutritionbts:minerals": 15
+    },
+    "croptopia:mead": {
+        "nutritionbts:carbohydrates": 0,
+        "nutritionbts:protein": 15,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 10,
+        "nutritionbts:minerals": 10
+    },
+    "croptopia:rum": {
+        "nutritionbts:carbohydrates": 10,
+        "nutritionbts:protein": 5,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 5,
+        "nutritionbts:minerals": 15
+    },
+    "croptopia:pumpkin_spice_latte": {
+        "nutritionbts:carbohydrates": 20,
+        "nutritionbts:protein": 10,
+        "nutritionbts:fat": 15,
+        "nutritionbts:vitamins": 0,
+        "nutritionbts:minerals": 25
+    },
+    "croptopia:beef_jerky": {
+        "nutritionbts:carbohydrates": 0,
+        "nutritionbts:protein": 20,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 0,
+        "nutritionbts:minerals": 5
+    },
+    "croptopia:pork_jerky": {
+        "nutritionbts:carbohydrates": 0,
+        "nutritionbts:protein": 20,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 0,
+        "nutritionbts:minerals": 5
+    },
+    "croptopia:kale_chips": {
+        "nutritionbts:carbohydrates": 15,
+        "nutritionbts:protein": 0,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 0,
+        "nutritionbts:minerals": 10
+    },
+    "croptopia:potato_chips": {
+        "nutritionbts:carbohydrates": 15,
+        "nutritionbts:protein": 0,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 0,
+        "nutritionbts:minerals": 10
+    },
+    "croptopia:steamed_rice": {
+        "nutritionbts:carbohydrates": 10,
+        "nutritionbts:protein": 5,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 5,
+        "nutritionbts:minerals": 5
+    },
+    "croptopia:french_fries": {
+        "nutritionbts:carbohydrates": 15,
+        "nutritionbts:protein": 0,
+        "nutritionbts:fat": 10,
+        "nutritionbts:vitamins": 0,
+        "nutritionbts:minerals": 0
+    },
+    "croptopia:sweet_potato_fries": {
+        "nutritionbts:carbohydrates": 15,
+        "nutritionbts:protein": 0,
+        "nutritionbts:fat": 10,
+        "nutritionbts:vitamins": 0,
+        "nutritionbts:minerals": 0
+    },
+    "croptopia:onion_rings": {
+        "nutritionbts:carbohydrates": 5,
+        "nutritionbts:protein": 0,
+        "nutritionbts:fat": 5,
+        "nutritionbts:vitamins": 10,
+        "nutritionbts:minerals": 5
+    },
+    "croptopia:doughnut": {
+        "nutritionbts:carbohydrates": 15,
+        "nutritionbts:protein": 5,
+        "nutritionbts:fat": 5,
+        "nutritionbts:vitamins": 0,
+        "nutritionbts:minerals": 0
+    },
+    "croptopia:cucumber_salad": {
+        "nutritionbts:carbohydrates": 10,
+        "nutritionbts:protein": 5,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 25,
+        "nutritionbts:minerals": 10
+    },
+    "croptopia:caesar_salad": {
+        "nutritionbts:carbohydrates": 5,
+        "nutritionbts:protein": 5,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 20,
+        "nutritionbts:minerals": 20
+    },
+    "croptopia:leafy_salad": {
+        "nutritionbts:carbohydrates": 0,
+        "nutritionbts:protein": 0,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 30,
+        "nutritionbts:minerals": 20
+    },
+    "croptopia:fruit_salad": {
+        "nutritionbts:carbohydrates": 5,
+        "nutritionbts:protein": 0,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 35,
+        "nutritionbts:minerals": 10
+    },
+    "croptopia:veggie_salad": {
+        "nutritionbts:carbohydrates": 5,
+        "nutritionbts:protein": 10,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 25,
+        "nutritionbts:minerals": 10
+    },
+    "croptopia:pork_and_beans": {
+        "nutritionbts:carbohydrates": 5,
+        "nutritionbts:protein": 25,
+        "nutritionbts:fat": 15,
+        "nutritionbts:vitamins": 0,
+        "nutritionbts:minerals": 5
+    },
+    "croptopia:oatmeal": {
+        "nutritionbts:carbohydrates": 20,
+        "nutritionbts:protein": 10,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 0,
+        "nutritionbts:minerals": 5
+    },
+    "croptopia:leek_soup": {
+        "nutritionbts:carbohydrates": 10,
+        "nutritionbts:protein": 0,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 15,
+        "nutritionbts:minerals": 10
+    },
+    "croptopia:yoghurt": {
+        "nutritionbts:carbohydrates": 0,
+        "nutritionbts:protein": 10,
+        "nutritionbts:fat": 10,
+        "nutritionbts:vitamins": 5,
+        "nutritionbts:minerals": 0
+    },
+    "croptopia:saucy_chips": {
+        "nutritionbts:carbohydrates": 20,
+        "nutritionbts:protein": 0,
+        "nutritionbts:fat": 5,
+        "nutritionbts:vitamins": 0,
+        "nutritionbts:minerals": 10
+    },
+    "croptopia:roasted_nuts": {
+        "nutritionbts:carbohydrates": 15,
+        "nutritionbts:protein": 5,
+        "nutritionbts:fat": 5,
+        "nutritionbts:vitamins": 0,
+        "nutritionbts:minerals": 0
+    },
+    "croptopia:trail_mix": {
+        "nutritionbts:carbohydrates": 25,
+        "nutritionbts:protein": 5,
+        "nutritionbts:fat": 15,
+        "nutritionbts:vitamins": 0,
+        "nutritionbts:minerals": 5
+    },
+    "croptopia:protein_bar": {
+        "nutritionbts:carbohydrates": 5,
+        "nutritionbts:protein": 35,
+        "nutritionbts:fat": 5,
+        "nutritionbts:vitamins": 0,
+        "nutritionbts:minerals": 5
+    },
+    "croptopia:nougat": {
+        "nutritionbts:carbohydrates": 15,
+        "nutritionbts:protein": 5,
+        "nutritionbts:fat": 10,
+        "nutritionbts:vitamins": 0,
+        "nutritionbts:minerals": 5
+    },
+    "croptopia:scrambled_eggs": {
+        "nutritionbts:carbohydrates": 0,
+        "nutritionbts:protein": 20,
+        "nutritionbts:fat": 10,
+        "nutritionbts:vitamins": 0,
+        "nutritionbts:minerals": 5
+    },
+    "croptopia:buttered_toast": {
+        "nutritionbts:carbohydrates": 25,
+        "nutritionbts:protein": 10,
+        "nutritionbts:fat": 5,
+        "nutritionbts:vitamins": 0,
+        "nutritionbts:minerals": 5
+    },
+    "croptopia:toast_with_jam": {
+        "nutritionbts:carbohydrates": 20,
+        "nutritionbts:protein": 5,
+        "nutritionbts:fat": 5,
+        "nutritionbts:vitamins": 10,
+        "nutritionbts:minerals": 5
+    },
+    "croptopia:ham_sandwich": {
+        "nutritionbts:carbohydrates": 25,
+        "nutritionbts:protein": 15,
+        "nutritionbts:fat": 5,
+        "nutritionbts:vitamins": 0,
+        "nutritionbts:minerals": 5
+    },
+    "croptopia:peanut_butter_and_jam": {
+        "nutritionbts:carbohydrates": 20,
+        "nutritionbts:protein": 0,
+        "nutritionbts:fat": 15,
+        "nutritionbts:vitamins": 0,
+        "nutritionbts:minerals": 15
+    },
+    "croptopia:blt": {
+        "nutritionbts:carbohydrates": 10,
+        "nutritionbts:protein": 10,
+        "nutritionbts:fat": 10,
+        "nutritionbts:vitamins": 15,
+        "nutritionbts:minerals": 5
+    },
+    "croptopia:grilled_cheese": {
+        "nutritionbts:carbohydrates": 10,
+        "nutritionbts:protein": 10,
+        "nutritionbts:fat": 10,
+        "nutritionbts:vitamins": 0,
+        "nutritionbts:minerals": 5
+    },
+    "croptopia:tuna_sandwich": {
+        "nutritionbts:carbohydrates": 20,
+        "nutritionbts:protein": 20,
+        "nutritionbts:fat": 10,
+        "nutritionbts:vitamins": 0,
+        "nutritionbts:minerals": 0
+    },
+    "croptopia:cheeseburger": {
+        "nutritionbts:carbohydrates": 10,
+        "nutritionbts:protein": 20,
+        "nutritionbts:fat": 10,
+        "nutritionbts:vitamins": 5,
+        "nutritionbts:minerals": 5
+    },
+    "croptopia:hamburger": {
+        "nutritionbts:carbohydrates": 20,
+        "nutritionbts:protein": 15,
+        "nutritionbts:fat": 5,
+        "nutritionbts:vitamins": 5,
+        "nutritionbts:minerals": 5
+    },
+    "croptopia:tofuburger": {
+        "nutritionbts:carbohydrates": 20,
+        "nutritionbts:protein": 15,
+        "nutritionbts:fat": 5,
+        "nutritionbts:vitamins": 5,
+        "nutritionbts:minerals": 5
+    },
+    "croptopia:pizza": {
+        "nutritionbts:carbohydrates": 15,
+        "nutritionbts:protein": 15,
+        "nutritionbts:fat": 10,
+        "nutritionbts:vitamins": 5,
+        "nutritionbts:minerals": 5
+    },
+    "croptopia:supreme_pizza": {
+        "nutritionbts:carbohydrates": 20,
+        "nutritionbts:protein": 25,
+        "nutritionbts:fat": 10,
+        "nutritionbts:vitamins": 25,
+        "nutritionbts:minerals": 10
+    },
+    "croptopia:cheese_pizza": {
+        "nutritionbts:carbohydrates": 20,
+        "nutritionbts:protein": 20,
+        "nutritionbts:fat": 20,
+        "nutritionbts:vitamins": 0,
+        "nutritionbts:minerals": 10
+    },
+    "croptopia:pineapple_pepperoni_pizza": {
+        "nutritionbts:carbohydrates": 20,
+        "nutritionbts:protein": 10,
+        "nutritionbts:fat": 5,
+        "nutritionbts:vitamins": 25,
+        "nutritionbts:minerals": 30
+    },
+    "croptopia:lemon_chicken": {
+        "nutritionbts:carbohydrates": 0,
+        "nutritionbts:protein": 25,
+        "nutritionbts:fat": 10,
+        "nutritionbts:vitamins": 5,
+        "nutritionbts:minerals": 10
+    },
+    "croptopia:fried_chicken": {
+        "nutritionbts:carbohydrates": 0,
+        "nutritionbts:protein": 25,
+        "nutritionbts:fat": 20,
+        "nutritionbts:vitamins": 0,
+        "nutritionbts:minerals": 5
+    },
+    "croptopia:chicken_and_noodles": {
+        "nutritionbts:carbohydrates": 15,
+        "nutritionbts:protein": 20,
+        "nutritionbts:fat": 10,
+        "nutritionbts:vitamins": 0,
+        "nutritionbts:minerals": 5
+    },
+    "croptopia:chicken_and_dumplings": {
+        "nutritionbts:carbohydrates": 15,
+        "nutritionbts:protein": 20,
+        "nutritionbts:fat": 10,
+        "nutritionbts:vitamins": 0,
+        "nutritionbts:minerals": 5
+    },
+    "croptopia:tofu_and_dumplings": {
+        "nutritionbts:carbohydrates": 20,
+        "nutritionbts:protein": 20,
+        "nutritionbts:fat": 10,
+        "nutritionbts:vitamins": 0,
+        "nutritionbts:minerals": 20
+    },
+    "croptopia:spaghetti_squash": {
+        "nutritionbts:carbohydrates": 40,
+        "nutritionbts:protein": 0,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 0,
+        "nutritionbts:minerals": 10
+    },
+    "croptopia:chicken_and_rice": {
+        "nutritionbts:carbohydrates": 5,
+        "nutritionbts:protein": 20,
+        "nutritionbts:fat": 10,
+        "nutritionbts:vitamins": 0,
+        "nutritionbts:minerals": 15
+    },
+    "croptopia:taco": {
+        "nutritionbts:carbohydrates": 5,
+        "nutritionbts:protein": 10,
+        "nutritionbts:fat": 10,
+        "nutritionbts:vitamins": 15,
+        "nutritionbts:minerals": 10
+    },
+    "croptopia:sushi": {
+        "nutritionbts:carbohydrates": 0,
+        "nutritionbts:protein": 10,
+        "nutritionbts:fat": 5,
+        "nutritionbts:vitamins": 10,
+        "nutritionbts:minerals": 25
+    },
+    "croptopia:egg_roll": {
+        "nutritionbts:carbohydrates": 10,
+        "nutritionbts:protein": 15,
+        "nutritionbts:fat": 10,
+        "nutritionbts:vitamins": 0,
+        "nutritionbts:minerals": 15
+    },
+    "croptopia:cashew_chicken": {
+        "nutritionbts:carbohydrates": 0,
+        "nutritionbts:protein": 20,
+        "nutritionbts:fat": 30,
+        "nutritionbts:vitamins": 0,
+        "nutritionbts:minerals": 20
+    },
+    "croptopia:yam_jam": {
+        "nutritionbts:carbohydrates": 10,
+        "nutritionbts:protein": 10,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 30,
+        "nutritionbts:minerals": 30
+    },
+    "croptopia:banana_cream_pie": {
+        "nutritionbts:carbohydrates": 10,
+        "nutritionbts:protein": 15,
+        "nutritionbts:fat": 20,
+        "nutritionbts:vitamins": 15,
+        "nutritionbts:minerals": 10
+    },
+    "croptopia:candy_corn": {
+        "nutritionbts:carbohydrates": 20,
+        "nutritionbts:protein": 0,
+        "nutritionbts:fat": 0,
+        "nutritionbts:vitamins": 0,
+        "nutritionbts:minerals": 5
+    },
+    "croptopia:rum_raisin_ice_cream": {
+        "nutritionbts:carbohydrates": 10,
+        "nutritionbts:protein": 10,
+        "nutritionbts:fat": 10,
+        "nutritionbts:vitamins": 10,
+        "nutritionbts:minerals": 30
+    },
+    "croptopia:cheese_cake": {
+        "nutritionbts:carbohydrates": 10,
+        "nutritionbts:protein": 20,
+        "nutritionbts:fat": 30,
+        "nutritionbts:vitamins": 0,
+        "nutritionbts:minerals": 10
+    },
+    "croptopia:brownies": {
+        "nutritionbts:carbohydrates": 10,
+        "nutritionbts:protein": 20,
+        "nutritionbts:fat": 10,
+        "nutritionbts:vitamins": 0,
+        "nutritionbts:minerals": 10
+    },
+    "croptopia:snicker_doodle": {
+        "nutritionbts:carbohydrates": 10,
+        "nutritionbts:protein": 5,
+        "nutritionbts:fat": 10,
+        "nutritionbts:vitamins": 0,
+        "nutritionbts:minerals": 10
+    },
+    "croptopia:banana_nut_bread": {
+        "nutritionbts:carbohydrates": 10,
+        "nutritionbts:protein": 10,
+        "nutritionbts:fat": 10,
+        "nutritionbts:vitamins": 10,
+        "nutritionbts:minerals": 10
+    },
+    "croptopia:candied_nuts": {
+        "nutritionbts:carbohydrates": 10,
+        "nutritionbts:protein": 0,
+        "nutritionbts:fat": 10,
+        "nutritionbts:vitamins": 0,
+        "nutritionbts:minerals": 5
+    },
+    "croptopia:almond_brittle": {
+        "nutritionbts:carbohydrates": 5,
+        "nutritionbts:protein": 10,
+        "nutritionbts:fat": 10,
+        "nutritionbts:vitamins": 0,
+        "nutritionbts:minerals": 10
+    },
+    "croptopia:raisin_oatmeal_cookie": {
+        "nutritionbts:carbohydrates": ,
+        "nutritionbts:protein": ,
+        "nutritionbts:fat": ,
+        "nutritionbts:vitamins": ,
+        "nutritionbts:minerals":
+    },
+    "croptopia:nutty_cookie": {
+        "nutritionbts:carbohydrates": ,
+        "nutritionbts:protein": ,
+        "nutritionbts:fat": ,
+        "nutritionbts:vitamins": ,
+        "nutritionbts:minerals":
+    },
+    "croptopia:burrito": {
+        "nutritionbts:carbohydrates": ,
+        "nutritionbts:protein": ,
+        "nutritionbts:fat": ,
+        "nutritionbts:vitamins": ,
+        "nutritionbts:minerals":
+    },
+    "croptopia:tostada": {
+        "nutritionbts:carbohydrates": ,
+        "nutritionbts:protein": ,
+        "nutritionbts:fat": ,
+        "nutritionbts:vitamins": ,
+        "nutritionbts:minerals":
+    },
+    "croptopia:horchata": {
+        "nutritionbts:carbohydrates": ,
+        "nutritionbts:protein": ,
+        "nutritionbts:fat": ,
+        "nutritionbts:vitamins": ,
+        "nutritionbts:minerals":
+    },
+    "croptopia:carnitas": {
+        "nutritionbts:carbohydrates": ,
+        "nutritionbts:protein": ,
+        "nutritionbts:fat": ,
+        "nutritionbts:vitamins": ,
+        "nutritionbts:minerals":
+    },
+    "croptopia:fajitas": {
+        "nutritionbts:carbohydrates": ,
+        "nutritionbts:protein": ,
+        "nutritionbts:fat": ,
+        "nutritionbts:vitamins": ,
+        "nutritionbts:minerals":
+    },
+    "croptopia:enchilada": {
+        "nutritionbts:carbohydrates": ,
+        "nutritionbts:protein": ,
+        "nutritionbts:fat": ,
+        "nutritionbts:vitamins": ,
+        "nutritionbts:minerals":
+    },
+    "croptopia:churros": {
+        "nutritionbts:carbohydrates": ,
+        "nutritionbts:protein": ,
+        "nutritionbts:fat": ,
+        "nutritionbts:vitamins": ,
+        "nutritionbts:minerals":
+    },
+    "croptopia:tamales": {
+        "nutritionbts:carbohydrates": ,
+        "nutritionbts:protein": ,
+        "nutritionbts:fat": ,
+        "nutritionbts:vitamins": ,
+        "nutritionbts:minerals":
+    },
+    "croptopia:tres_leche_cake": {
+        "nutritionbts:carbohydrates": ,
+        "nutritionbts:protein": ,
+        "nutritionbts:fat": ,
+        "nutritionbts:vitamins": ,
+        "nutritionbts:minerals":
+    },
+    "croptopia:stuffed_poblanos": {
+        "nutritionbts:carbohydrates": ,
+        "nutritionbts:protein": ,
+        "nutritionbts:fat": ,
+        "nutritionbts:vitamins": ,
+        "nutritionbts:minerals":
+    },
+    "croptopia:chili_relleno": {
+        "nutritionbts:carbohydrates": ,
+        "nutritionbts:protein": ,
+        "nutritionbts:fat": ,
+        "nutritionbts:vitamins": ,
+        "nutritionbts:minerals":
+    },
+    "croptopia:crema": {
+        "nutritionbts:carbohydrates": ,
+        "nutritionbts:protein": ,
+        "nutritionbts:fat": ,
+        "nutritionbts:vitamins": ,
+        "nutritionbts:minerals":
+    },
+    "croptopia:refried_beans": {
+        "nutritionbts:carbohydrates": ,
+        "nutritionbts:protein": ,
+        "nutritionbts:fat": ,
+        "nutritionbts:vitamins": ,
+        "nutritionbts:minerals":
+    },
+    "croptopia:chimichanga": {
+        "nutritionbts:carbohydrates": ,
+        "nutritionbts:protein": ,
+        "nutritionbts:fat": ,
+        "nutritionbts:vitamins": ,
+        "nutritionbts:minerals":
+    },
+    "croptopia:quesadilla": {
+        "nutritionbts:carbohydrates": ,
+        "nutritionbts:protein": ,
+        "nutritionbts:fat": ,
+        "nutritionbts:vitamins": ,
+        "nutritionbts:minerals":
+    },
+    "croptopia:shepherds_pie": {
+        "nutritionbts:carbohydrates": ,
+        "nutritionbts:protein": ,
+        "nutritionbts:fat": ,
+        "nutritionbts:vitamins": ,
+        "nutritionbts:minerals":
+    },
+    "croptopia:beef_wellington": {
+        "nutritionbts:carbohydrates": ,
+        "nutritionbts:protein": ,
+        "nutritionbts:fat": ,
+        "nutritionbts:vitamins": ,
+        "nutritionbts:minerals":
+    },
+    "croptopia:fish_and_chips": {
+        "nutritionbts:carbohydrates": ,
+        "nutritionbts:protein": ,
+        "nutritionbts:fat": ,
+        "nutritionbts:vitamins": ,
+        "nutritionbts:minerals":
+    },
+    "croptopia:eton_mess": {
+        "nutritionbts:carbohydrates": ,
+        "nutritionbts:protein": ,
+        "nutritionbts:fat": ,
+        "nutritionbts:vitamins": ,
+        "nutritionbts:minerals":
+    },
+    "croptopia:tea": {
+        "nutritionbts:carbohydrates": ,
+        "nutritionbts:protein": ,
+        "nutritionbts:fat": ,
+        "nutritionbts:vitamins": ,
+        "nutritionbts:minerals":
+    },
+    "croptopia:cornish_pasty": {
+        "nutritionbts:carbohydrates": ,
+        "nutritionbts:protein": ,
+        "nutritionbts:fat": ,
+        "nutritionbts:vitamins": ,
+        "nutritionbts:minerals":
+    },
+    "croptopia:scones": {
+        "nutritionbts:carbohydrates": ,
+        "nutritionbts:protein": ,
+        "nutritionbts:fat": ,
+        "nutritionbts:vitamins": ,
+        "nutritionbts:minerals":
+    },
+    "croptopia:figgy_pudding": {
+        "nutritionbts:carbohydrates": ,
+        "nutritionbts:protein": ,
+        "nutritionbts:fat": ,
+        "nutritionbts:vitamins": ,
+        "nutritionbts:minerals":
+    },
+    "croptopia:treacle_tart": {
+        "nutritionbts:carbohydrates": ,
+        "nutritionbts:protein": ,
+        "nutritionbts:fat": ,
+        "nutritionbts:vitamins": ,
+        "nutritionbts:minerals":
+    },
+    "croptopia:sticky_toffee_pudding": {
+        "nutritionbts:carbohydrates": ,
+        "nutritionbts:protein": ,
+        "nutritionbts:fat": ,
+        "nutritionbts:vitamins": ,
+        "nutritionbts:minerals":
+    },
+    "croptopia:trifle": {
+        "nutritionbts:carbohydrates": ,
+        "nutritionbts:protein": ,
+        "nutritionbts:fat": ,
+        "nutritionbts:vitamins": ,
+        "nutritionbts:minerals":
+    },
+    "croptopia:ajvar": {
+        "nutritionbts:carbohydrates": ,
+        "nutritionbts:protein": ,
+        "nutritionbts:fat": ,
+        "nutritionbts:vitamins": ,
+        "nutritionbts:minerals":
+    },
+    "croptopia:ajvar_toast": {
+        "nutritionbts:carbohydrates": ,
+        "nutritionbts:protein": ,
+        "nutritionbts:fat": ,
+        "nutritionbts:vitamins": ,
+        "nutritionbts:minerals":
+    },
+    "croptopia:avocado_toast": {
+        "nutritionbts:carbohydrates": ,
+        "nutritionbts:protein": ,
+        "nutritionbts:fat": ,
+        "nutritionbts:vitamins": ,
+        "nutritionbts:minerals":
+    },
+    "croptopia:beef_stew": {
+        "nutritionbts:carbohydrates": ,
+        "nutritionbts:protein": ,
+        "nutritionbts:fat": ,
+        "nutritionbts:vitamins": ,
+        "nutritionbts:minerals":
+    },
+    "croptopia:beef_stir_fry": {
+        "nutritionbts:carbohydrates": ,
+        "nutritionbts:protein": ,
+        "nutritionbts:fat": ,
+        "nutritionbts:vitamins": ,
+        "nutritionbts:minerals":
+    },
+    "croptopia:buttered_green_beans": {
+        "nutritionbts:carbohydrates": ,
+        "nutritionbts:protein": ,
+        "nutritionbts:fat": ,
+        "nutritionbts:vitamins": ,
+        "nutritionbts:minerals":
+    },
+    "croptopia:cheesy_asparagus": {
+        "nutritionbts:carbohydrates": ,
+        "nutritionbts:protein": ,
+        "nutritionbts:fat": ,
+        "nutritionbts:vitamins": ,
+        "nutritionbts:minerals":
+    },
+    "croptopia:chocolate_ice_cream": {
+        "nutritionbts:carbohydrates": ,
+        "nutritionbts:protein": ,
+        "nutritionbts:fat": ,
+        "nutritionbts:vitamins": ,
+        "nutritionbts:minerals":
+    },
+    "croptopia:eggplant_parmesan": {
+        "nutritionbts:carbohydrates": ,
+        "nutritionbts:protein": ,
+        "nutritionbts:fat": ,
+        "nutritionbts:vitamins": ,
+        "nutritionbts:minerals":
+    },
+    "croptopia:fruit_cake": {
+        "nutritionbts:carbohydrates": ,
+        "nutritionbts:protein": ,
+        "nutritionbts:fat": ,
+        "nutritionbts:vitamins": ,
+        "nutritionbts:minerals":
+    },
+    "croptopia:grilled_eggplant": {
+        "nutritionbts:carbohydrates": ,
+        "nutritionbts:protein": ,
+        "nutritionbts:fat": ,
+        "nutritionbts:vitamins": ,
+        "nutritionbts:minerals":
+    },
+    "croptopia:kiwi_sorbet": {
+        "nutritionbts:carbohydrates": ,
+        "nutritionbts:protein": ,
+        "nutritionbts:fat": ,
+        "nutritionbts:vitamins": ,
+        "nutritionbts:minerals":
+    },
+    "croptopia:lemon_coconut_bar": {
+        "nutritionbts:carbohydrates": ,
+        "nutritionbts:protein": ,
+        "nutritionbts:fat": ,
+        "nutritionbts:vitamins": ,
+        "nutritionbts:minerals":
+    },
+    "croptopia:nether_wart_stew": {
+        "nutritionbts:carbohydrates": ,
+        "nutritionbts:protein": ,
+        "nutritionbts:fat": ,
+        "nutritionbts:vitamins": ,
+        "nutritionbts:minerals":
+    },
+    "croptopia:peanut_butter": {
+        "nutritionbts:carbohydrates": ,
+        "nutritionbts:protein": ,
+        "nutritionbts:fat": ,
+        "nutritionbts:vitamins": ,
+        "nutritionbts:minerals":
+    },
+    "croptopia:peanut_butter_with_celery": {
+        "nutritionbts:carbohydrates": ,
+        "nutritionbts:protein": ,
+        "nutritionbts:fat": ,
+        "nutritionbts:vitamins": ,
+        "nutritionbts:minerals":
+    },
+    "croptopia:potato_soup": {
+        "nutritionbts:carbohydrates": ,
+        "nutritionbts:protein": ,
+        "nutritionbts:fat": ,
+        "nutritionbts:vitamins": ,
+        "nutritionbts:minerals":
+    },
+    "croptopia:ratatouille": {
+        "nutritionbts:carbohydrates": ,
+        "nutritionbts:protein": ,
+        "nutritionbts:fat": ,
+        "nutritionbts:vitamins": ,
+        "nutritionbts:minerals":
+    },
+    "croptopia:bacon": {
+        "nutritionbts:carbohydrates": ,
+        "nutritionbts:protein": ,
+        "nutritionbts:fat": ,
+        "nutritionbts:vitamins": ,
+        "nutritionbts:minerals":
+    },
+    "croptopia:rhubarb_crisp": {
+        "nutritionbts:carbohydrates": ,
+        "nutritionbts:protein": ,
+        "nutritionbts:fat": ,
+        "nutritionbts:vitamins": ,
+        "nutritionbts:minerals":
+    },
+    "croptopia:roasted_asparagus": {
+        "nutritionbts:carbohydrates": ,
+        "nutritionbts:protein": ,
+        "nutritionbts:fat": ,
+        "nutritionbts:vitamins": ,
+        "nutritionbts:minerals":
+    },
+    "croptopia:roasted_radishes": {
+        "nutritionbts:carbohydrates": ,
+        "nutritionbts:protein": ,
+        "nutritionbts:fat": ,
+        "nutritionbts:vitamins": ,
+        "nutritionbts:minerals":
+    },
+    "croptopia:roasted_squash": {
+        "nutritionbts:carbohydrates": ,
+        "nutritionbts:protein": ,
+        "nutritionbts:fat": ,
+        "nutritionbts:vitamins": ,
+        "nutritionbts:minerals":
+    },
+    "croptopia:roasted_turnips": {
+        "nutritionbts:carbohydrates": ,
+        "nutritionbts:protein": ,
+        "nutritionbts:fat": ,
+        "nutritionbts:vitamins": ,
+        "nutritionbts:minerals":
+    },
+    "croptopia:steamed_broccoli": {
+        "nutritionbts:carbohydrates": ,
+        "nutritionbts:protein": ,
+        "nutritionbts:fat": ,
+        "nutritionbts:vitamins": ,
+        "nutritionbts:minerals":
+    },
+    "croptopia:steamed_green_beans": {
+        "nutritionbts:carbohydrates": ,
+        "nutritionbts:protein": ,
+        "nutritionbts:fat": ,
+        "nutritionbts:vitamins": ,
+        "nutritionbts:minerals":
+    },
+    "croptopia:stir_fry": {
+        "nutritionbts:carbohydrates": ,
+        "nutritionbts:protein": ,
+        "nutritionbts:fat": ,
+        "nutritionbts:vitamins": ,
+        "nutritionbts:minerals":
+    },
+    "croptopia:stuffed_artichoke": {
+        "nutritionbts:carbohydrates": ,
+        "nutritionbts:protein": ,
+        "nutritionbts:fat": ,
+        "nutritionbts:vitamins": ,
+        "nutritionbts:minerals":
+    },
+    "croptopia:toast_sandwich": {
+        "nutritionbts:carbohydrates": ,
+        "nutritionbts:protein": ,
+        "nutritionbts:fat": ,
+        "nutritionbts:vitamins": ,
+        "nutritionbts:minerals":
+    },
+    "croptopia:roasted_pumpkin_seeds": {
+        "nutritionbts:carbohydrates": ,
+        "nutritionbts:protein": ,
+        "nutritionbts:fat": ,
+        "nutritionbts:vitamins": ,
+        "nutritionbts:minerals":
+    },
+    "croptopia:roasted_sunflower_seeds": {
+        "nutritionbts:carbohydrates": ,
+        "nutritionbts:protein": ,
+        "nutritionbts:fat": ,
+        "nutritionbts:vitamins": ,
+        "nutritionbts:minerals":
+    },
+    "croptopia:pumpkin_bars": {
+        "nutritionbts:carbohydrates": ,
+        "nutritionbts:protein": ,
+        "nutritionbts:fat": ,
+        "nutritionbts:vitamins": ,
+        "nutritionbts:minerals":
+    },
+    "croptopia:corn_bread": {
+        "nutritionbts:carbohydrates": ,
+        "nutritionbts:protein": ,
+        "nutritionbts:fat": ,
+        "nutritionbts:vitamins": ,
+        "nutritionbts:minerals":
+    },
+    "croptopia:pumpkin_soup": {
+        "nutritionbts:carbohydrates": ,
+        "nutritionbts:protein": ,
+        "nutritionbts:fat": ,
+        "nutritionbts:vitamins": ,
+        "nutritionbts:minerals":
+    },
+    "croptopia:meringue": {
+        "nutritionbts:carbohydrates": ,
+        "nutritionbts:protein": ,
+        "nutritionbts:fat": ,
+        "nutritionbts:vitamins": ,
+        "nutritionbts:minerals":
+    },
+    "croptopia:cabbage_roll": {
+        "nutritionbts:carbohydrates": ,
+        "nutritionbts:protein": ,
+        "nutritionbts:fat": ,
+        "nutritionbts:vitamins": ,
+        "nutritionbts:minerals":
+    },
+    "croptopia:borscht": {
+        "nutritionbts:carbohydrates": ,
+        "nutritionbts:protein": ,
+        "nutritionbts:fat": ,
+        "nutritionbts:vitamins": ,
+        "nutritionbts:minerals":
+    },
+    "croptopia:goulash": {
+        "nutritionbts:carbohydrates": ,
+        "nutritionbts:protein": ,
+        "nutritionbts:fat": ,
+        "nutritionbts:vitamins": ,
+        "nutritionbts:minerals":
+    },
+    "croptopia:beetroot_salad": {
+        "nutritionbts:carbohydrates": ,
+        "nutritionbts:protein": ,
+        "nutritionbts:fat": ,
+        "nutritionbts:vitamins": ,
+        "nutritionbts:minerals":
+    },
+    "croptopia:candied_kumquats": {
+        "nutritionbts:carbohydrates": ,
+        "nutritionbts:protein": ,
+        "nutritionbts:fat": ,
+        "nutritionbts:vitamins": ,
+        "nutritionbts:minerals":
+    },
+    "croptopia:steamed_crab": {
+        "nutritionbts:carbohydrates": ,
+        "nutritionbts:protein": ,
+        "nutritionbts:fat": ,
+        "nutritionbts:vitamins": ,
+        "nutritionbts:minerals":
+    },
+    "croptopia:sea_lettuce": {
+        "nutritionbts:carbohydrates": ,
+        "nutritionbts:protein": ,
+        "nutritionbts:fat": ,
+        "nutritionbts:vitamins": ,
+        "nutritionbts:minerals":
+    },
+    "croptopia:deep_fried_shrimp": {
+        "nutritionbts:carbohydrates": ,
+        "nutritionbts:protein": ,
+        "nutritionbts:fat": ,
+        "nutritionbts:vitamins": ,
+        "nutritionbts:minerals":
+    },
+    "croptopia:tuna_roll": {
+        "nutritionbts:carbohydrates": ,
+        "nutritionbts:protein": ,
+        "nutritionbts:fat": ,
+        "nutritionbts:vitamins": ,
+        "nutritionbts:minerals":
+    },
+    "croptopia:fried_calamari": {
+        "nutritionbts:carbohydrates": ,
+        "nutritionbts:protein": ,
+        "nutritionbts:fat": ,
+        "nutritionbts:vitamins": ,
+        "nutritionbts:minerals":
+    },
+    "croptopia:crab_legs": {
+        "nutritionbts:carbohydrates": ,
+        "nutritionbts:protein": ,
+        "nutritionbts:fat": ,
+        "nutritionbts:vitamins": ,
+        "nutritionbts:minerals":
+    },
+    "croptopia:steamed_clams": {
+        "nutritionbts:carbohydrates": ,
+        "nutritionbts:protein": ,
+        "nutritionbts:fat": ,
+        "nutritionbts:vitamins": ,
+        "nutritionbts:minerals":
+    },
+    "croptopia:grilled_oysters": {
+        "nutritionbts:carbohydrates": ,
+        "nutritionbts:protein": ,
+        "nutritionbts:fat": ,
+        "nutritionbts:vitamins": ,
+        "nutritionbts:minerals":
+    },
+    "croptopia:anchovy_pizza": {
+        "nutritionbts:carbohydrates": ,
+        "nutritionbts:protein": ,
+        "nutritionbts:fat": ,
+        "nutritionbts:vitamins": ,
+        "nutritionbts:minerals":
+    },
+    "croptopia:mashed_potatoes": {
+        "nutritionbts:carbohydrates": ,
+        "nutritionbts:protein": ,
+        "nutritionbts:fat": ,
+        "nutritionbts:vitamins": ,
+        "nutritionbts:minerals":
+    },
+    "croptopia:baked_crepes": {
+        "nutritionbts:carbohydrates": ,
+        "nutritionbts:protein": ,
+        "nutritionbts:fat": ,
+        "nutritionbts:vitamins": ,
+        "nutritionbts:minerals":
+    },
+    "croptopia:cinnamon_roll": {
+        "nutritionbts:carbohydrates": ,
+        "nutritionbts:protein": ,
+        "nutritionbts:fat": ,
+        "nutritionbts:vitamins": ,
+        "nutritionbts:minerals":
+    },
+    "croptopia:croque_madame": {
+        "nutritionbts:carbohydrates": ,
+        "nutritionbts:protein": ,
+        "nutritionbts:fat": ,
+        "nutritionbts:vitamins": ,
+        "nutritionbts:minerals":
+    },
+    "croptopia:croque_monsieur": {
+        "nutritionbts:carbohydrates": ,
+        "nutritionbts:protein": ,
+        "nutritionbts:fat": ,
+        "nutritionbts:vitamins": ,
+        "nutritionbts:minerals":
+    },
+    "croptopia:dauphine_potatoes": {
+        "nutritionbts:carbohydrates": ,
+        "nutritionbts:protein": ,
+        "nutritionbts:fat": ,
+        "nutritionbts:vitamins": ,
+        "nutritionbts:minerals":
+    },
+    "croptopia:fried_frog_legs": {
+        "nutritionbts:carbohydrates": ,
+        "nutritionbts:protein": ,
+        "nutritionbts:fat": ,
+        "nutritionbts:vitamins": ,
+        "nutritionbts:minerals":
+    },
+    "croptopia:frog_legs": {
+        "nutritionbts:carbohydrates": ,
+        "nutritionbts:protein": ,
+        "nutritionbts:fat": ,
+        "nutritionbts:vitamins": ,
+        "nutritionbts:minerals":
+    },
+    "croptopia:ground_pork": {
+        "nutritionbts:carbohydrates": ,
+        "nutritionbts:protein": ,
+        "nutritionbts:fat": ,
+        "nutritionbts:vitamins": ,
+        "nutritionbts:minerals":
+    },
+    "croptopia:hashed_brown": {
+        "nutritionbts:carbohydrates": ,
+        "nutritionbts:protein": ,
+        "nutritionbts:fat": ,
+        "nutritionbts:vitamins": ,
+        "nutritionbts:minerals":
+    },
+    "croptopia:macaron": {
+        "nutritionbts:carbohydrates": ,
+        "nutritionbts:protein": ,
+        "nutritionbts:fat": ,
+        "nutritionbts:vitamins": ,
+        "nutritionbts:minerals":
+    },
+    "croptopia:quiche": {
+        "nutritionbts:carbohydrates": ,
+        "nutritionbts:protein": ,
+        "nutritionbts:fat": ,
+        "nutritionbts:vitamins": ,
+        "nutritionbts:minerals":
+    },
+    "croptopia:sausage": {
+        "nutritionbts:carbohydrates": ,
+        "nutritionbts:protein": ,
+        "nutritionbts:fat": ,
+        "nutritionbts:vitamins": ,
+        "nutritionbts:minerals":
+    },
+    "croptopia:sunny_side_eggs": {
+        "nutritionbts:carbohydrates": ,
+        "nutritionbts:protein": ,
+        "nutritionbts:fat": ,
+        "nutritionbts:vitamins": ,
+        "nutritionbts:minerals":
+    },
+    "croptopia:sweet_crepes": {
+        "nutritionbts:carbohydrates": ,
+        "nutritionbts:protein": ,
+        "nutritionbts:fat": ,
+        "nutritionbts:vitamins": ,
+        "nutritionbts:minerals":
+    },
+    "croptopia:the_big_breakfast": {
+        "nutritionbts:carbohydrates": 20,
+        "nutritionbts:protein": 20,
+        "nutritionbts:fat": 20,
+        "nutritionbts:vitamins": 20,
+        "nutritionbts:minerals": 20
+        }
+    }
+}

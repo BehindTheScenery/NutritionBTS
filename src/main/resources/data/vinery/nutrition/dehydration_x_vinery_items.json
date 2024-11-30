@@ -1,0 +1,207 @@
+{
+  "values": {
+    "vinery:chorus_wine": {
+      "nutritionbts:carbohydrates": 6,
+      "nutritionbts:protein": 4,
+      "nutritionbts:fat": 6,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 19
+    },
+    "vinery:cherry_wine": {
+      "nutritionbts:carbohydrates": 2,
+      "nutritionbts:protein": 1,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 7,
+      "nutritionbts:minerals": 25
+    },
+    "vinery:magnetic_wine": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 0,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 30
+    },
+    "vinery:noir_wine": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 0,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 10,
+      "nutritionbts:minerals": 25
+    },
+    "vinery:lilitu_wine": {
+      "nutritionbts:carbohydrates": 31,
+      "nutritionbts:protein": 2,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 7,
+      "nutritionbts:minerals": 10
+    },
+    "vinery:mellohi_wine": {
+      "nutritionbts:carbohydrates": 15,
+      "nutritionbts:protein": 0,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 5,
+      "nutritionbts:minerals": 10
+    },
+    "vinery:stal_wine": {
+      "nutritionbts:carbohydrates": 5,
+      "nutritionbts:protein": 0,
+      "nutritionbts:fat": 5,
+      "nutritionbts:vitamins": 5,
+      "nutritionbts:minerals": 5
+    },
+    "vinery:strad_wine": {
+      "nutritionbts:carbohydrates": 5,
+      "nutritionbts:protein": 0,
+      "nutritionbts:fat": 5,
+      "nutritionbts:vitamins": 5,
+      "nutritionbts:minerals": 5
+    },
+    "vinery:solaris_wine": {
+      "nutritionbts:carbohydrates": 25,
+      "nutritionbts:protein": 0,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 8,
+      "nutritionbts:minerals": 7
+    },
+    "vinery:bolvar_wine": {
+      "nutritionbts:carbohydrates": 20,
+      "nutritionbts:protein": 0,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 13,
+      "nutritionbts:minerals": 7
+    },
+    "vinery:aegis_wine": {
+      "nutritionbts:carbohydrates": 15,
+      "nutritionbts:protein": 5,
+      "nutritionbts:fat": 5,
+      "nutritionbts:vitamins": 5,
+      "nutritionbts:minerals": 5
+    },
+    "vinery:clark_wine": {
+      "nutritionbts:carbohydrates": 10,
+      "nutritionbts:protein": 0,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 5,
+      "nutritionbts:minerals": 5
+    },
+    "vinery:chenet_wine": {
+      "nutritionbts:carbohydrates": 25,
+      "nutritionbts:protein": 0,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 5
+    },
+    "vinery:kelp_cider": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 5,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 30
+    },
+    "vinery:apple_wine": {
+      "nutritionbts:carbohydrates": 15,
+      "nutritionbts:protein": 0,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 15,
+      "nutritionbts:minerals": 10
+    },
+    "vinery:apple_cider": {
+      "nutritionbts:carbohydrates": 12,
+      "nutritionbts:protein": 0,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 12,
+      "nutritionbts:minerals": 6
+    },
+    "vinery:jellie_wine": {
+      "nutritionbts:carbohydrates": 20,
+      "nutritionbts:protein": 4,
+      "nutritionbts:fat": 6,
+      "nutritionbts:vitamins": 20,
+      "nutritionbts:minerals": 20
+    },
+    "vinery:red_wine": {
+      "nutritionbts:carbohydrates": 15,
+      "nutritionbts:protein": 0,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 5,
+      "nutritionbts:minerals": 10
+    },
+    "vinery:knulp_wine": {
+      "nutritionbts:carbohydrates": 10,
+      "nutritionbts:protein": 0,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 10,
+      "nutritionbts:minerals": 20
+    },
+    "vinery:jo_special_mixture": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 0,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 10,
+      "nutritionbts:minerals": 40
+    },
+    "vinery:cristel_wine": {
+      "nutritionbts:carbohydrates": 15,
+      "nutritionbts:protein": 5,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 5,
+      "nutritionbts:minerals": 20
+    },
+    "vinery:creepers_crush": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 0,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 25
+    },
+    "vinery:villagers_fright": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 0,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 25
+    },
+    "vinery:glowing_wine": {
+      "nutritionbts:carbohydrates": 10,
+      "nutritionbts:protein": 0,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 10,
+      "nutritionbts:minerals": 15
+    },
+    "vinery:mead": {
+      "nutritionbts:carbohydrates": 15,
+      "nutritionbts:protein": 0,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 0
+    },
+    "vinery:bottle_mojang_noir": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 0,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 20,
+      "nutritionbts:minerals": 10
+    },
+    "vinery:eiswein": {
+      "nutritionbts:carbohydrates": 5,
+      "nutritionbts:protein": 5,
+      "nutritionbts:fat": 5,
+      "nutritionbts:vitamins": 5,
+      "nutritionbts:minerals": 20
+    },
+    "vinery:lamroc_wine": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 0,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 30
+    },
+    "vinery:count_roleester_shiraz": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 0,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 30
+    }
+  }
+}

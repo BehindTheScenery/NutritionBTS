@@ -7,11 +7,7 @@
     "text.autoconfig.nutritionbts.option.positiveNutrition": "Positive Nutrition",
     "text.autoconfig.nutritionbts.option.posX": "Pos X",
     "text.autoconfig.nutritionbts.option.posY": "Pos Y",
-    "text.autoconfig.nutritionbts.option.carbohydrateItemId": "Carbohydrate Item Id",
-    "text.autoconfig.nutritionbts.option.proteinItemId": "Protein Item Id",
-    "text.autoconfig.nutritionbts.option.fatItemId": "Fat Item Id",
-    "text.autoconfig.nutritionbts.option.vitaminItemId": "Vitamin Item Id",
-    "text.autoconfig.nutritionbts.option.mineralItemId": "Mineral Item Id",
+    "text.nutritionbts.hold_shift": "Hold [SHIFT]",
 
     "screen.nutritionbts.carbohydrates": "Carbs",
     "screen.nutritionbts.protein": "Protein",

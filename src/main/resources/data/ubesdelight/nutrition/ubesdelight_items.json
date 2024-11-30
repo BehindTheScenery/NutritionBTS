@@ -1,0 +1,270 @@
+{
+  "values": {
+    "ubesdelight:ube": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 0,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 10,
+      "nutritionbts:minerals": 0
+    },
+    "ubesdelight:garlic": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 0,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 5,
+      "nutritionbts:minerals": 5
+    },
+    "ubesdelight:ginger": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 0,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 10
+    },
+    "ubesdelight:lemongrass": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 0,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 10,
+      "nutritionbts:minerals": 0
+    },
+    "ubesdelight:garlic_chop": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 0,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 3,
+      "nutritionbts:minerals": 2
+    },
+    "ubesdelight:ginger_chop": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 0,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 5
+    },
+    "ubesdelight:sinangag": {
+      "nutritionbts:carbohydrates": 10,
+      "nutritionbts:protein": 0,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 15,
+      "nutritionbts:minerals": 10
+    },
+    "ubesdelight:kinilaw": {
+      "nutritionbts:carbohydrates": 5,
+      "nutritionbts:protein": 10,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 10,
+      "nutritionbts:minerals": 5
+    },
+    "ubesdelight:lumpia": {
+      "nutritionbts:carbohydrates": 10,
+      "nutritionbts:protein": 10,
+      "nutritionbts:fat": 5,
+      "nutritionbts:vitamins": 10,
+      "nutritionbts:minerals": 0
+    },
+    "ubesdelight:tocino": {
+      "nutritionbts:carbohydrates": 10,
+      "nutritionbts:protein": 10,
+      "nutritionbts:fat": 5,
+      "nutritionbts:vitamins": 10,
+      "nutritionbts:minerals": 5
+    },
+    "ubesdelight:chicken_inasal": {
+      "nutritionbts:carbohydrates": 10,
+      "nutritionbts:protein": 15,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 15,
+      "nutritionbts:minerals": 0
+    },
+    "ubesdelight:chicken_inasal_rice": {
+      "nutritionbts:carbohydrates": 20,
+      "nutritionbts:protein": 15,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 20,
+      "nutritionbts:minerals": 10
+    },
+    "ubesdelight:tosilog": {
+      "nutritionbts:carbohydrates": 15,
+      "nutritionbts:protein": 20,
+      "nutritionbts:fat": 5,
+      "nutritionbts:vitamins": 15,
+      "nutritionbts:minerals": 10
+    },
+    "ubesdelight:bangsilog": {
+      "nutritionbts:carbohydrates": 15,
+      "nutritionbts:protein": 20,
+      "nutritionbts:fat": 5,
+      "nutritionbts:vitamins": 15,
+      "nutritionbts:minerals": 10
+    },
+    "ubesdelight:sisig": {
+      "nutritionbts:carbohydrates": 5,
+      "nutritionbts:protein": 30,
+      "nutritionbts:fat": 10,
+      "nutritionbts:vitamins": 10,
+      "nutritionbts:minerals": 10
+    },
+    "ubesdelight:bulalo": {
+      "nutritionbts:carbohydrates": 5,
+      "nutritionbts:protein": 20,
+      "nutritionbts:fat": 5,
+      "nutritionbts:vitamins": 20,
+      "nutritionbts:minerals": 20
+    },
+    "ubesdelight:arroz_caldo": {
+      "nutritionbts:carbohydrates": 15,
+      "nutritionbts:protein": 15,
+      "nutritionbts:fat": 5,
+      "nutritionbts:vitamins": 25,
+      "nutritionbts:minerals": 10
+    },
+    "ubesdelight:mechado": {
+      "nutritionbts:carbohydrates": 5,
+      "nutritionbts:protein": 15,
+      "nutritionbts:fat": 5,
+      "nutritionbts:vitamins": 30,
+      "nutritionbts:minerals": 15
+    },
+    "ubesdelight:cookie_ube": {
+      "nutritionbts:carbohydrates": 5,
+      "nutritionbts:protein": 0,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 5,
+      "nutritionbts:minerals": 0
+    },
+    "ubesdelight:cookie_ginger": {
+      "nutritionbts:carbohydrates": 5,
+      "nutritionbts:protein": 0,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 5
+    },
+    "ubesdelight:leche_flan": {
+      "nutritionbts:carbohydrates": 5,
+      "nutritionbts:protein": 5,
+      "nutritionbts:fat": 5,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 0
+    },
+    "ubesdelight:ube_cake_slice": {
+      "nutritionbts:carbohydrates": 3,
+      "nutritionbts:protein": 3,
+      "nutritionbts:fat": 2,
+      "nutritionbts:vitamins": 2,
+      "nutritionbts:minerals": 0
+    },
+    "ubesdelight:polvorone": {
+      "nutritionbts:carbohydrates": 4,
+      "nutritionbts:protein": 3,
+      "nutritionbts:fat": 3,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 0
+    },
+    "ubesdelight:polvorone_pinipig": {
+      "nutritionbts:carbohydrates": 6,
+      "nutritionbts:protein": 2,
+      "nutritionbts:fat": 2,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 0
+    },
+    "ubesdelight:polvorone_ube": {
+      "nutritionbts:carbohydrates": 4,
+      "nutritionbts:protein": 2,
+      "nutritionbts:fat": 2,
+      "nutritionbts:vitamins": 2,
+      "nutritionbts:minerals": 0
+    },
+    "ubesdelight:polvorone_cc": {
+      "nutritionbts:carbohydrates": 8,
+      "nutritionbts:protein": 1,
+      "nutritionbts:fat": 1,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 0
+    },
+    "ubesdelight:pandesal_raw": {
+      "nutritionbts:carbohydrates": 9,
+      "nutritionbts:protein": 1,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 0
+    },
+    "ubesdelight:pandesal": {
+      "nutritionbts:carbohydrates": 35,
+      "nutritionbts:protein": 5,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 0
+    },
+    "ubesdelight:pandesal_ube_raw": {
+      "nutritionbts:carbohydrates": 7,
+      "nutritionbts:protein": 1,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 2,
+      "nutritionbts:minerals": 0
+    },
+    "ubesdelight:pandesal_ube": {
+      "nutritionbts:carbohydrates": 30,
+      "nutritionbts:protein": 5,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 10,
+      "nutritionbts:minerals": 0
+    },
+    "ubesdelight:ensaymada_raw": {
+      "nutritionbts:carbohydrates": 4,
+      "nutritionbts:protein": 4,
+      "nutritionbts:fat": 2,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 0
+    },
+    "ubesdelight:ensaymada": {
+      "nutritionbts:carbohydrates": 20,
+      "nutritionbts:protein": 20,
+      "nutritionbts:fat": 5,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 0
+    },
+    "ubesdelight:ensaymada_ube_raw": {
+      "nutritionbts:carbohydrates": 3,
+      "nutritionbts:protein": 2,
+      "nutritionbts:fat": 2,
+      "nutritionbts:vitamins": 3,
+      "nutritionbts:minerals": 0
+    },
+    "ubesdelight:ensaymada_ube": {
+      "nutritionbts:carbohydrates": 15,
+      "nutritionbts:protein": 10,
+      "nutritionbts:fat": 10,
+      "nutritionbts:vitamins": 15,
+      "nutritionbts:minerals": 0
+    },
+    "ubesdelight:hopia_munggo_raw": {
+      "nutritionbts:carbohydrates": 4,
+      "nutritionbts:protein": 2,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 4
+    },
+    "ubesdelight:hopia_munggo": {
+      "nutritionbts:carbohydrates": 15,
+      "nutritionbts:protein": 5,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 15
+    },
+    "ubesdelight:hopia_ube_raw": {
+      "nutritionbts:carbohydrates": 1,
+      "nutritionbts:protein": 1,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 4,
+      "nutritionbts:minerals": 4
+    },
+    "ubesdelight:hopia_ube": {
+      "nutritionbts:carbohydrates": 3,
+      "nutritionbts:protein": 2,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 15,
+      "nutritionbts:minerals": 15
+    }
+  }
+}

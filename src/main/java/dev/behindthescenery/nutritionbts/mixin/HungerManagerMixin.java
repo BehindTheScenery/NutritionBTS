@@ -1,133 +1,105 @@
 package dev.behindthescenery.nutritionbts.mixin;
 
-import com.google.common.collect.Multimap;
-import dev.behindthescenery.nutritionbts.NutritionMain;
 import dev.behindthescenery.nutritionbts.access.HungerManagerAccess;
+import dev.behindthescenery.nutritionbts.data.NutritionTypeLoader;
 import dev.behindthescenery.nutritionbts.init.ConfigInit;
+import dev.behindthescenery.nutritionbts.nutrition.NutritionType;
 import net.minecraft.entity.attribute.EntityAttributeInstance;
+import net.minecraft.entity.attribute.EntityAttributeModifier;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.player.HungerManager;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.nbt.NbtCompound;
+import net.minecraft.nbt.NbtElement;
+import net.minecraft.nbt.NbtList;
 import net.minecraft.network.packet.s2c.play.EntityAttributesS2CPacket;
+import net.minecraft.registry.Registries;
 import net.minecraft.server.network.ServerPlayerEntity;
+import net.minecraft.util.Identifier;
+import org.jetbrains.annotations.NotNull;
 import org.spongepowered.asm.mixin.Mixin;
-import org.spongepowered.asm.mixin.Shadow;
+import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
-@SuppressWarnings("ALL")
+//@SuppressWarnings("ALL")
+@SuppressWarnings("AddedMixinMembersNamePattern")
 @Mixin(HungerManager.class)
 public class HungerManagerMixin implements HungerManagerAccess {
-
-    private int carbohydrateLevel = ConfigInit.CONFIG.maxNutrition / 2;
-    private int proteinLevel = ConfigInit.CONFIG.maxNutrition / 2;
-    private int fatLevel = ConfigInit.CONFIG.maxNutrition / 2;
-    private int vitaminLevel = ConfigInit.CONFIG.maxNutrition / 2;
-    private int mineralLevel = ConfigInit.CONFIG.maxNutrition / 2;
-    private final Map<Integer, Boolean> effectMap = new HashMap<Integer, Boolean>() {
-        {
-            put(0, false);
-            put(1, false);
-            put(2, false);
-            put(3, false);
-            put(4, false);
-        }
-    };
-    // Unused
-    private boolean shouldUpdateNutritions = false;
-
-    @Shadow
-    private int foodTickTimer;
+    // Needs to be serialized
+    @Unique
+    private final Map<NutritionType, Integer> nutritions = new HashMap<>();
 
     @Inject(method = "update", at = @At(value = "INVOKE_ASSIGN", target = "Ljava/lang/Math;max(II)I", ordinal = 0))
     private void updateNutritionMixin(PlayerEntity player, CallbackInfo info) {
-        decrementNutritionLevel(0, 1);
-        decrementNutritionLevel(1, 1);
-        decrementNutritionLevel(2, 1);
-        decrementNutritionLevel(3, 1);
-        decrementNutritionLevel(4, 1);
+        NutritionTypeLoader.INSTANCE.getLoaded().forEach(type -> decrementNutritionLevel(type, 1));
     }
 
-    @Inject(method = "update", at = @At("HEAD"))
-    private void updateMixin(PlayerEntity player, CallbackInfo info) {
-        if (this.foodTickTimer % 5 == 0 && this.shouldUpdateNutritions) {
-            this.shouldUpdateNutritions = false;
+    @Unique
+    private void applyEffects(PlayerEntity player, @NotNull Collection<StatusEffectInstance> effects) {
+        for (StatusEffectInstance instance : effects) {
+            if (!player.hasStatusEffect(instance.getEffectType()) || player.getStatusEffect(instance.getEffectType()).getDuration() < instance.getDuration() - 50) {
+                player.addStatusEffect(new StatusEffectInstance(instance));
+            }
         }
     }
 
-    @SuppressWarnings("unchecked")
+    @Unique
+    private List<EntityAttributeInstance> applyAttributeModifiers(PlayerEntity player, @NotNull Map<Identifier, EntityAttributeModifier> map) {
+        List<EntityAttributeInstance> modifiedAttributes = new ArrayList<>();
+        for (Map.Entry<Identifier, EntityAttributeModifier> entry : map.entrySet()) {
+            Registries.ATTRIBUTE.getEntry(entry.getKey()).ifPresent(attribute -> {
+                EntityAttributeInstance instance = player.getAttributeInstance(attribute);
+                if (instance == null || instance.hasModifier(entry.getValue().id())) return;
+                instance.addPersistentModifier(entry.getValue());
+                modifiedAttributes.add(instance);
+            });
+        }
+        return modifiedAttributes;
+    }
+
+    @Unique
+    private List<EntityAttributeInstance> tryRemoveAttributeModifiers(PlayerEntity player, @NotNull Map<Identifier, EntityAttributeModifier> map) {
+        List<EntityAttributeInstance> modifiedAttributes = new ArrayList<>();
+        for (Map.Entry<Identifier, EntityAttributeModifier> entry : map.entrySet()) {
+            Registries.ATTRIBUTE.getEntry(entry.getKey()).ifPresent(attribute -> {
+                EntityAttributeInstance instance = player.getAttributeInstance(attribute);
+                if (instance == null || !instance.hasModifier(entry.getValue().id())) return;
+                instance.removeModifier(entry.getValue());
+                modifiedAttributes.add(instance);
+            });
+        }
+        return modifiedAttributes;
+    }
+
     @Inject(method = "update", at = @At("TAIL"))
-    private void updateNutritionEffectsMixin(PlayerEntity player, CallbackInfo info) {
-        if (!player.isCreative() && player.getWorld().getTime() % 20 == 0) {
-            boolean changedAttributes = false;
-            List<Integer> list = List.of(this.carbohydrateLevel, this.proteinLevel, this.fatLevel, this.vitaminLevel, this.mineralLevel);
-            for (int i = 0; i < list.size(); i++) {
-                if (list.get(i) <= ConfigInit.CONFIG.negativeNutrition) {
-                    List<Object> negativeEffectList = NutritionMain.NUTRITION_NEGATIVE_EFFECTS.get(i);
-                    if (negativeEffectList != null && !negativeEffectList.isEmpty()) {
-                        for (int u = 0; u < negativeEffectList.size(); u++) {
-                            if (negativeEffectList.get(u) instanceof StatusEffectInstance statusEffectInstance) {
-                                if (!player.hasStatusEffect(statusEffectInstance.getEffectType())
-                                    || player.getStatusEffect(statusEffectInstance.getEffectType()).getDuration() < statusEffectInstance.getDuration() - 50) {
-                                    player.addStatusEffect(new StatusEffectInstance(statusEffectInstance));
-                                }
-                            } else if (!this.effectMap.get(i) && negativeEffectList.get(u) instanceof Multimap multimap) {
-                                player.getAttributes().addTemporaryModifiers(multimap);
-                                changedAttributes = true;
-                            }
-                        }
-                        this.effectMap.put(i, true);
-                    }
-                } else if (list.get(i) >= ConfigInit.CONFIG.positiveNutrition) {
-                    List<Object> positiveEffectList = NutritionMain.NUTRITION_POSITIVE_EFFECTS.get(i);
-                    if (positiveEffectList != null && !positiveEffectList.isEmpty()) {
-                        for (int u = 0; u < positiveEffectList.size(); u++) {
-                            if (positiveEffectList.get(u) instanceof StatusEffectInstance statusEffectInstance) {
-                                if (!player.hasStatusEffect(statusEffectInstance.getEffectType())
-                                    || player.getStatusEffect(statusEffectInstance.getEffectType()).getDuration() < statusEffectInstance.getDuration() - 50) {
-                                    player.addStatusEffect(new StatusEffectInstance(statusEffectInstance));
-                                }
-                            } else if (!this.effectMap.get(i) && positiveEffectList.get(u) instanceof Multimap multimap) {
-                                player.getAttributes().addTemporaryModifiers(multimap);
-                                changedAttributes = true;
-                            }
-                        }
-                        this.effectMap.put(i, true);
-                    }
-                } else {
-                    if (this.effectMap.get(i)) {
-                        this.effectMap.put(i, false);
-                        List<Object> positiveEffectList = NutritionMain.NUTRITION_POSITIVE_EFFECTS.get(i);
-                        for (Object o : positiveEffectList) {
-                            if (o instanceof Multimap multimap) {
-                                player.getAttributes().removeModifiers(multimap);
-                                changedAttributes = true;
-                            }
-                        }
-                        List<Object> negativeEffectList = NutritionMain.NUTRITION_NEGATIVE_EFFECTS.get(i);
-                        for (int u = 0; u < negativeEffectList.size(); u++) {
-                            if (negativeEffectList.get(u) instanceof Multimap multimap) {
-                                player.getAttributes().removeModifiers(multimap);
-                                changedAttributes = true;
-                            }
-                        }
-                    }
-                }
+    private void updateNutritionEffectsMixin(@NotNull PlayerEntity player, CallbackInfo info) {
+        if (player.isCreative() || player.getWorld().getTime() % 20 != 0) return;
+
+        List<EntityAttributeInstance> modifiedAttributes = new ArrayList<>();
+
+        for (NutritionType type : NutritionTypeLoader.INSTANCE.getLoaded()) {
+            if (!nutritions.containsKey(type)) nutritions.put(type, ConfigInit.CONFIG.maxNutrition / 2);
+
+            int nutritionLevel = nutritions.get(type);
+
+            if (nutritionLevel <= ConfigInit.CONFIG.negativeNutrition) {
+                applyEffects(player, type.negativeEffects());
+                modifiedAttributes.addAll(applyAttributeModifiers(player, type.negativeAttributeModifiers()));
             }
-            if (changedAttributes) {
-                Collection<EntityAttributeInstance> collection = player.getAttributes().getAttributesToSend();
-                if (!collection.isEmpty()) {
-                    ((ServerPlayerEntity) player).networkHandler.send(new EntityAttributesS2CPacket(player.getId(), collection));
-                }
+            else modifiedAttributes.addAll(tryRemoveAttributeModifiers(player, type.negativeAttributeModifiers()));
+
+            if (nutritionLevel >= ConfigInit.CONFIG.positiveNutrition) {
+                applyEffects(player, type.positiveEffects());
+                modifiedAttributes.addAll(applyAttributeModifiers(player, type.positiveAttributeModifiers()));
             }
+            else modifiedAttributes.addAll(tryRemoveAttributeModifiers(player, type.positiveAttributeModifiers()));
         }
+
+        if (!modifiedAttributes.isEmpty()) ((ServerPlayerEntity) player).networkHandler.send(new EntityAttributesS2CPacket(player.getId(), modifiedAttributes));
     }
 
     @Inject(method = "addExhaustion", at = @At("TAIL"))
@@ -136,80 +108,54 @@ public class HungerManagerMixin implements HungerManagerAccess {
 
     @Inject(method = "readNbt", at = @At("TAIL"))
     private void readNbtMixin(NbtCompound nbt, CallbackInfo info) {
-        this.carbohydrateLevel = nbt.getInt("CarbohydrateLevel");
-        this.proteinLevel = nbt.getInt("ProteinLevel");
-        this.fatLevel = nbt.getInt("FatLevel");
-        this.vitaminLevel = nbt.getInt("VitaminLevel");
-        this.mineralLevel = nbt.getInt("MineralLevel");
+        nbt.getList("Nutritions", NbtElement.COMPOUND_TYPE).forEach(e -> {
+            NbtCompound compound = (NbtCompound) e;
+            try {
+                nutritions.put(NutritionType.byId(Identifier.of(compound.getString("Key"))), compound.getInt("Value"));
+            } catch (IllegalArgumentException ignored) {
+            }
+        });
     }
 
     @Inject(method = "writeNbt", at = @At("TAIL"))
     private void writeNbtMixin(NbtCompound nbt, CallbackInfo info) {
-        nbt.putInt("CarbohydrateLevel", this.carbohydrateLevel);
-        nbt.putInt("ProteinLevel", this.proteinLevel);
-        nbt.putFloat("FatLevel", this.fatLevel);
-        nbt.putFloat("VitaminLevel", this.vitaminLevel);
-        nbt.putFloat("MineralLevel", this.mineralLevel);
+        NbtList list = new NbtList();
+        nutritions.forEach((k, v) -> {
+            NbtCompound compound = new NbtCompound();
+            compound.putString("Key", k.id().toString());
+            compound.putInt("Value", v);
+            list.add(compound);
+        });
+        nbt.put("Nutritions", list);
     }
 
     @Override
-    public void addNutritionLevel(int type, int level) {
-        if (type == 0) {
-            this.carbohydrateLevel = Math.min(this.carbohydrateLevel + level, ConfigInit.CONFIG.maxNutrition);
-        } else if (type == 1) {
-            this.proteinLevel = Math.min(this.proteinLevel + level, ConfigInit.CONFIG.maxNutrition);
-        } else if (type == 2) {
-            this.fatLevel = Math.min(this.fatLevel + level, ConfigInit.CONFIG.maxNutrition);
-        } else if (type == 3) {
-            this.vitaminLevel = Math.min(this.vitaminLevel + level, ConfigInit.CONFIG.maxNutrition);
-        } else if (type == 4) {
-            this.mineralLevel = Math.min(this.mineralLevel + level, ConfigInit.CONFIG.maxNutrition);
-        }
-        this.shouldUpdateNutritions = true;
+    public void addNutritionLevel(NutritionType type, int level) {
+        nutritions.put(type, Math.min(nutritions.getOrDefault(type, 0) + level, ConfigInit.CONFIG.maxNutrition));
     }
 
     @Override
-    public void decrementNutritionLevel(int type, int level) {
-        if (type == 0) {
-            this.carbohydrateLevel = Math.max(this.carbohydrateLevel - level, 0);
-        } else if (type == 1) {
-            this.proteinLevel = Math.max(this.proteinLevel - level, 0);
-        } else if (type == 2) {
-            this.fatLevel = Math.max(this.fatLevel - level, 0);
-        } else if (type == 3) {
-            this.vitaminLevel = Math.max(this.vitaminLevel - level, 0);
-        } else if (type == 4) {
-            this.mineralLevel = Math.max(this.mineralLevel - level, 0);
-        }
-        this.shouldUpdateNutritions = true;
+    public void decrementNutritionLevel(NutritionType type, int level) {
+        nutritions.put(type, Math.max(nutritions.getOrDefault(type, 0) - level, 0));
     }
 
     @Override
-    public void setNutritionLevel(int type, int level) {
-        if (type == 0) {
-            this.carbohydrateLevel = level;
-        } else if (type == 1) {
-            this.proteinLevel = level;
-        } else if (type == 2) {
-            this.fatLevel = level;
-        } else if (type == 3) {
-            this.vitaminLevel = level;
-        } else if (type == 4) {
-            this.mineralLevel = level;
-        }
-        this.shouldUpdateNutritions = true;
+    public void setNutritionLevel(NutritionType type, int level) {
+        nutritions.put(type, level);
     }
 
     @Override
-    public int getNutritionLevel(int type) {
-        return switch (type) {
-            case 0 -> this.carbohydrateLevel;
-            case 1 -> this.proteinLevel;
-            case 2 -> this.fatLevel;
-            case 3 -> this.vitaminLevel;
-            case 4 -> this.mineralLevel;
-            default -> 0;
-        };
+    public int getNutritionLevel(NutritionType type) {
+        return nutritions.getOrDefault(type, 0);
     }
 
+    @Override
+    public Map<NutritionType, Integer> getNutritionLevels() {
+        return Map.copyOf(nutritions);
+    }
+
+    @Override
+    public void setNutritionLevels(Map<NutritionType, Integer> levels) {
+        nutritions.putAll(levels);
+    }
 }

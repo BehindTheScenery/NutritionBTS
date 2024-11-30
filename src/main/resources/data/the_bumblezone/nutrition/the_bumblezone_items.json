@@ -1,0 +1,39 @@
+{
+  "values": {
+    "the_bumblezone:sugar_water_bottle": {
+      "nutritionbts:carbohydrates": 5,
+      "nutritionbts:protein": 0,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 0
+    },
+    "the_bumblezone:royal_jelly_bottle": {
+      "nutritionbts:carbohydrates": 15,
+      "nutritionbts:protein": 0,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 10,
+      "nutritionbts:minerals": 35
+    },
+    "the_bumblezone:bee_soup": {
+      "nutritionbts:carbohydrates": 30,
+      "nutritionbts:protein": 0,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 10,
+      "nutritionbts:minerals": 20
+    },
+    "the_bumblezone:bee_bread": {
+      "nutritionbts:carbohydrates": 20,
+      "nutritionbts:protein": 0,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 10,
+      "nutritionbts:minerals": 0
+    },
+    "the_bumblezone:honey_crystal_shards": {
+      "nutritionbts:carbohydrates": 5,
+      "nutritionbts:protein": 0,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 5
+    }
+  }
+}

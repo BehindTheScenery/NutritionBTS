@@ -1,0 +1,36 @@
+{
+  "id": "nutritionbts:vitamins",
+  "tooltip": "screen.nutritionbts.vitamins",
+  "icon": "minecraft:apple",
+  "color": 11711154,
+  "positiveAttributes": {
+    "minecraft:generic.max_health": {
+      "id": "nutritionbts:vitamins_positive_1",
+      "operation": "add_value",
+      "amount": 2.0
+    }
+  },
+  "negativeAttributes": {
+    "minecraft:generic.max_health": {
+      "id": "nutritionbts:vitamins_negative_1",
+      "operation": "add_value",
+      "amount": -2.0
+    }
+  },
+  "positiveEffects": [
+    {
+      "id": "minecraft:regeneration",
+      "duration": 319,
+      "amplifier": 0,
+      "show_particles": false
+    }
+  ],
+  "negativeEffects": [
+    {
+      "id": "minecraft:weakness",
+      "duration": 319,
+      "amplifier": 0,
+      "show_particles": false
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "values": {
+    "betternether:stalagnate_bowl_wart": {
+      "nutritionbts:carbohydrates": 10,
+      "nutritionbts:protein": 0,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 10,
+      "nutritionbts:minerals": 10
+    },
+    "betternether:stalagnate_bowl_mushroom": {
+      "nutritionbts:carbohydrates": 7,
+      "nutritionbts:protein": 4,
+      "nutritionbts:fat": 15,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 4
+    },
+    "betternether:stalagnate_bowl_apple": {
+      "nutritionbts:carbohydrates": 5,
+      "nutritionbts:protein": 0,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 15,
+      "nutritionbts:minerals": 0
+    },
+    "betternether:hook_mushroom_cooked": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 5,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 10,
+      "nutritionbts:minerals": 5
+    },
+    "betternether:black_apple": {
+      "nutritionbts:carbohydrates": 5,
+      "nutritionbts:protein": 0,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 10,
+      "nutritionbts:minerals": 5
+    }
+  }
+}

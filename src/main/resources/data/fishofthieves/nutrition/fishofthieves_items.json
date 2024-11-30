@@ -1,0 +1,165 @@
+{
+  "values": {
+    "fishofthieves:earthworms": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 2,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 3
+    },
+    "fishofthieves:grubs": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 2,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 3
+    },
+    "fishofthieves:leeches": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 2,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 3
+    },
+    "fishofthieves:splashtail": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 4,
+      "nutritionbts:fat": 1,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 5
+    },
+    "fishofthieves:cooked_splashtail": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 12,
+      "nutritionbts:fat": 3,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 15
+    },
+    "fishofthieves:pondie": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 4,
+      "nutritionbts:fat": 1,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 0
+    },
+    "fishofthieves:cooked_pondie": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 20,
+      "nutritionbts:fat": 5,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 0
+    },
+    "fishofthieves:islehopper": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 4,
+      "nutritionbts:fat": 2,
+      "nutritionbts:vitamins": 4,
+      "nutritionbts:minerals": 0
+    },
+    "fishofthieves:cooked_islehopper": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 10,
+      "nutritionbts:fat": 5,
+      "nutritionbts:vitamins": 10,
+      "nutritionbts:minerals": 0
+    },
+    "fishofthieves:ancientscale": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 4,
+      "nutritionbts:fat": 2,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 4
+    },
+    "fishofthieves:cooked_ancientscale": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 10,
+      "nutritionbts:fat": 5,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 10
+    },
+    "fishofthieves:plentifin": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 10,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 0
+    },
+    "fishofthieves:cooked_plentifin": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 25,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 0
+    },
+    "fishofthieves:wildsplash": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 3,
+      "nutritionbts:fat": 3,
+      "nutritionbts:vitamins": 3,
+      "nutritionbts:minerals": 1
+    },
+    "fishofthieves:cooked_wildsplash": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 10,
+      "nutritionbts:fat": 10,
+      "nutritionbts:vitamins": 5,
+      "nutritionbts:minerals": 5
+    },
+    "fishofthieves:devilfish": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 5,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 5
+    },
+    "fishofthieves:cooked_devilfish": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 12,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 13
+    },
+    "fishofthieves:battlegill": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 4,
+      "nutritionbts:fat": 2,
+      "nutritionbts:vitamins": 2,
+      "nutritionbts:minerals": 2
+    },
+    "fishofthieves:cooked_battlegill": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 12,
+      "nutritionbts:fat": 6,
+      "nutritionbts:vitamins": 6,
+      "nutritionbts:minerals": 6
+    },
+    "fishofthieves:wrecker": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 5,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 5
+    },
+    "fishofthieves:cooked_wrecker": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 15,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 15
+    },
+    "fishofthieves:stormfish": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 4,
+      "nutritionbts:fat": 2,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 4
+    },
+    "fishofthieves:cooked_stormfish": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 12,
+      "nutritionbts:fat": 6,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 12
+    }
+  }
+}

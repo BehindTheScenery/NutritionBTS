@@ -1,0 +1,102 @@
+{
+  "values": {
+    "betterend:shadow_berry_raw": {
+      "nutritionbts:carbohydrates": 5,
+      "nutritionbts:protein": 0,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 5,
+      "nutritionbts:minerals": 10
+    },
+    "betterend:shadow_berry_cooked": {
+      "nutritionbts:carbohydrates": 10,
+      "nutritionbts:protein": 0,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 10,
+      "nutritionbts:minerals": 10
+    },
+    "betterend:end_fish_raw": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 7,
+      "nutritionbts:fat": 3,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 0
+    },
+    "betterend:end_fish_cooked": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 21,
+      "nutritionbts:fat": 9,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 0
+    },
+    "betterend:sweet_berry_jelly": {
+      "nutritionbts:carbohydrates": 15,
+      "nutritionbts:protein": 5,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 15,
+      "nutritionbts:minerals": 5
+    },
+    "betterend:shadow_berry_jelly": {
+      "nutritionbts:carbohydrates": 10,
+      "nutritionbts:protein": 5,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 10,
+      "nutritionbts:minerals": 5
+    },
+    "betterend:blossom_berry_jelly": {
+      "nutritionbts:carbohydrates": 15,
+      "nutritionbts:protein": 5,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 15,
+      "nutritionbts:minerals": 5
+    },
+    "betterend:blossom_berry": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 0,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 15,
+      "nutritionbts:minerals": 5
+    },
+    "betterend:amber_root_raw": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 0,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 10
+    },
+    "betterend:chorus_mushroom_raw": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 5,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 10
+    },
+    "betterend:chorus_mushroom_cooked": {
+      "nutritionbts:carbohydrates": 5,
+      "nutritionbts:protein": 10,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 15
+    },
+    "betterend:bolux_mushroom_cooked": {
+      "nutritionbts:carbohydrates": 5,
+      "nutritionbts:protein": 10,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 15
+    },
+    "betterend:cave_pumpkin_pie": {
+      "nutritionbts:carbohydrates": 15,
+      "nutritionbts:protein": 0,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 15,
+      "nutritionbts:minerals": 10
+    },
+    "betterend:umbrella_cluster_juice": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 0,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 15,
+      "nutritionbts:minerals": 10
+    }
+  }
+}

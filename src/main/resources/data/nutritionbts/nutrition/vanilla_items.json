@@ -1,0 +1,291 @@
+{
+  "values": {
+    "minecraft:apple": {
+      "nutritionbts:carbohydrates": 12,
+      "nutritionbts:protein": 1,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 6,
+      "nutritionbts:minerals": 1
+    },
+    "minecraft:golden_apple": {
+      "nutritionbts:carbohydrates": 12,
+      "nutritionbts:protein": 1,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 6,
+      "nutritionbts:minerals": 1
+    },
+    "minecraft:enchanted_golden_apple": {
+      "nutritionbts:carbohydrates": 12,
+      "nutritionbts:protein": 1,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 6,
+      "nutritionbts:minerals": 1
+    },
+    "minecraft:melon_slice": {
+      "nutritionbts:carbohydrates": 4,
+      "nutritionbts:protein": 1,
+      "nutritionbts:fat": 1,
+      "nutritionbts:vitamins": 3,
+      "nutritionbts:minerals": 1
+    },
+    "minecraft:sweet_berries": {
+      "nutritionbts:carbohydrates": 3,
+      "nutritionbts:protein": 0,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 6,
+      "nutritionbts:minerals": 1
+    },
+    "minecraft:glow_berries": {
+      "nutritionbts:carbohydrates": 3,
+      "nutritionbts:protein": 1,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 3,
+      "nutritionbts:minerals": 3
+    },
+    "minecraft:chorus_fruit": {
+      "nutritionbts:carbohydrates": 6,
+      "nutritionbts:protein": 4,
+      "nutritionbts:fat": 6,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 4
+    },
+    "minecraft:carrot": {
+      "nutritionbts:carbohydrates": 6,
+      "nutritionbts:protein": 3,
+      "nutritionbts:fat": 1,
+      "nutritionbts:vitamins": 3,
+      "nutritionbts:minerals": 2
+    },
+    "minecraft:golden_carrot": {
+      "nutritionbts:carbohydrates": 12,
+      "nutritionbts:protein": 6,
+      "nutritionbts:fat": 2,
+      "nutritionbts:vitamins": 6,
+      "nutritionbts:minerals": 4
+    },
+    "minecraft:poisonous_potato": {
+      "nutritionbts:carbohydrates": 4,
+      "nutritionbts:protein": 1,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 0
+    },
+    "minecraft:baked_potato": {
+      "nutritionbts:carbohydrates": 20,
+      "nutritionbts:protein": 5,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 0
+    },
+    "minecraft:potato": {
+      "nutritionbts:carbohydrates": 6,
+      "nutritionbts:protein": 2,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 2
+    },
+    "minecraft:beetroot": {
+      "nutritionbts:carbohydrates": 3,
+      "nutritionbts:protein": 1,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 1,
+      "nutritionbts:minerals": 0
+    },
+    "minecraft:dried_kelp": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 1,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 4
+    },
+    "minecraft:beef": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 8,
+      "nutritionbts:fat": 7,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 0
+    },
+    "minecraft:cooked_beef": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 24,
+      "nutritionbts:fat": 16,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 0
+    },
+    "minecraft:porkchop": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 7,
+      "nutritionbts:fat": 8,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 0
+    },
+    "minecraft:cooked_porkchop": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 16,
+      "nutritionbts:fat": 24,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 0
+    },
+    "minecraft:mutton": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 7,
+      "nutritionbts:fat": 3,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 0
+    },
+    "minecraft:cooked_mutton": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 21,
+      "nutritionbts:fat": 9,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 0
+    },
+    "minecraft:chicken": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 9,
+      "nutritionbts:fat": 1,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 0
+    },
+    "minecraft:cooked_chicken": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 27,
+      "nutritionbts:fat": 3,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 0
+    },
+    "minecraft:rabbit": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 11,
+      "nutritionbts:fat": 4,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 0
+    },
+    "minecraft:cooked_rabbit": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 19,
+      "nutritionbts:fat": 6,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 0
+    },
+    "minecraft:cod": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 7,
+      "nutritionbts:fat": 1,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 2
+    },
+    "minecraft:cooked_cod": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 16,
+      "nutritionbts:fat": 3,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 6
+    },
+    "minecraft:salmon": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 4,
+      "nutritionbts:fat": 4,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 2
+    },
+    "minecraft:cooked_salmon": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 10,
+      "nutritionbts:fat": 14,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 6
+    },
+    "minecraft:tropical_fish": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 3,
+      "nutritionbts:fat": 1,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 1
+    },
+    "minecraft:pufferfish": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 0,
+      "nutritionbts:fat": 4,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 1
+    },
+    "minecraft:bread": {
+      "nutritionbts:carbohydrates": 19,
+      "nutritionbts:protein": 4,
+      "nutritionbts:fat": 1,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 1
+    },
+    "minecraft:cookie": {
+      "nutritionbts:carbohydrates": 2,
+      "nutritionbts:protein": 0,
+      "nutritionbts:fat": 3,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 0
+    },
+    "minecraft:pumpkin_pie": {
+      "nutritionbts:carbohydrates": 18,
+      "nutritionbts:protein": 4,
+      "nutritionbts:fat": 18,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 0
+    },
+    "minecraft:rotten_flesh": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 4,
+      "nutritionbts:fat": 2,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 14
+    },
+    "minecraft:spider_eye": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 2,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 8
+    },
+    "minecraft:mushroom_stew": {
+      "nutritionbts:carbohydrates": 7,
+      "nutritionbts:protein": 4,
+      "nutritionbts:fat": 15,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 4
+    },
+    "minecraft:beetroot_soup": {
+      "nutritionbts:carbohydrates": 18,
+      "nutritionbts:protein": 6,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 6,
+      "nutritionbts:minerals": 0
+    },
+    "minecraft:rabbit_stew": {
+      "nutritionbts:carbohydrates": 26,
+      "nutritionbts:protein": 27,
+      "nutritionbts:fat": 8,
+      "nutritionbts:vitamins": 4,
+      "nutritionbts:minerals": 5
+    },
+    "minecraft:suspicious_stew": {
+      "nutritionbts:carbohydrates": 7,
+      "nutritionbts:protein": 4,
+      "nutritionbts:fat": 15,
+      "nutritionbts:vitamins": 5,
+      "nutritionbts:minerals": 4
+    },
+    "minecraft:honey_bottle": {
+      "nutritionbts:carbohydrates": 29,
+      "nutritionbts:protein": 1,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 0
+    },
+    "minecraft:ominous_bottle": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 0,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 5
+    }
+  }
+}

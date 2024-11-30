@@ -18,6 +18,8 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
+import static dev.behindthescenery.nutritionbts.NutritionMain.MOD_ID;
+
 @Environment(EnvType.CLIENT)
 @Mixin(InventoryScreen.class)
 public abstract class InventoryScreenMixin extends AbstractInventoryScreen<PlayerScreenHandler> {
@@ -30,7 +32,7 @@ public abstract class InventoryScreenMixin extends AbstractInventoryScreen<Playe
     private void mouseClickedMixin(double mouseX, double mouseY, int button, CallbackInfoReturnable<Boolean> info) {
         if (this.client != null && this.focusedSlot == null && this.isPointWithinBounds(ConfigInit.CONFIG.posX, ConfigInit.CONFIG.posY, 9, 9, mouseX, mouseY)) {
             NutritionClientPacketHandler.writeC2SNutritionPacket();
-            this.client.setScreen(new NutritionScreen(Text.translatable("screen.nutritionbts")));
+            this.client.setScreen(new NutritionScreen(Text.translatable("screen." + MOD_ID)));
             info.setReturnValue(true);
         }
     }
@@ -39,7 +41,7 @@ public abstract class InventoryScreenMixin extends AbstractInventoryScreen<Playe
     protected void drawBackgroundMixin(DrawContext context, float delta, int mouseX, int mouseY, CallbackInfo info) {
         if (this.isPointWithinBounds(ConfigInit.CONFIG.posX, ConfigInit.CONFIG.posY, 9, 9, mouseX, mouseY)) {
             context.drawTexture(RenderInit.NUTRITION_ICONS, this.x + ConfigInit.CONFIG.posX, this.y + ConfigInit.CONFIG.posY, 185, 10, 9, 9);
-            context.drawTooltip(this.textRenderer, Text.translatable("screen.nutritionbts"), mouseX, mouseY);
+            context.drawTooltip(this.textRenderer, Text.translatable("screen." + MOD_ID), mouseX, mouseY);
         } else {
             context.drawTexture(RenderInit.NUTRITION_ICONS, this.x + ConfigInit.CONFIG.posX, this.y + ConfigInit.CONFIG.posY, 176, 10, 9, 9);
         }

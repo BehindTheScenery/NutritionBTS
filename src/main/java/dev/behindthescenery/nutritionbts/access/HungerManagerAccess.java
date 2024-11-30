@@ -1,12 +1,20 @@
 package dev.behindthescenery.nutritionbts.access;
 
+import dev.behindthescenery.nutritionbts.nutrition.NutritionType;
+
+import java.util.Map;
+
 public interface HungerManagerAccess {
 
-    void addNutritionLevel(int type, int level);
+    void addNutritionLevel(NutritionType type, int level);
 
-    void decrementNutritionLevel(int type, int level);
+    void decrementNutritionLevel(NutritionType type, int level);
 
-    void setNutritionLevel(int type, int level);
+    void setNutritionLevel(NutritionType type, int level);
 
-    int getNutritionLevel(int type);
+    int getNutritionLevel(NutritionType type);
+
+    Map<NutritionType, Integer> getNutritionLevels();
+
+    void setNutritionLevels(Map<NutritionType, Integer> levels);
 }

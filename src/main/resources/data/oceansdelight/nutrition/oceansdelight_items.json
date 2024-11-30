@@ -1,0 +1,144 @@
+{
+  "values": {
+    "oceansdelight:tentacles": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 10,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 5
+    },
+    "oceansdelight:cut_tentacles": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 4,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 1
+    },
+    "oceansdelight:squid_rings": {
+      "nutritionbts:carbohydrates": 5,
+      "nutritionbts:protein": 10,
+      "nutritionbts:fat": 5,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 5
+    },
+    "oceansdelight:tentacle_on_a_stick": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 10,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 5
+    },
+    "oceansdelight:baked_tentacle_on_a_stick": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 20,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 10
+    },
+    "oceansdelight:guardian_tail": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 0,
+      "nutritionbts:fat": 5,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 5
+    },
+    "oceansdelight:cooked_guardian_tail": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 0,
+      "nutritionbts:fat": 15,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 15
+    },
+    "oceansdelight:bowl_of_guardian_soup": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 20,
+      "nutritionbts:fat": 30,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 25
+    },
+    "oceansdelight:elder_guardian_slab": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 10,
+      "nutritionbts:fat": 15,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 20
+    },
+    "oceansdelight:elder_guardian_slice": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 1,
+      "nutritionbts:fat": 1,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 3
+    },
+    "oceansdelight:cooked_elder_guardian_slice": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 5,
+      "nutritionbts:fat": 5,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 5
+    },
+    "oceansdelight:elder_guardian_roll": {
+      "nutritionbts:carbohydrates": 10,
+      "nutritionbts:protein": 5,
+      "nutritionbts:fat": 5,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 15
+    },
+    "oceansdelight:cabbage_wrapped_elder_guardian": {
+      "nutritionbts:carbohydrates": 10,
+      "nutritionbts:protein": 15,
+      "nutritionbts:fat": 15,
+      "nutritionbts:vitamins": 20,
+      "nutritionbts:minerals": 15
+    },
+    "oceansdelight:fugu_slice": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 0,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 5
+    },
+    "oceansdelight:fugu_roll": {
+      "nutritionbts:carbohydrates": 20,
+      "nutritionbts:protein": 0,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 15
+    },
+    "oceansdelight:braised_sea_pickle": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 0,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 20,
+      "nutritionbts:minerals": 20
+    },
+    "oceansdelight:stuffed_cod": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 5,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 5,
+      "nutritionbts:minerals": 5
+    },
+    "oceansdelight:cooked_stuffed_cod": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 10,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 10,
+      "nutritionbts:minerals": 10
+    },
+    "oceansdelight:honey_fried_kelp": {
+      "nutritionbts:carbohydrates": 10,
+      "nutritionbts:protein": 0,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 0,
+      "nutritionbts:minerals": 10
+    },
+    "oceansdelight:seagrass_salad": {
+      "nutritionbts:carbohydrates": 0,
+      "nutritionbts:protein": 0,
+      "nutritionbts:fat": 0,
+      "nutritionbts:vitamins": 5,
+      "nutritionbts:minerals": 5
+    }
+  }
+}
