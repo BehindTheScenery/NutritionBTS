@@ -48,12 +48,6 @@ public class NutritionScreen extends Screen {
     protected void init() {
         super.init();
         this.hungerManagerAccess = this.client != null && this.client.player != null ? (HungerManagerAccess) this.client.player.getHungerManager() : null;
-
-        if (hungerManagerAccess == null) return;
-
-//        this.x = (this.width - SCREEN_WIDTH) / 2;
-//        this.y = (this.height - SCREEN_HEIGHT) / 2;
-        // 178 - 20 = 158
     }
 
     @SuppressWarnings("DataFlowIssue")
